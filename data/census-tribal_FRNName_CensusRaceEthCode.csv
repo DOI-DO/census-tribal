@@ -1,0 +1,577 @@
+id_prefix,id_mid,FRN_NameAsPublished,Census_RaceEthCode
+TRBF,ASHAWN,"Absentee-Shawnee Tribe of Indians of Oklahoma",6270
+AKNF,AGDAGX,"Agdaagux Tribe of King Cove",5121
+TRBF,AGCACL,"Agua Caliente Band of Cahuilla Indians of the Agua Caliente Indian Reservation, California",5557
+TRBF,AKCHIN,"Ak-Chin Indian Community",5510
+AKNF,AKACHK,"Akiachak Native Community",5411
+AKNF,AKIAKC,"Akiak Native Community",5412
+TRBF,ALCOUS,"Alabama-Coushatta Tribe of Texas",5727
+TRBF,ALQSRT,"Alabama-Quassarte Tribal Town",5736
+AKNF,ALATNA,"Alatna Village",5023
+AKNF,ALGACQ,"Algaaciq Native Village (St. Mary's)",5413
+AKNF,ALAKKT,"Allakaket Village",5025
+TRBF,ALTURS,"Alturas Indian Rancheria, California",6112
+AKNF,ALTIIQ,"Alutiiq Tribe of Old Harbor",5173
+AKNF,ANGOON,"Angoon Community Association",5340
+AKNF,ANVIKV,"Anvik Village",5026
+TRBF,APCHOK,"Apache Tribe of Oklahoma",5515
+AKNF,ARCTIC,"Arctic Village (See Native Village of Venetie Tribal Government)",5091
+AKNF,ACSRMT,"Asa'carsarmiut Tribe",5414
+TRBF,ASNBSX,"Assiniboine and Sioux Tribes of the Fort Peck Indian Reservation, Montana",5531
+TRBF,AGSTCL,"Augustine Band of Cahuilla Indians, California",5558
+TRBF,BRLSCH,"Bad River Band of the Lake Superior Tribe of Chippewa Indians of the Bad River Reservation, Wisconsin",5650
+TRBF,BYMLLS,"Bay Mills Indian Community, Michigan",5651
+TRBF,BEARRV,"Bear River Band of the Rohnerville Rancheria, California",5566
+AKNF,BEAVRV,"Beaver Village",5028
+TRBF,BRCMDU,"Berry Creek Rancheria of Maidu Indians of California",5927
+TRBF,BGLAGN,"Big Lagoon Rancheria, California",6347
+TRBF,BGPIPT,"Big Pine Paiute Tribe of the Owens Valley",6044
+TRBF,BGSNDY,"Big Sandy Rancheria of Western Mono Indians of California",5989
+TRBF,BGVALY,"Big Valley Band of Pomo Indians of the Big Valley Rancheria, California",6118
+AKNF,BIRCHC,"Birch Creek Tribe",5029
+TRBF,BISHPT,"Bishop Paiute Tribe",6072
+TRBF,BLCKFT,"Blackfeet Tribe of the Blackfeet Indian Reservation of Montana",5536
+TRBF,BLULKE,"Blue Lake Rancheria, California",6414
+TRBF,BRGPRT,"Bridgeport Indian Colony",6045
+TRBF,BNVSTA,"Buena Vista Rancheria of Me-Wuk Indians of California",5970
+TRBF,BRNSPT,"Burns Paiute Tribe",6046
+TRBF,CBZNCL,"Cabazon Band of Cahuilla Indians (previously listed as Cabazon Band of Mission Indians, California)",5559
+TRBF,CDWNTN,"Cachil DeHe Band of Wintun Indians of the Colusa Indian Community of the Colusa Rancheria, California",6408
+TRBF,CADDON,"Caddo Nation of Oklahoma",5553
+TRBF,CAHTOT,"Cahto Tribe of the Laytonville Rancheria",5567
+TRBF,CLBAND,"Cahuilla Band of Indians",5965
+TRBF,CAVMWK,"California Valley Miwok Tribe, California",5568
+TRBF,CMPODG,"Campo Band of Diegueno Mission Indians of the Campo Indian Reservation, California",5773
+TRBF,CAPGDG,"Capitan Grande Band of Diegueno Mission Indians of California (Barona Group of Capitan Grande Band of Mission Indians of the Barona Reservation, California; Viejas (Baron Long) Group of Capitan Grande Band of Mission Indians of the Viejas Reservation, California)",5774
+TRBF,CATWBA,"Catawba Indian Nation",5586
+TRBF,CAYUGA,"Cayuga Nation",5864
+TRBF,CEDARV,"Cedarville Rancheria, California",6047
+AKNF,TLNGHD,"Central Council of the Tlingit & Haida Indian Tribes",5321
+AKNF,CHLKSK,"Chalkyitsik Village",5030
+AKNF,CHSHNA,"Cheesh-Na Tribe",5031
+TRBF,CHMHVI,"Chemehuevi Indian Tribe of the Chemehuevi Reservation, California",5597
+TRBF,CHRAEH,"Cher-Ae Heights Indian Community of the Trinidad Rancheria, California",5569
+TRBF,CHKEEN,"Cherokee Nation",5603
+AKNF,CHEVAK,"Chevak Native Village",5226
+TRBF,CHYRSX,"Cheyenne River Sioux Tribe of the Cheyenne River Reservation, South Dakota",6297
+TRBF,CHYARP,"Cheyenne and Arapaho Tribes, Oklahoma",5624
+TRBF,CHCKHT,"Chickahominy Indian Tribe",5630
+TRBF,CHCKHE,"Chickahominy Indian Tribe—Eastern Division",5629
+AKNF,CHCKLN,"Chickaloon Native Village",5032
+TRBF,CHRMWK,"Chicken Ranch Rancheria of Me-Wuk Indians of California",5971
+AKNF,CGNKBY,"Chignik Bay Tribal Council",5125
+AKNF,CGNKLK,"Chignik Lake Village",5126
+AKNF,CHLKAT,"Chilkat Indian Village (Klukwan)",5322
+AKNF,CLKOOT,"Chilkoot Indian Association (Haines)",5323
+AKNF,CHINIK,"Chinik Eskimo Community (Golovin)",5227
+TRBF,CHCRRB,"Chippewa Cree Indians of the Rocky Boy's Reservation, Montana",5679
+TRBF,CHTMCH,"Chitimacha Tribe of Louisiana",5684
+AKNF,CLNWCK,"Chuloonawick Native Village",5417
+AKNF,CIRCLE,"Circle Native Community",5033
+TRBF,CITPWT,"Citizen Potawatomi Nation, Oklahoma",6153
+TRBF,CDPOMO,"Cloverdale Rancheria of Pomo Indians of California",6120
+TRBF,COCOPH,"Cocopah Tribe of Arizona",6445
+TRBF,CRDALN,"Coeur D'Alene Tribe",5708
+TRBF,CSMONO,"Cold Springs Rancheria of Mono Indians of California",5990
+TRBF,CORIVR,"Colorado River Indian Tribes of the Colorado River Indian Reservation, Arizona and California",5712
+TRBF,CMNCHE,"Comanche Nation, Oklahoma",5716
+TRBF,CSKTFR,"Confederated Salish and Kootenai Tribes of the Flathead Reservation",6238
+TRBF,YAKAMA,"Confederated Tribes and Bands of the Yakama Nation",6419
+TRBF,SILETZ,"Confederated Tribes of Siletz Indians of Oregon",6293
+TRBF,CHEHLS,"Confederated Tribes of the Chehalis Reservation",5590
+TRBF,COLVLL,"Confederated Tribes of the Colville Reservation",5714
+TRBF,CLUSLW,"Confederated Tribes of the Coos, Lower Umpqua and Siuslaw Indians",5720
+TRBF,CFTGSH,"Confederated Tribes of the Goshute Reservation, Nevada and Utah",6284
+TRBF,GRNRND,"Confederated Tribes of the Grand Ronde Community of Oregon",5831
+TRBF,UMATLL,"Confederated Tribes of the Umatilla Indian Reservation",6355
+TRBF,WRMSPR,"Confederated Tribes of the Warm Springs Reservation of Oregon",6386
+TRBF,COQLLE,"Coquille Indian Tribe",5722
+TRBF,COUSLA,"Coushatta Tribe of Louisiana",5728
+TRBF,COWCRU,"Cow Creek Band of Umpqua Tribe of Indians",6358
+TRBF,COWLTZ,"Cowlitz Indian Tribe",5731
+TRBF,CVPOMO,"Coyote Valley Band of Pomo Indians of California",6121
+AKNF,CRAIGT,"Craig Tribal Association",5324
+TRBF,CRCRSX,"Crow Creek Sioux Tribe of the Crow Creek Reservation, South Dakota",6298
+TRBF,CROWMT,"Crow Tribe of Montana",5752
+AKNF,CRYUNG,"Curyung Tribal Council",5418
+TRBF,DELAWN,"Delaware Nation, Oklahoma",5763
+TRBF,DELAWT,"Delaware Tribe of Indians",5764
+AKNF,DOUGLS,"Douglas Indian Association",5325
+TRBF,DCPOMO,"Dry Creek Rancheria Band of Pomo Indians, California",6122
+TRBF,DUCKSH,"Duckwater Shoshone Tribe (previously listed as Duckwater Shoshone Tribe of the Duckwater Reservation, Nevada)",6286
+TRBF,ECHKEE,"Eastern Band of Cherokee Indians",5606
+TRBF,ESHAWN,"Eastern Shawnee Tribe of Oklahoma",6272
+TRBF,EASTSH,"Eastern Shoshone Tribe of the Wind River Reservation, Wyoming",6287
+AKNF,EGEGIK,"Egegik Village",5129
+AKNF,EKLTNA,"Eklutna Native Village",5037
+TRBF,ELPOMO,"Elem Indian Colony of Pomo Indians of the Sulphur Bank Rancheria, California",6124
+TRBF,ELKVLY,"Elk Valley Rancheria, California",6348
+TRBF,ELYTSH,"Ely Shoshone Tribe of Nevada",6288
+AKNF,EMMNAK,"Emmonak Village",5420
+TRBF,ENTMDU,"Enterprise Rancheria of Maidu Indians of California",5928
+AKNF,EVNSVL,"Evansville Village (aka Bettles Field)",5038
+TRBF,EPPKMY,"Ewiiaapaayp Band of Kumeyaay Indians, California",5775
+TRBF,GRATON,"Federated Indians of Graton Rancheria, California",6125
+TRBF,FSNTSX,"Flandreau Santee Sioux Tribe of South Dakota",6300
+TRBF,FRCPWT,"Forest County Potawatomi Community, Wisconsin",6154
+TRBF,BELKNP,"Fort Belknap Indian Community of the Fort Belknap Reservation of Montana",5820
+TRBF,BIDWLL,"Fort Bidwell Indian Community of the Fort Bidwell Reservation of California",6048
+TRBF,INDPPT,"Fort Independence Indian Community of Paiute Indians of the Fort Independence Reservation, California",6049
+TRBF,FMPTSH,"Fort McDermitt Paiute and Shoshone Tribes of the Fort McDermitt Indian Reservation, Nevada and Oregon",6069
+TRBF,MCDWYP,"Fort McDowell Yavapai Nation, Arizona",5827
+TRBF,MOJAVE,"Fort Mojave Indian Tribe of Arizona, California & Nevada",6446
+TRBF,SLAPCH,"Fort Sill Apache Tribe of Oklahoma",5516
+TRBF,GILARV,"Gila River Indian Community of the Gila River Indian Reservation, Arizona",6103
+TRBF,GTOWCH,"Grand Traverse Band of Ottawa and Chippewa Indians, Michigan",5655
+TRBF,GREENV,"Greenville Rancheria",5929
+TRBF,GWNTNW,"Grindstone Indian Rancheria of Wintun-Wailaki Indians of California",6412
+TRBF,GUIDIV,"Guidiville Rancheria of California",6126
+AKNF,GLKANA,"Gulkana Village Council",5040
+TRBF,HMPOMO,"Habematolel Pomo of Upper Lake, California",6127
+TRBF,HANNHV,"Hannahville Indian Community, Michigan",6155
+TRBF,HAVASP,"Havasupai Tribe of the Havasupai Reservation, Arizona",6447
+AKNF,HEALYL,"Healy Lake Village",5041
+TRBF,HOCHNK,"Ho-Chunk Nation of Wisconsin",5842
+TRBF,HOHTRB,"Hoh Indian Tribe",5593
+AKNF,HCROSS,"Holy Cross Tribe",5042
+AKNF,HOONAH,"Hoonah Indian Association",5327
+TRBF,HOOPAV,"Hoopa Valley Tribe, California",5844
+TRBF,HOPIAZ,"Hopi Tribe of Arizona",5851
+TRBF,HLPOMO,"Hopland Band of Pomo Indians, California",6128
+TRBF,HLTNML,"Houlton Band of Maliseet Indians",5939
+TRBF,HUALAP,"Hualapai Indian Tribe of the Hualapai Indian Reservation, Arizona",6448
+AKNF,HUGHES,"Hughes Village",5043
+AKNF,HUSLIA,"Huslia Village",5044
+AKNF,HDABRG,"Hydaburg Cooperative Association",5328
+AKNF,IGIUGG,"Igiugig Village",5130
+TRBF,IIPAYN,"Iipay Nation of Santa Ysabel, California",5776
+TRBF,INAJDG,"Inaja Band of Diegueno Mission Indians of the Inaja and Cosmit Reservation, California",5777
+AKNF,INPTAS,"Inupiat Community of the Arctic Slope",5230
+TRBF,IONMWK,"Ione Band of Miwok Indians of California",5972
+TRBF,IOWAKN,"Iowa Tribe of Kansas and Nebraska",5859
+TRBF,IOWAOK,"Iowa Tribe of Oklahoma",5860
+AKNF,IQUGMT,"Iqugmiut Traditional Council",5421
+AKNF,IVNFBY,"Ivanof Bay Tribe",5131
+TRBF,JCKMWK,"Jackson Band of Miwuk Indians",5973
+TRBF,JTSKLL,"Jamestown S'Klallam Tribe",6225
+TRBF,JAMULV,"Jamul Indian Village of California",5778
+TRBF,JCHCTW,"Jena Band of Choctaw Indians",5692
+TRBF,JIAPCH,"Jicarilla Apache Nation, New Mexico",5517
+AKNF,KAGUYK,"Kaguyak Village",5132
+TRBF,KAIBPT,"Kaibab Band of Paiute Indians of the Kaibab Indian Reservation, Arizona",6050
+AKNF,KKTOVK,"Kaktovik Village (aka Barter Island)",5231
+TRBF,KALSPL,"Kalispel Indian Community of the Kalispel Reservation",5880
+TRBF,KARUKT,"Karuk Tribe",5882
+TRBF,KSPOMO,"Kashia Band of Pomo Indians of the Stewarts Point Rancheria, California",6129
+AKNF,KSIGLK,"Kasigluk Traditional Elders Council",5434
+TRBF,KAWNOK,"Kaw Nation, Oklahoma",5884
+AKNF,KENTZE,"Kenaitze Indian Tribe",5089
+AKNF,KTCHKN,"Ketchikan Indian Community",5329
+TRBF,KWNWBY,"Keweenaw Bay Indian Community, Michigan",5656
+TRBF,KILGEE,"Kialegee Tribal Town",5739
+TRBF,KCKPTX,"Kickapoo Traditional Tribe of Texas",5887
+TRBF,KCKPKS,"Kickapoo Tribe of Indians of the Kickapoo Reservation in Kansas",5888
+TRBF,KCKPOK,"Kickapoo Tribe of Oklahoma",5889
+AKNF,KNGISL,"King Island Native Community",5233
+AKNF,KNGSAL,"King Salmon Tribe",5135
+TRBF,KIOWAT,"Kiowa Indian Tribe of Oklahoma",5892
+TRBF,KLAMTH,"Klamath Tribes",5896
+AKNF,KLAWCK,"Klawock Cooperative Association",5330
+TRBF,KDWNTN,"Kletsel Dehe Wintun Nation of the Cortina Rancheria (previously listed as Kletsel Dehe Band of Wintun Indians)",6409
+AKNF,KNIKTR,"Knik Tribe",5045
+TRBF,KOINCA,"Koi Nation of Northern California",6130
+AKNF,KOKHNK,"Kokhanok Village",5137
+TRBF,KTNIID,"Kootenai Tribe of Idaho",5900
+AKNF,KOYUKK,"Koyukuk Native Village",5046
+TRBF,LJOLLS,"La Jolla Band of Luiseno Indians, California",5913
+TRBF,LPSTDG,"La Posta Band of Diegueno Mission Indians of the La Posta Indian Reservation, California",5779
+TRBF,COLSCH,"Lac Courte Oreilles Band of Lake Superior Chippewa Indians of Wisconsin",5657
+TRBF,VDLSCH,"Lac Vieux Desert Band of Lake Superior Chippewa Indians of Michigan",5659
+TRBF,FLLSCH,"Lac du Flambeau Band of Lake Superior Chippewa Indians of the Lac du Flambeau Reservation of Wisconsin",5658
+TRBF,LVGSPT,"Las Vegas Tribe of Paiute Indians of the Las Vegas Indian Colony, Nevada",6051
+AKNF,LEVLCK,"Levelock Village",5422
+AKNF,LIMEVL,"Lime Village",5048
+TRBF,LRVOWA,"Little River Band of Ottawa Indians, Michigan",6035
+TRBF,LSHELL,"Little Shell Tribe of Chippewa Indians of Montana",5662
+TRBF,LTROWA,"Little Traverse Bay Bands of Odawa Indians, Michigan",6036
+TRBF,LPPTSH,"Lone Pine Paiute-Shoshone Tribe",6070
+TRBF,LCCLCU,"Los Coyotes Band of Cahuilla and Cupeno Indians, California",5560
+AKNF,LOUDEN,"Louden Tribe (previously listed as Galena Village (aka Louden Village))",5039
+TRBF,LVLKPT,"Lovelock Paiute Tribe of the Lovelock Indian Colony, Nevada",6052
+TRBF,LWBRSX,"Lower Brule Sioux Tribe of the Lower Brule Reservation, South Dakota",6301
+TRBF,LELWHA,"Lower Elwha Tribal Community",6226
+TRBF,LWSXMN,"Lower Sioux Indian Community in the State of Minnesota",6302
+TRBF,LUMMIT,"Lummi Tribe of the Lummi Reservation",5924
+TRBF,LYTTON,"Lytton Rancheria of California",6131
+TRBF,MAKAHN,"Makah Indian Tribe of the Makah Indian Reservation",5936
+TRBF,MCPOMO,"Manchester Band of Pomo Indians of the Manchester Rancheria, California",6132
+AKNF,MNLYHS,"Manley Hot Springs Village",5049
+AKNF,MNOKTK,"Manokotak Village",5423
+TRBF,MZNTDG,"Manzanita Band of Diegueno Mission Indians of the Manzanita Reservation, California",5780
+TRBF,MPQUOT,"Mashantucket Pequot Indian Tribe",6099
+TRBF,MWMPNG,"Mashpee Wampanoag Tribe",6375
+TRBF,MBNPWT,"Match-e-be-nash-she-wish Band of Pottawatomi Indians of Michigan",6156
+AKNF,MCGRTH,"McGrath Native Village",5050
+TRBF,MCHPDA,"Mechoopda Indian Tribe of Chico Rancheria, California",5930
+TRBF,MNMNEE,"Menominee Indian Tribe of Wisconsin",5948
+AKNF,MNTSTA,"Mentasta Traditional Council",5051
+TRBF,MSGRDG,"Mesa Grande Band of Diegueno Mission Indians of the Mesa Grande Reservation, California",5781
+TRBF,MSAPCH,"Mescalero Apache Tribe of the Mescalero Reservation, New Mexico",5519
+AKNF,MTLKTL,"Metlakatla Indian Community, Annette Island Reserve",5396
+TRBF,MIKMAQ,"Mi'kmaq Nation (previously listed as Aroostook Band of Micmacs)",5960
+TRBF,MIAMIT,"Miami Tribe of Oklahoma",5955
+TRBF,MCSKEE,"Miccosukee Tribe of Indians",5957
+TRBF,MTPOMO,"Middletown Rancheria of Pomo Indians of California",6133
+TRBF,MINNCH,"Minnesota Chippewa Tribe, Minnesota (Six component reservations: Bois Forte Band (Nett Lake); Fond du Lac Band; Grand Portage Band; Leech Lake Band; Mille Lacs Band; White Earth Band)",5664
+TRBF,MCHCTW,"Mississippi Band of Choctaw Indians",5694
+TRBF,MOPAPT,"Moapa Band of Paiute Indians of the Moapa River Indian Reservation, Nevada",6054
+TRBF,MODOCN,"Modoc Nation",5980
+TRBF,MHEGAN,"Mohegan Tribe of Indians of Connecticut",5984
+TRBF,MNACAN,"Monacan Indian Nation",5986
+TRBF,MRTMDU,"Mooretown Rancheria of Maidu Indians of California",5931
+TRBF,MORNGO,"Morongo Band of Mission Indians, California",5561
+TRBF,MCKLSH,"Muckleshoot Indian Tribe",6194
+AKNF,NAKNEK,"Naknek Native Village",5424
+TRBF,NNSMND,"Nansemond Indian Nation",5795
+TRBF,NRGNST,"Narragansett Indian Tribe",5997
+AKNF,AFGNAK,"Native Village of Afognak",5140
+AKNF,AKHIOK,"Native Village of Akhiok",5141
+AKNF,AKUTAN,"Native Village of Akutan",5142
+AKNF,ALKNGK,"Native Village of Aleknagik",5425
+AKNF,AMBLER,"Native Village of Ambler",5235
+AKNF,ATKANV,"Native Village of Atka",5143
+AKNF,ATQSUK,"Native Village of Atqasuk",5224
+AKNF,INPTBW,"Native Village of Barrow Inupiat Traditional Government",5236
+AKNF,BLKFSK,"Native Village of Belkofski",5144
+AKNF,BREVIG,"Native Village of Brevig Mission",5237
+AKNF,BCKLND,"Native Village of Buckland",5238
+AKNF,CNTWLL,"Native Village of Cantwell",5052
+AKNF,CHNEGA,"Native Village of Chenega (aka Chanega)",5145
+AKNF,CHGNKL,"Native Village of Chignik Lagoon",5146
+AKNF,CHTINA,"Native Village of Chitina",5053
+AKNF,CHTHBK,"Native Village of Chuathbaluk (Russian Mission, Kuskokwim)",5426
+AKNF,COUNCL,"Native Village of Council",5239
+AKNF,DEERNG,"Native Village of Deering",5240
+AKNF,INALIK,"Native Village of Diomede (aka Inalik)",5241
+AKNF,VEAGLE,"Native Village of Eagle",5054
+AKNF,NVLEEK,"Native Village of Eek",5427
+AKNF,NVEKUK,"Native Village of Ekuk",5428
+AKNF,VEKWOK,"Native Village of Ekwok",5419
+AKNF,NVELIM,"Native Village of Elim",5242
+AKNF,NVEYAK,"Native Village of Eyak (Cordova)",5147
+AKNF,FSPASS,"Native Village of False Pass",5148
+AKNF,GWCHZG,"Native Village of Fort Yukon",5055
+AKNF,GAKONA,"Native Village of Gakona",5056
+AKNF,GAMBLL,"Native Village of Gambell",5429
+AKNF,GEORGT,"Native Village of Georgetown",5430
+AKNF,GNWSBY,"Native Village of Goodnews Bay",5431
+AKNF,HAMLTN,"Native Village of Hamilton",5432
+AKNF,HOOPBY,"Native Village of Hooper Bay",5433
+AKNF,KANATK,"Native Village of Kanatak",5149
+AKNF,KARLUK,"Native Village of Karluk",5150
+AKNF,VKIANA,"Native Village of Kiana",5243
+AKNF,KIPNUK,"Native Village of Kipnuk",5435
+AKNF,KVALNA,"Native Village of Kivalina",5244
+AKNF,KLTIKH,"Native Village of Kluti Kaah (aka Copper Center)",5057
+AKNF,KOBUKV,"Native Village of Kobuk",5245
+AKNF,KNGGNK,"Native Village of Kongiganak",5436
+AKNF,KTZBUE,"Native Village of Kotzebue",5246
+AKNF,KOYUKV,"Native Village of Koyuk",5247
+AKNF,KWGLGK,"Native Village of Kwigillingok",5437
+AKNF,QUNHGK,"Native Village of Kwinhagak (aka Quinhagak)",5438
+AKNF,LARSBY,"Native Village of Larsen Bay",5151
+AKNF,MRSHLL,"Native Village of Marshall (aka Fortuna Ledge)",5439
+AKNF,MIGLOO,"Native Village of Mary's Igloo",5248
+AKNF,MEKRYK,"Native Village of Mekoryuk",5249
+AKNF,VMINTO,"Native Village of Minto",5058
+AKNF,NANWLK,"Native Village of Nanwalek (aka English Bay)",5152
+AKNF,NPAIMT,"Native Village of Napaimute",5440
+AKNF,NAPAKK,"Native Village of Napakiak",5441
+AKNF,NAPSKK,"Native Village of Napaskiak",5442
+AKNF,NLSONL,"Native Village of Nelson Lagoon",5153
+AKNF,NGHTMT,"Native Village of Nightmute",5443
+AKNF,NKLSKI,"Native Village of Nikolski",5154
+AKNF,NOATAK,"Native Village of Noatak",5250
+AKNF,NUIQST,"Native Village of Nuiqsut (aka Nooiksut)",5251
+AKNF,NNMIQA,"Native Village of Nunam Iqua",5444
+AKNF,NNPTCK,"Native Village of Nunapitchuk",5445
+AKNF,OZNKIE,"Native Village of Ouzinkie",5155
+AKNF,VPAIMT,"Native Village of Paimiut",5483
+AKNF,PRRYVL,"Native Village of Perryville",5156
+AKNF,PILOTP,"Native Village of Pilot Point",5157
+AKNF,PNTHPE,"Native Village of Point Hope",5252
+AKNF,PNTLAY,"Native Village of Point Lay",5253
+AKNF,PRTGRM,"Native Village of Port Graham",5158
+AKNF,PRTHDN,"Native Village of Port Heiden",5159
+AKNF,PRTLNS,"Native Village of Port Lions",5160
+AKNF,NVRUBY,"Native Village of Ruby",5059
+AKNF,STMCHL,"Native Village of Saint Michael",5447
+AKNF,SAVNGA,"Native Village of Savoonga",5448
+AKNF,SCMNBY,"Native Village of Scammon Bay",5449
+AKNF,SELAWK,"Native Village of Selawik",5254
+AKNF,SHKTLK,"Native Village of Shaktoolik",5255
+AKNF,SSHMRF,"Native Village of Shishmaref",5256
+AKNF,SHNGNK,"Native Village of Shungnak",5257
+AKNF,STEVNS,"Native Village of Stevens",5060
+AKNF,TNCRSS,"Native Village of Tanacross",5061
+AKNF,NVTNNA,"Native Village of Tanana",5062
+AKNF,TATTLK,"Native Village of Tatitlek",5161
+AKNF,TAZLNA,"Native Village of Tazlina",5063
+AKNF,TELLER,"Native Village of Teller",5258
+AKNF,TETLIN,"Native Village of Tetlin",5064
+AKNF,TNTTLK,"Native Village of Tuntutuliak",5450
+AKNF,TUNNAK,"Native Village of Tununak",5451
+AKNF,TYONEK,"Native Village of Tyonek",5065
+AKNF,UNLKLT,"Native Village of Unalakleet",5259
+AKNF,NVUNGA,"Native Village of Unga",5162
+AKNF,VENETI,"Native Village of Venetie Tribal Government (Arctic Village and Village of Venetie)",5090
+AKNF,VWALES,"Native Village of Wales",5260
+AKNF,NVWMTN,"Native Village of White Mountain",5261
+TRBF,NAVAJO,"Navajo Nation, Arizona, New Mexico, & Utah",5999
+AKNF,NENANA,"Nenana Native Association",5066
+AKNF,NKLGNK,"New Koliganek Village Council",5452
+AKNF,NSTYHK,"New Stuyahok Village",5453
+AKNF,NHALEN,"Newhalen Village",5454
+AKNF,NEWTOK,"Newtok Village",5455
+TRBF,NEZPRC,"Nez Perce Tribe",6001
+AKNF,NKOLAI,"Nikolai Village",5067
+AKNF,NNLCHK,"Ninilchik Village",5068
+TRBF,NISQLL,"Nisqually Indian Tribe",6195
+AKNF,NOMECM,"Nome Eskimo Community",5262
+AKNF,NNDLTN,"Nondalton Village",5069
+TRBF,NOOKSK,"Nooksack Indian Tribe",6196
+AKNF,NOORVK,"Noorvik Native Community",5263
+TRBF,NARPWR,"Northern Arapaho Tribe of the Wind River Reservation, Wyoming",5525
+TRBF,NORCHY,"Northern Cheyenne Tribe of the Northern Cheyenne Indian Reservation, Montana",5620
+TRBF,NFMONO,"Northfork Rancheria of Mono Indians of California",5991
+AKNF,NRTHWY,"Northway Village",5070
+TRBF,NWSSHN,"Northwestern Band of the Shoshone Nation",6289
+TRBF,NSHPWT,"Nottawaseppi Huron Band of the Potawatomi, Michigan",6157
+AKNF,NULATO,"Nulato Village",5071
+AKNF,NKYRMT,"Nunakauyarmiut Tribe",5456
+TRBF,OGLLSX,"Oglala Sioux Tribe",6304
+TRBF,OKYOWG,"Ohkay Owingeh, New Mexico",6165
+TRBF,OMAHAT,"Omaha Tribe of Nebraska",6023
+TRBF,ONDANY,"Oneida Indian Nation",5867
+TRBF,ONDAWI,"Oneida Nation",6025
+TRBF,ONNDGA,"Onondaga Nation",5868
+AKNF,GRYLNG,"Organized Village of Grayling (aka Holikachuk)",5072
+AKNF,VLKAKE,"Organized Village of Kake",5331
+AKNF,KASAAN,"Organized Village of Kasaan",5332
+AKNF,KWTHLK,"Organized Village of Kwethluk",5457
+AKNF,SAXMAN,"Organized Village of Saxman",5333
+AKNF,OTSRMT,"Orutsararmiut Traditional Native Council",5458
+AKNF,OSCARV,"Oscarville Traditional Village",5459
+TRBF,OTOMSA,"Otoe-Missouria Tribe of Indians, Oklahoma",6031
+TRBF,OWATOK,"Ottawa Tribe of Oklahoma",6037
+TRBF,PTTRUT,"Paiute Indian Tribe of Utah (Cedar Band of Paiutes, Kanosh Band of Paiutes, Koosharem Band of Paiutes, Indian Peaks Band of Paiutes, and Shivwits Band of Paiutes)",6056
+TRBF,PTSHFL,"Paiute-Shoshone Tribe of the Fallon Reservation and Colony, Nevada",6071
+TRBF,PALABD,"Pala Band of Mission Indians",5914
+TRBF,PAMNKY,"Pamunkey Indian Tribe",6078
+TRBF,PSQYQI,"Pascua Yaqui Tribe of Arizona",6424
+TRBF,PSKNML,"Paskenta Band of Nomlaki Indians of California",6009
+TRBF,PSMQDY,"Passamaquoddy Tribe",6081
+AKNF,PLFHBR,"Pauloff Harbor Village",5163
+TRBF,PAMALS,"Pauma Band of Luiseno Mission Indians of the Pauma & Yuima Reservation, California",5915
+TRBF,PAWNEE,"Pawnee Nation of Oklahoma",6086
+TRBF,PCHNGA,"Pechanga Band of Indians (previously listed as Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, California)",5916
+AKNF,PDROBY,"Pedro Bay Village",5073
+TRBF,PNBSCT,"Penobscot Nation",6090
+TRBF,PEORIA,"Peoria Tribe of Indians of Oklahoma",6093
+AKNF,PTRSBG,"Petersburg Indian Association",5335
+TRBF,PYCKCH,"Picayune Rancheria of Chukchansi Indians of California",6431
+AKNF,PILTST,"Pilot Station Traditional Village",5460
+TRBF,PVPOMO,"Pinoleville Pomo Nation, California",6135
+TRBF,PITRVR,"Pit River Tribe, California (includes XL Ranch, Big Bend, Likely, Lookout, Montgomery Creek, and Roaring Creek Rancherias)",6113
+AKNF,PTKAPT,"Pitka's Point Traditional Council",5446
+AKNF,PLATNM,"Platinum Traditional Village",5461
+TRBF,PCREEK,"Poarch Band of Creek Indians",5744
+TRBF,POKPWT,"Pokagon Band of Potawatomi Indians, Michigan and Indiana",6158
+TRBF,PNCAOK,"Ponca Tribe of Indians of Oklahoma",6148
+TRBF,PNCANE,"Ponca Tribe of Nebraska",6149
+TRBF,PGSKLL,"Port Gamble S'Klallam Tribe",6227
+AKNF,OGSNKL,"Portage Creek Village (aka Ohgsenakale)",5462
+TRBF,PTTERV,"Potter Valley Tribe, California",6136
+TRBF,PRAPWT,"Prairie Band Potawatomi Nation",6159
+TRBF,PRAIRI,"Prairie Island Indian Community in the State of Minnesota",6306
+AKNF,PRBLFC,"Pribilof Islands Aleut Communities of St. Paul & St. George Islands (Saint George Island and Saint Paul Island)",5174
+TRBF,ACOMAP,"Pueblo of Acoma, New Mexico",6167
+TRBF,COCHTI,"Pueblo of Cochiti, New Mexico",6168
+TRBF,ISLETA,"Pueblo of Isleta, New Mexico",6169
+TRBF,JEMEZP,"Pueblo of Jemez, New Mexico",6170
+TRBF,LAGUNA,"Pueblo of Laguna, New Mexico",6171
+TRBF,NAMBEP,"Pueblo of Nambe, New Mexico",6172
+TRBF,PCURIS,"Pueblo of Picuris, New Mexico",6173
+TRBF,POJOAQ,"Pueblo of Pojoaque, New Mexico",6174
+TRBF,SFLIPE,"Pueblo of San Felipe, New Mexico",6175
+TRBF,SILDFN,"Pueblo of San Ildefonso, New Mexico",6176
+TRBF,SANDIA,"Pueblo of Sandia, New Mexico",6177
+TRBF,STAANA,"Pueblo of Santa Ana, New Mexico",6178
+TRBF,SCLARA,"Pueblo of Santa Clara, New Mexico",6179
+TRBF,TAOSPB,"Pueblo of Taos, New Mexico",6181
+TRBF,TSUQUE,"Pueblo of Tesuque, New Mexico",6182
+TRBF,ZIAPBL,"Pueblo of Zia, New Mexico",6183
+TRBF,PLKLYK,"Pulikla Tribe of Yurok People (previously listed as Resighini Rancheria, California)",6456
+TRBF,PUYLLP,"Puyallup Tribe of the Puyallup Reservation",6197
+TRBF,PYRLPT,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada",6057
+AKNF,QGNTGN,"Qagan Tayagungin Tribe of Sand Point",5164
+AKNF,QWALGN,"Qawalangin Tribe of Unalaska",5165
+TRBF,QUAPAW,"Quapaw Nation",6214
+TRBF,QUARTZ,"Quartz Valley Indian Community of the Quartz Valley Reservation of California",6265
+TRBF,QUECHN,"Quechan Tribe of the Fort Yuma Indian Reservation, California & Arizona",6450
+TRBF,QUILTE,"Quileute Tribe of the Quileute Reservation",5594
+TRBF,QUINLT,"Quinault Indian Nation",6216
+TRBF,RMNACL,"Ramona Band of Cahuilla, California",5562
+AKNF,RAMPRT,"Rampart Village",5074
+TRBF,RPHNCK,"Rappahannock Tribe, Inc.",6218
+TRBF,RCLSCH,"Red Cliff Band of Lake Superior Chippewa Indians of Wisconsin",5665
+TRBF,RDLKCH,"Red Lake Band of Chippewa Indians, Minnesota",5666
+TRBF,RDDING,"Redding Rancheria, California",5575
+TRBF,RVPOMO,"Redwood Valley or Little River Band of Pomo Indians of the Redwood Valley Rancheria California",6137
+TRBF,RNOSPK,"Reno-Sparks Indian Colony, Nevada",6220
+TRBF,RNCNLS,"Rincon Band of Luiseno Mission Indians of Rincon Reservation, California",5917
+TRBF,ROBNSN,"Robinson Rancheria",6138
+TRBF,RSBDSX,"Rosebud Sioux Tribe of the Rosebud Indian Reservation, South Dakota",6307
+TRBF,RNDVLY,"Round Valley Indian Tribes, Round Valley Reservation, California",6222
+TRBF,SCFXMO,"Sac & Fox Nation of Missouri in Kansas and Nebraska",6230
+TRBF,SCFXOK,"Sac & Fox Nation, Oklahoma",6231
+TRBF,SCFXMS,"Sac & Fox Tribe of the Mississippi in Iowa",6232
+TRBF,SGNWCH,"Saginaw Chippewa Indian Tribe of Michigan",5667
+AKNF,STPAUL,"Saint Paul Island (See Pribilof Islands Aleut Communities of St. Paul & St. George Islands)",5176
+TRBF,SRMHWK,"Saint Regis Mohawk Tribe",5869
+AKNF,SLMATF,"Salamatof Tribe",5085
+TRBF,SRPMCP,"Salt River Pima-Maricopa Indian Community of the Salt River Reservation, Arizona",6105
+TRBF,SAMISH,"Samish Indian Nation",6198
+TRBF,SCAPCH,"San Carlos Apache Tribe of the San Carlos Reservation, Arizona",5520
+TRBF,SNJSPT,"San Juan Southern Paiute Tribe of Arizona",6058
+TRBF,SPQLDG,"San Pasqual Band of Diegueno Mission Indians of California",5782
+TRBF,SRSACL,"Santa Rosa Band of Cahuilla Indians, California",5563
+TRBF,STARSA,"Santa Rosa Indian Community of the Santa Rosa Rancheria, California",5576
+TRBF,SYCMSH,"Santa Ynez Band of Chumash Mission Indians of the Santa Ynez Reservation, California",5703
+TRBF,SNTSXN,"Santee Sioux Nation, Nebraska",6308
+TRBF,SDMNGO,"Santo Domingo Pueblo",6180
+TRBF,SKSTTL,"Sauk-Suiattle Indian Tribe",6199
+TRBF,SSMACH,"Sault Ste. Marie Tribe of Chippewa Indians, Michigan",5668
+TRBF,SCPOMO,"Scotts Valley Band of Pomo Indians of California",6139
+AKNF,SLDVIA,"Seldovia Village Tribe",5075
+TRBF,SMNLFL,"Seminole Tribe of Florida",6250
+TRBF,SNCNAT,"Seneca Nation of Indians",5870
+TRBF,SNCCYG,"Seneca-Cayuga Nation",5872
+AKNF,SHGELK,"Shageluk Native Village",5076
+TRBF,SHMDSX,"Shakopee Mdewakanton Sioux Community of Minnesota",6309
+TRBF,SHAWNT,"Shawnee Tribe",6275
+TRBF,SHPOMO,"Sherwood Valley Rancheria of Pomo Indians of California",6140
+TRBF,SHSMWK,"Shingle Springs Band of Miwok Indians, Shingle Springs Rancheria (Verona Tract), California",5974
+TRBF,SHNNCK,"Shinnecock Indian Nation",6279
+TRBF,SHLWBY,"Shoalwater Bay Indian Tribe of the Shoalwater Bay Indian Reservation",6281
+TRBF,SHBKFH,"Shoshone-Bannock Tribes of the Fort Hall Reservation",5824
+TRBF,SHPTDV,"Shoshone-Paiute Tribes of the Duck Valley Reservation, Nevada",6073
+TRBF,SWOYTE,"Sisseton-Wahpeton Oyate of the Lake Traverse Reservation, South Dakota",6310
+AKNF,SITKAT,"Sitka Tribe of Alaska",5337
+AKNF,SKAGWY,"Skagway Village",5338
+TRBF,SKOKOM,"Skokomish Indian Tribe",6200
+TRBF,SKVGSH,"Skull Valley Band of Goshute Indians of Utah",6290
+TRBF,SNOQLM,"Snoqualmie Indian Tribe",6203
+TRBF,SOBOBA,"Soboba Band of Luiseno Indians, California",5918
+TRBF,SKGNCH,"Sokaogon Chippewa Community, Wisconsin",5669
+AKNF,SNKNEK,"South Naknek Village",5168
+TRBF,STHUTE,"Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado",6363
+TRBF,SPRTLK,"Spirit Lake Tribe, North Dakota",6311
+TRBF,SPKANE,"Spokane Tribe of the Spokane Reservation",6322
+TRBF,SQUXIN,"Squaxin Island Tribe of the Squaxin Island Reservation",6204
+TRBF,SCRXCH,"St. Croix Chippewa Indians of Wisconsin",5670
+AKNF,STGRGE,"St. George Island (See Pribilof Islands Aleut Communities of St. Paul & St. George Islands)",5175
+TRBF,SNDRSX,"Standing Rock Sioux Tribe of North & South Dakota",6312
+AKNF,STBBNS,"Stebbins Community Association",5464
+TRBF,STLMSH,"Stillaguamish Tribe of Indians of Washington",6206
+TRBF,SBRMNS,"Stockbridge Munsee Community, Wisconsin",6324
+TRBF,SUMLPT,"Summit Lake Paiute Tribe of Nevada",6059
+AKNF,SUNAQT,"Sun'aq Tribe of Kodiak",5170
+TRBF,SUQUAM,"Suquamish Indian Tribe of the Port Madison Reservation",6208
+TRBF,SUSANV,"Susanville Indian Rancheria, California",6060
+TRBF,SWINOM,"Swinomish Indian Tribal Community",6207
+TRBF,SYCKMY,"Sycuan Band of the Kumeyaay Nation",5783
+TRBF,TABLEM,"Table Mountain Rancheria",6432
+AKNF,TKOTNA,"Takotna Village",5078
+AKNF,TNGRNQ,"Tangirnaq Native Village",5139
+TRBF,TEMWSH,"Te-Moak Tribe of Western Shoshone Indians of Nevada (Four constituent bands: Battle Mountain Band; Elko Band; South Fork Band; and Wells Band)",6326
+TRBF,TEJONT,"Tejon Indian Tribe",6434
+AKNF,TELIDA,"Telida Village",5080
+TRBF,CHKSAW,"The Chickasaw Nation",5635
+TRBF,CHCTWN,"The Choctaw Nation of Oklahoma",5690
+TRBF,MCREEK,"The Muscogee (Creek) Nation",5735
+TRBF,OSAGEN,"The Osage Nation",6029
+TRBF,SMNLOK,"The Seminole Nation of Oklahoma",6251
+TRBF,TLPLCO,"Thlopthlocco Tribal Town",5746
+TRBF,MHATAT,"Three Affiliated Tribes of the Fort Berthold Reservation, North Dakota",6339
+TRBF,TIMBSH,"Timbisha Shoshone Tribe",6285
+TRBF,THNODM,"Tohono O'odham Nation of Arizona",6341
+TRBF,TLWDNI,"Tolowa Dee-ni' Nation",6346
+TRBF,TNWSNC,"Tonawanda Band of Seneca",5873
+TRBF,TNKAWA,"Tonkawa Tribe of Indians of Oklahoma",6351
+TRBF,TTAPCH,"Tonto Apache Tribe of Arizona",5521
+TRBF,TMDSCL,"Torres Martinez Desert Cahuilla Indians, California",5564
+AKNF,TOGIAK,"Traditional Village of Togiak",5465
+TRBF,TULALP,"Tulalip Tribes of Washington",6209
+TRBF,TULERV,"Tule River Indian Tribe of the Tule River Reservation, California",6435
+AKNF,TLUKSK,"Tuluksak Native Community",5466
+TRBF,TUNBIL,"Tunica-Biloxi Indian Tribe",5808
+TRBF,TLMMWK,"Tuolumne Band of Me-Wuk Indians of the Tuolumne Rancheria of California",5975
+TRBF,TRTMCH,"Turtle Mountain Band of Chippewa Indians of North Dakota",5672
+TRBF,TSCARA,"Tuscarora Nation",5874
+TRBF,TWNPLM,"Twenty-Nine Palms Band of Mission Indians of California",5920
+AKNF,TWINHL,"Twin Hills Village",5467
+AKNF,UGASHK,"Ugashik Village",5171
+AKNF,UMKUMT,"Umkumiut Native Village",5468
+TRBF,AUBURN,"United Auburn Indian Community of the Auburn Rancheria of California",5934
+TRBF,KCHKEE,"United Keetoowah Band of Cherokee Indians in Oklahoma",5616
+TRBF,UMTPNI,"Upper Mattaponi Tribe",5944
+TRBF,UPPRSX,"Upper Sioux Community, Minnesota",6314
+TRBF,USKAGT,"Upper Skagit Indian Tribe",6210
+TRBF,UTEUOR,"Ute Indian Tribe of the Uintah & Ouray Reservation, Utah",6364
+TRBF,UTEMTN,"Ute Mountain Ute Tribe",6365
+TRBF,UUGWPT,"Utu Utu Gwaitu Paiute Tribe of the Benton Paiute Reservation, California",6061
+AKNF,ALAKNK,"Village of Alakanuk",5469
+AKNF,ANKTVK,"Village of Anaktuvuk Pass",5264
+AKNF,VANIAK,"Village of Aniak",5470
+AKNF,ATMTLK,"Village of Atmautluak",5471
+AKNF,BLLMSL,"Village of Bill Moore's Slough",5472
+AKNF,CHFRNK,"Village of Chefornak",5473
+AKNF,CLRKPT,"Village of Clarks Point",5474
+AKNF,CRKEDC,"Village of Crooked Creek",5475
+AKNF,DOTLAK,"Village of Dot Lake",5082
+AKNF,VILMNA,"Village of Iliamna",5083
+AKNF,KLSKAG,"Village of Kalskag",5476
+AKNF,KALTAG,"Village of Kaltag",5084
+AKNF,KOTLIK,"Village of Kotlik",5477
+AKNF,LKLSKG,"Village of Lower Kalskag",5478
+AKNF,OHOGMT,"Village of Ohogamiut",5479
+AKNF,REDDVL,"Village of Red Devil",5480
+AKNF,SLTMUT,"Village of Sleetmute",5481
+AKNF,SOLOMN,"Village of Solomon",5265
+AKNF,STNYRV,"Village of Stony River",5086
+AKNF,VVENET,"Village of Venetie (See Native Village of Venetie Tribal Government)",5092
+AKNF,WAINWT,"Village of Wainwright",5266
+TRBF,WLKRPT,"Walker River Paiute Tribe of the Walker River Reservation, Nevada",6062
+TRBF,WMPNGA,"Wampanoag Tribe of Gay Head (Aquinnah)",6380
+TRBF,WASHOE,"Washoe Tribe of Nevada & California (Carson Colony, Dresslerville Colony, Woodfords Community, Stewart Community, & Washoe Ranches)",6391
+TRBF,WMAPCH,"White Mountain Apache Tribe of the Fort Apache Reservation, Arizona",5522
+TRBF,WKWTOK,"Wichita and Affiliated Tribes (Wichita, Keechi, Waco, & Tawakonie), Oklahoma",6395
+TRBF,WILTON,"Wilton Rancheria, California",5976
+TRBF,WNNBGO,"Winnebago Tribe of Nebraska",6403
+TRBF,WNNMCA,"Winnemucca Indian Colony of Nevada",6063
+TRBF,WIYOTT,"Wiyot Tribe, California",6415
+AKNF,WRNGLL,"Wrangell Cooperative Association",5341
+TRBF,WYNDTT,"Wyandotte Nation",5875
+AKNF,YKTTLN,"Yakutat Tlingit Tribe",5342
+TRBF,YNKTSX,"Yankton Sioux Tribe of South Dakota",6317
+TRBF,YPAPCH,"Yavapai-Apache Nation of the Camp Verde Indian Reservation, Arizona",6428
+TRBF,YPPSCT,"Yavapai-Prescott Indian Tribe",6451
+TRBF,YRTNPT,"Yerington Paiute Tribe of the Yerington Colony & Campbell Ranch, Nevada",6065
+TRBF,YDWNTN,"Yocha Dehe Wintun Nation, California",6410
+TRBF,YMBASH,"Yomba Shoshone Tribe of the Yomba Reservation, Nevada",6291
+TRBF,YLSTSR,"Ysleta del Sur Pueblo",6185
+TRBF,YHVTSM,"Yuhaaviatam of San Manuel Nation (previously listed as San Manuel Band of Mission Indians, California)",6260
+AKNF,YUPIIT,"Yupiit of Andreafski",5482
+TRBF,YUROKT,"Yurok Tribe of the Yurok Reservation, California",6455
+TRBF,ZUNINM,"Zuni Tribe of the Zuni Reservation, New Mexico",6186
