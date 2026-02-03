@@ -1,8 +1,5 @@
 # census-tribal
-
-<img src="res/census-tribal_Icon.png" alt="Project Icon" width="250">
-
-## Welcome to the census-tribal Data User's Guide for the Department of the Interior
+## <img src="res/census-tribal_Icon.png" alt="Project Icon" width="100"> Welcome to the Department of the Interior's _User's Guide for Census-Tribal Data._
 
 This repository was created to support DOI and other federal employess who want to access and analyze Census data for American Indian and Alaska Native (AIAN) geographies.
 
