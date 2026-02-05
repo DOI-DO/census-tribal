@@ -12,22 +12,21 @@ Census ACS products for the majority of AIAN geographies are limited to 5-year e
 
 [^1]: https://www2.census.gov/training-workshops/courses/intro-census-data-api/api-course-module-1-presentation.pdf
 
-ACS data reported for Tribal geographies includes non-Tribal members; the Census Bureau warns that "data users...need to understand that many American Indian and Alaska Native areas have substantial populations that are neither American Indian nor Alaska Native."[^2] Tools summarizing data from Tribal geographies, such as the Census Bureau's My Tribal Area site, "provide characteristics for the entire population living in the AIAN area (regardless of their race or whether people identify as American Indian or Alaska Native)."[^3]
+ACS data reported for Tribal geographies includes non-Tribal members; the Census Bureau warns that "data users...need to understand that many American Indian and Alaska Native \[AIAN\] areas have substantial populations that are neither American Indian nor Alaska Native."[^2] Tools summarizing data from Tribal geographies, such as the Census Bureau's My Tribal Area site, "provide characteristics for the entire population living in the AIAN area (regardless of their race or whether people identify as American Indian or Alaska Native)."[^3]
 
 [^2]: <https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_aian_handbook_2021_ch02.pdf>
 
 [^3]: <https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_aian_handbook_2021_ch05.pdf>
 
-For this reason, whenever possible, data at the Tribal geography level should be subset by race/ethnicity for purposes related to describing Tribal populations. Not all ACS topics in the Census Bureau's data.census.gov are disaggregated by race/ethnicity.[^4] Examples in this document will assist users in finding Census ACS data for Tribal geographies disaggregated by race/ethnicity.
+For this reason, whenever possible, data at the Tribal geography level should be subset by race/ethnicity for purposes related to describing Tribal populations. Not all ACS topics in the Census Bureau's data.census.gov are disaggregated by race/ethnicity.[^4] Examples in this document will assist users in finding Census ACS data for Tribal geographies disaggregated by race/ethnicity. Census reports racial categories as "race alone," when only one race is chosen, e.g., 'AIAN alone" or AIAN-A, and "race alone or in combination," when a one or more race is chosen, e.g. "AIAN alone or in combination" or AIAN-AoIC.
 
 [^4]: <https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_aian_handbook_2021_ch02.pdf>
 
-
 ## Constructing API Calls from Census
 
-### Get an API key
+### First get an API key
 
-Census does not require users to have an API key, but there are limits on the number of requests that can come from a single IP address without a key. It's quick and easy to request one: <https://api.census.gov/data/key_signup.html>.
+Census does not require users to have an API key, but there are limits on the number of requests that can come from a single IP address without a key. It's quick and easy to request a key: <https://api.census.gov/data/key_signup.html>.
 
 ```{r 1}
 #| echo: false
@@ -35,43 +34,51 @@ Census does not require users to have an API key, but there are limits on the nu
 census_api_key="9b678913174c9e9d7825c60981d91a896e1dbdb6"
 ```
 
-### Pull an entire table using the API
+### Pull a table using the API
 
-API calls can be constructed to either pull an entire table, analogous to downloading a table from data.census.gov, or to pull specific variables. We will pull the table **B01001: Sex by Age** from the AIAN Detailed Tables. You can view this table in data.census.gov [here](https://data.census.gov/table/ACSDT5YAIAN2021.B01001?t=-02&g=010XX00US$2500000&d=ACS+5-Year+Estimates+American+Indian+and+Alaska+Native+Detailed+Tables). This version of the table includes all AIANNH geographies and data on "All available races alone or in combination". When you view the table in data.census.gov, you will see an "API" button in the header above the table, which provides the API endpoint. Copying and pasting this endpoint into a web browser will show you the data the table contains. When you construct an API call, you construct a similar endpoint, pull the data into your R environment into a tidy and human readable data frame.
+API calls can be constructed to either pull an entire table, analogous to downloading a table from data.census.gov, or to pull specific variables. We will first describe how to pull the table **B01001: Sex by Age** from the AIAN Detailed Tables. You can view this table in data.census.gov [here](https://data.census.gov/table/ACSDT5YAIAN2021.B01001?t=-02&g=010XX00US$2500000&d=ACS+5-Year+Estimates+American+Indian+and+Alaska+Native+Detailed+Tables). This version of the table includes all AIANNH geographies and data on "All available races alone or in combination". When you view the table in data.census.gov, you will see an "API" button in the header above the table, which provides the API endpoint. Copying and pasting this endpoint into a web browser will show you the data the table contains in (non-standard) JSON format (add *&outputFormat=csv* to the end of the URL to get the data in comma delimited format). When you construct an API call, you construct a similar endpoint and pull the data into your R environment and into a tidy and human readable data frame.
 
-In this example, if you click on the API button when you open the table in data.census.gov, you'll get this:
+In this example, if you click on the API button when you open the table in data.census.gov, you'll get this URL
 
 [`https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-02)&ucgid=pseudo(0100000US$2500000)`](https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-02)&ucgid=pseudo(0100000US$2500000))
 
-That url can be broken down into some general parts that will exist across the different tables:
+The URL for the API call can be broken down into five parts:
 
-![](images/clipboard-655687448.png)
+1.  The base URL, in this example: *api.census.gov/data/2021/acs/acs5/aian*;
 
-There are a few things to understand about these different parts:
+2.  The table id, in this example: *group(B01001)*;
 
-1.  **Pop group iteration codes**
+3.  The population group iteration code, in this example: *POPGROUP=pseudo(-02)*;
 
--   Uses [iteration codes](https://www2.census.gov/programs-surveys/decennial/datasets/summary-file-2/attachment.pdf) which are NOT the same as Census’ race/ethnicity codes
+4.  The geography code, in this example: *ucgid=pseudo(0100000US\$2500000)*; and
 
--   Can specify exact codes or use “pseudo()” codes:
+5.  The API key, appended at the end of the URL with *&key={API_KEY here}*.
 
-    -   pseudo(-00) == “All available races” – this will show AIAN-A, AIAN-AoIC, and any specific tribal groups alone or in combination
+Using the Census API requires you to know the table that you want to download, as well as understand Census codes for population groups and geographies.
 
-    -   pseudo(-01) == “All available races alone” – this will show only AIAN-A
+1.  **Population group iteration codes**
 
-    -   pseudo(-02) == “All available races alone or in combination” – this will show only AIAN-AoIC
+These codes are used to subset data by racial category, but they are not the same as Census' race/ethnicity codes. They allow users to specify "X race alone," "X race alone or in combination," as well as specific tribal groups, e.g., "Eastern tribes, alone" (285) or "Yup'ik, alone" (190). The full list of codes can be found here: [iteration codes](https://www2.census.gov/programs-surveys/decennial/datasets/summary-file-2/attachment.pdf). In addition to these specific codes, common *sets* of codes can be pulled this the following:
 
-    -   For pulling both AIAN-A and AIAN-AoIC without the specific tribal groupings, use pseudo(-01, -02) – this is equivalent to pulling POPGROUPs **006** and **009** (see iteration codes)
+```         
+pseudo(-00) == “All available races” – this includes AIAN-A, AIAN-AoIC, and all specific tribal groups alone or in combination.
+
+pseudo(-01) == “All available races alone” – this includes AIAN-A, but not AIAN-AoIC.
+
+pseudo(-02) == “All available races alone or in combination” – this includes AIAN-AoIC, but not AIAN-A.
+
+For pulling both AIAN-A and AIAN-AoIC without the specific tribal groupings, use pseudo(-01, -02). This is equivalent to pulling POPGROUPs **006** and **009** (see iteration codes).
+```
 
 2.  **Geographic codes**
 
--   Uses GEO_ID in the form of “ucgid = {GEO_ID}"
+Geographic codes are used to select the Census geographies for which you would like data summaries. To extract data for a specific geography, you need to know the associated GEO_ID.
 
-    -   Ex for Navajo Nation, would specify “ucgid=2500000US2430”
+-   The format for the call is “ucgid = {GEO_ID}," for example, for the Navajo Nation, your would specify “ucgid=2500000US2430”
 
--   For pulling multiple geographies, again uses the “pseudo()” code concept:
+-   To pull multiple geographies, use the “pseudo()” code convention:
 
-    -   All AIANNH: pseudo(0100000US\$2500000)
+    -   All AIANNH: pseudo(0100000US\$2500000).
 
     -   Only Alaska Native Regional Corporations (ANRCs): pseudo(0400000US02\$2300000)
 
