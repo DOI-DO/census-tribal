@@ -31,7 +31,10 @@ Census does not require users to have an API key, but there are limits on the nu
 ```{r 1}
 #| echo: false
 # Assign your API key to a variable to call later
-census_api_key="9b678913174c9e9d7825c60981d91a896e1dbdb6"
+# Will run with census_api_key set to '' but there can be limits on the number of requests
+#census_api_key='' #note: uncomment before publishing
+census_api_key='9b678913174c9e9d7825c60981d91a896e1dbdb6' #note: this is Ann's key, remove before publishing
+
 ```
 
 ### Pull a table using the API
@@ -98,8 +101,10 @@ library(rvest)
 
 ```{r 3}
 # Pull the data from the specific endpoint
-# Note: API key is not used in this example
-response <- GET('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-02)&ucgid=pseudo(0100000US$2500000)')
+# Note: For this, and all other, examples, you can add '&descriptive=true' to the API call to get the variable label included in the data. It will appear as a row in the df (in the code structure of this, and all other, examples, it will appear as the first row) and could be cleaned up using regex or other string-processing packages (like stringr) to be used as variable names
+
+api_url <- paste0('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-02)&ucgid=pseudo(0100000US$2500000)', '&descriptive=true', '&key=', census_api_key)
+response <- GET(api_url)
 data <- fromJSON(content(response, "text"))
 
 # Convert to data frame
@@ -122,14 +127,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 
 ```
@@ -140,8 +145,9 @@ It's hard to understand what exactly is being shown in this table but before div
 
 ```{r 4}
 # Pull the data from the specific endpoint
-# Note: API key is not used in this example
-response <- GET('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-01,-02)&ucgid=pseudo(0100000US$2500000)')
+
+api_url <- paste0('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-01,-02)&ucgid=pseudo(0100000US$2500000)', '&descriptive=true', '&key=', census_api_key)
+response <- GET(api_url)
 # Note the addition of '-01' to the POPGROUP pseudo above
 data <- fromJSON(content(response, "text"))
 
@@ -165,14 +171,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -184,8 +190,8 @@ Let's look at one more example using this endpoint where we pull the most expans
 
 ```{r 5}
 # Pull the data from the specific endpoint
-# Note: API key is not used in this example
-response <- GET('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-00)&ucgid=2500000US2430')
+api_url <- paste0('https://api.census.gov/data/2021/acs/acs5/aian?get=group(B01001)&POPGROUP=pseudo(-00)&ucgid=2500000US2430', '&descriptive=true', '&key=', census_api_key)
+response <- GET(api_url)
 # Note the use of '-00' in the POPGROUP pseudo above
 data <- fromJSON(content(response, "text"))
 
@@ -208,14 +214,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -267,10 +273,11 @@ variables <- 'GEO_ID,NAME,POPGROUP,POPGROUP_LABEL,B01001_001E,B01001_001M'
 # In this example, we are using the AIANT so the most recent year is 2021
 year <- '2021'
 
-base_url <- paste0("https://api.census.gov/data/", year, "/acs/acs5/aian")
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5/aian')
   query <- list(
     get = variables,
-    "for" = "american indian area/alaska native area/hawaiian home land:*",
+    'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    descriptive = 'true',
     key = census_api_key # defined in a previous step 
   )
 
@@ -297,14 +304,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -347,7 +354,7 @@ The code chunk below pulls all of the variables that are in the Data Profile tab
 # Data Profile variables
 
 # URL of the variables page 
-url <- "https://api.census.gov/data/2023/acs/acs5/profile/variables.html"  
+url <- 'https://api.census.gov/data/2023/acs/acs5/profile/variables.html'
 
 # Read the HTML content 
 page <- read_html(url)
@@ -365,7 +372,7 @@ variables_df <- tables[[1]] |>
 
 # filter to only AIAN 
 dpvar_aian <- variables_df |>   
-  filter(str_detect(Label, "American Indian and Alaska Native"))
+  filter(str_detect(Label, 'American Indian and Alaska Native'))
 
 rm(url, page, tables)
 ```
@@ -380,14 +387,14 @@ library(DT)
 
 datatable(
   head(dpvar_aian, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -408,10 +415,11 @@ variables <- 'GEO_ID,NAME,DP05_0001E,DP05_0001M,DP05_0039E,DP05_0039M,DP05_0071E
 year <- '2023'
 
 # base url has a slightly different form than the AIANT so this is different from the past examples
-base_url <- paste0("https://api.census.gov/data/", year, "/acs/acs5/profile")
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5/profile')
   query <- list(
     get = variables,
-    "for" = "american indian area/alaska native area/hawaiian home land:*",
+    'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    descriptive = 'true',
     key = census_api_key # defined in a previous step 
   )
 
@@ -438,14 +446,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -466,7 +474,7 @@ Because there are so many variables within the Subject Tables, and the added lay
 # Subject Table variables
 
 # URL of the variables page 
-url <- "https://api.census.gov/data/2023/acs/acs5/subject/variables.html"  
+url <- 'https://api.census.gov/data/2023/acs/acs5/subject/variables.html'  
 
 # Read the HTML content 
 page <- read_html(url)
@@ -484,7 +492,7 @@ subvar_all <- tables[[1]] |>
 
 # filter to only AIAN 
 subvar_aian <- subvar_all |>   
-  filter(str_detect(Label, "American Indian and Alaska Native"))
+  filter(str_detect(Label, 'American Indian and Alaska Native'))
 
 rm(url, page, tables)
 ```
@@ -499,14 +507,14 @@ library(DT)
 
 datatable(
   head(subvar_aian, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -519,10 +527,11 @@ variables <- 'GEO_ID,NAME,S1903_C03_001E,S1903_C03_004E'
 year <- '2023'
 
 # base url has a slightly different form than the AIANT and Data Profiles so this is different from the past examples
-base_url <- paste0("https://api.census.gov/data/", year, "/acs/acs5/subject")
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5/subject')
   query <- list(
     get = variables,
-    "for" = "american indian area/alaska native area/hawaiian home land:*",
+    'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    descriptive = 'true',
     key = census_api_key # defined in a previous step 
   )
 
@@ -549,14 +558,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -576,7 +585,7 @@ For the AIAN Tables, *all* variables can be broken out by various types of Ameri
 
 # AIAN Table variables
 
-url <- "https://api.census.gov/data/2021/acs/acs5/aian/variables.html"
+url <- 'https://api.census.gov/data/2021/acs/acs5/aian/variables.html'
 
 # Read the HTML content 
 page <- read_html(url)
@@ -605,14 +614,14 @@ library(DT)
 
 datatable(
   head(aiantvar, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -630,7 +639,7 @@ Otherwise, the format of these variables takes the same general form that has be
 
 # Detailed Table variables
 
-url <- "https://api.census.gov/data/2023/acs/acs5/variables.html"
+url <- 'https://api.census.gov/data/2023/acs/acs5/variables.html'
 
 # Read the HTML content 
 page <- read_html(url)
@@ -649,7 +658,7 @@ dtvar_all <- tables[[1]] |>
 # filter to only AIAN 
 # The Detailed Tables differ from the Subject Tables and Data Profiles in that race can appear in both the Label field and the Concept field
 dtvar_aian <- dtvar_all |>   
-  filter(str_detect(Label, "American Indian and Alaska Native") | str_detect(Concept, "American Indian and Alaska Native"))
+  filter(str_detect(Label, 'American Indian and Alaska Native') | str_detect(Concept, 'American Indian and Alaska Native'))
 
 rm(page, tables, url)
 ```
@@ -664,14 +673,14 @@ library(DT)
 
 datatable(
   head(dtvar_aian, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -684,10 +693,11 @@ variables <- 'GEO_ID,NAME,B01002C_001E'
 year <- '2023'
 
 # base url has a slightly different form than the AIANT and Data Profiles so this is different from the past examples
-base_url <- paste0("https://api.census.gov/data/", year, "/acs/acs5")
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5')
   query <- list(
     get = variables,
-    "for" = "american indian area/alaska native area/hawaiian home land:*",
+    'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    descriptive = 'true',
     key = census_api_key # defined in a previous step 
   )
 
@@ -714,14 +724,14 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
@@ -736,11 +746,12 @@ variables <- 'GEO_ID,NAME,B08505C_007E'
 year <- '2023'
 
 # base url has a slightly different form than the AIANT and Data Profiles so this is different from the past examples
-base_url <- paste0("https://api.census.gov/data/", year, "/acs/acs5")
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5')
   query <- list(
     get = variables,
-    #"for" = "american indian area/alaska native area/hawaiian home land:*",
-    "for" = "state:*",
+    #'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    'for' = 'state:*',
+    descriptive = 'true',
     key = census_api_key # defined in a previous step 
   )
 
@@ -767,17 +778,15 @@ library(DT)
 
 datatable(
   head(df, 50),
-  extensions = c("FixedColumns"),
+  extensions = c('FixedColumns'),
   options = list(
     scrollX = TRUE,
-    scrollY = "320px",
-    paging  = FALSE,        # no pagination; we rely on vertical scroll
+    scrollY = '320px',
+    paging  = FALSE,
     autoWidth = TRUE
   ),
-  class = "cell-border stripe hover"
+  class = 'cell-border stripe hover'
 )
 ```
 
 It's a good idea to use the advanced search tool for data.census.gov (<https://data.census.gov/advanced>) to get a sense for what kinds of data are available for the topic you are interested in, because there may be multiple tables that address that topic and those tables may be available for different geographies. For example, though data on AIAN populations working from home were not available for Tribal geographies through the Detailed Tables, using the advanced search tool would point you to a Subject Table (S0802) that has similar types of data for Tribal geographies that could potentially be used instead.
-
-*Repo push test*
