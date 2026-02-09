@@ -22,9 +22,10 @@ library(jsonlite)
 library(rvest) 
 ```
 
-## Step 1: Pull Decennial data at the tribal geography level for total population, AIAN-alone population, and AIAN-AoIC population
+## Step 1: Pull 2020 Decennial Census data for total population of (1) AIAN-alone and (2) AIAN-AoIC for all tribal geographies.
 
 ```{r}
+# 0100000 indicate all U.S., 2500000 indicates tribal geogrphies within the U.S.
 api_url <- paste0('https://api.census.gov/data/2020/dec/dhc?get=group(P8)&ucgid=pseudo(0100000US$2500000)', '&descriptive=true', '&key=', census_api_key)
 response <- GET(api_url)
 data <- fromJSON(content(response, "text"))
