@@ -1,0 +1,165 @@
+---
+title: "CensusTribalWorkflow"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+# Assign your API key to a variable to call later
+# Will run with census_api_key set to '' but there can be limits on the number of requests
+#census_api_key='' #note: uncomment before publishing
+census_api_key='9b678913174c9e9d7825c60981d91a896e1dbdb6' #note: this is Ann's key, remove before publishing
+```
+
+```{r}
+#| warning: false
+#| message: false
+# Call necessary packages
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(rvest) 
+```
+
+## Step 1: Pull Decennial data at the tribal geography level for total population, AIAN-alone population, and AIAN-AoIC population
+
+```{r}
+api_url <- paste0('https://api.census.gov/data/2020/dec/dhc?get=group(P8)&ucgid=pseudo(0100000US$2500000)', '&descriptive=true', '&key=', census_api_key)
+response <- GET(api_url)
+data <- fromJSON(content(response, "text"))
+
+# Convert to data frame
+df <- as.data.frame(data, stringsAsFactors = FALSE)
+names(df) <- df[1, ]
+df <- df[-1, ]
+
+```
+
+```{r}
+# Figure out which variables we want to select. We need a measure of total population and then any variables that are associated with populations identifying as AIAN.
+vars <- df[1, ] |>
+  pivot_longer(
+    cols = everything(),
+    names_to = 'var_name',
+    values_to = 'var_desc'
+  )
+
+aian_vars <- vars |>
+  filter(str_detect(var_desc, 'American Indian'))|> # filter to variables with 'American Indian' in the description
+  filter(grepl("N$", var_name)) # filter to variables where the variable ends with N (instead of NA which represents an annotation)
+
+select_vars <- aian_vars$var_name
+select_vars <- c('GEO_ID', 'NAME', 'ucgid', 'P8_001N', select_vars) # Add the variable for total population and geog identifying vars
+
+
+# Select the variables identified above and sum all the "two or more races" variables to create one AIAN_AOIC variable
+df_sum <- df |>
+  select(any_of(select_vars)) |>
+  filter(GEO_ID != 'Geography') |> # drop first row that contains variable descriptions 
+  mutate(across(P8_001N:last_col(), as.numeric)) |>
+  rowwise() |>
+  mutate(dec_pop_aian_ic = sum(c_across(P8_012N:last_col()), na.rm = TRUE)) # sum two or more races vars; should consider making this more robust - this depends on the df being structured in a certain way (having all the two or more races vars clustered together)
+
+dec_pop <- df_sum |>
+  select(GEO_ID, NAME, P8_001N, P8_005N, dec_pop_aian_ic) |>
+  rename('dec_pop_total' = 'P8_001N',
+         'dec_pop_aian_a' = 'P8_005N') |>
+  mutate(dec_pct_aian = (dec_pop_aian_a + dec_pop_aian_ic) / dec_pop_total)
+```
+
+## Step 2: Pull the most recent ACS-5 data at the tribal geography level for total population, AIAN-alone population, and AIAN-AoIC population
+
+```{r}
+# Data Profile variables
+
+# URL of the variables page 
+url <- 'https://api.census.gov/data/2024/acs/acs5/profile/variables.html'
+
+# Read the HTML content 
+page <- read_html(url)
+
+# Extract all tables from the page 
+tables <- page |>
+  html_elements("table")  
+
+# Convert the table to a data frame 
+variables_df <- tables[[1]] |>    
+  html_table(fill = TRUE) |>   
+  tibble::as_tibble(.name_repair = "unique") |>   
+  slice(-1) |>   
+  select(-last_col())
+
+selected_vars <- variables_df |>
+  filter(Label == 'Estimate!!RACE!!Total population' |
+            Label == 'Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native' |
+              Label == 'Estimate!!Race alone or in combination with one or more other races!!Total population!!American Indian and Alaska Native')
+
+select_vars <- selected_vars$Name
+
+rm(url, page, tables)
+```
+
+```{r}
+#| warning: false
+#| message: false
+
+# List the variables WITHOUT spaces between the variable names
+variables <- c('GEO_ID', 'NAME', select_vars) # Add geog identifying vars to the selected vars identified above
+variables <- paste(variables, collapse = ',') # Collapse into a string with no spaces
+  'GEO_ID,NAME,DP05_0001E,DP05_0001M,DP05_0039E,DP05_0039M,DP05_0085E,DP05_0085M'
+# In this example, we are using the Data Profiles so the most recent year is 2024
+year <- '2024'
+
+# base url has a slightly different form than the AIANT so this is different from the past examples
+base_url <- paste0('https://api.census.gov/data/', year, '/acs/acs5/profile')
+  query <- list(
+    get = variables,
+    'for' = 'american indian area/alaska native area/hawaiian home land:*',
+    descriptive = 'true',
+    key = census_api_key # defined in a previous step 
+  )
+
+  # Make request
+  response <- GET(base_url, query = query)
+  data <- fromJSON(content(response, "text"))
+
+  # Convert to data frame
+  df <- as.data.frame(data, stringsAsFactors = FALSE)
+  names(df) <- df[1, ]
+  df <- df[-1, ]
+  
+# Move identifying variables to the top of the df
+df <- relocate(df, 'GEO_ID', 'NAME')
+```
+
+```{r}
+# Repeat the computations that were done with the decennial data for comparison
+acs_pop <- df |>
+  rename('acs_pop_total' = 'DP05_0033E',
+         'acs_pop_aian_a' = 'DP05_0053E',
+         'acs_pop_aian_aoic' = 'DP05_0085E') |>
+  mutate(across(acs_pop_total:last_col(), as.numeric)) |>
+  select(GEO_ID, NAME, acs_pop_total, acs_pop_aian_a, acs_pop_aian_aoic) |>
+  filter(GEO_ID != 'Geography') |> # drop first row that contains variable descriptions 
+  mutate(acs_pct_aian = (acs_pop_aian_aoic) / acs_pop_total)
+  
+```
+
+## Compare total population count versus most recent estimate
+
+```{r}
+total_pop <- dec_pop |>
+  select(GEO_ID, NAME, dec_pop_total) |>
+  left_join(select(acs_pop, GEO_ID, acs_pop_total)) |>
+  mutate(pct_chg = acs_pop_total/dec_pop_total -1)
+```
+
+## Compare percent AIAN in Decennial versus most recent ACS
+
+```{r}
+pct_aian <- dec_pop |>
+  select(GEO_ID, NAME, dec_pct_aian) |>
+  left_join(select(acs_pop, GEO_ID, acs_pct_aian)) |>
+  mutate(dec_acs_comp = dec_pct_aian / acs_pct_aian)
+```
