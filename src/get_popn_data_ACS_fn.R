@@ -14,6 +14,8 @@
 # pivot_wider(out, id_cols = c("GEOID", "NAME"), names_from = variable, values_from = estimate) %>% 
 #           mutate(AoIC = A + IC) %>% select(GEOID, NAME, total, A, AoIC)
 
+# To call, specify the year of ACS you want, e.g. get_acs_popn_data(year = 2024)
+
 # A Miller, adapted from E Silverman "get_popn_data_DECENNIAL_fn.R"
 
 get_acs_popn_data <- function(year = year,
