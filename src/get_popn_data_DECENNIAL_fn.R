@@ -46,7 +46,7 @@ get_popn_data <- function(year = 2020, sumfile = "dhc",
     out <- out %>% filter(!(as.numeric(GEOID) %in% c(5000:5499)))
     # drop state AIR and statistical areas, except 2 Fed recognize:
     out <- out %>% filter(!(as.numeric(GEOID) > 8999 & 
-                              !(as.numeric(GEOID) %in% c(9260, 9370))))
+                              !(as.numeric(GEOID) %in% c(9260, 9370, 9815))))
     
   }
   
