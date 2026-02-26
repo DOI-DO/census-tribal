@@ -1,0 +1,589 @@
+"","GEOID","dec.NAME","dec.total","dec.A","dec.AoIC","dec.pct_AIAN","dec.A_AoIC","acs.NAME","acs.total","acs.A","acs.AoIC","acs.pct_AIAN","acs.A_AoIC"
+"1","0010","Acoma Pueblo and Off-Reservation Trust Land, NM",3230,3043,3113,0.963777089783282,0.977513652425313,"Acoma Pueblo and Off-Reservation Trust Land, NM",3605,3397,3464,0.960887656033287,0.980658198614319
+"2","0020","Agua Caliente Indian Reservation and Off-Reservation Trust Land, CA",27090,333,825,0.0304540420819491,0.403636363636364,"Agua Caliente Indian Reservation and Off-Reservation Trust Land, CA",28392,274,756,0.0266272189349112,0.362433862433862
+"3","0050","Alabama-Coushatta Reservation and Off-Reservation Trust Land, TX",679,589,609,0.896907216494845,0.967159277504105,"Alabama-Coushatta Reservation and Off-Reservation Trust Land, TX",630,452,561,0.89047619047619,0.805704099821747
+"4","0080","Allegany Reservation, NY",6664,1875,2354,0.353241296518607,0.796516567544605,"Allegany Reservation, NY",6005,1274,1532,0.255120732722731,0.831592689295039
+"5","0095","Alturas Indian Rancheria, CA",3,2,3,1,0.666666666666667,"Alturas Indian Rancheria, CA",0,0,0,NA,NA
+"6","0110","Annette Island Reserve, AK",1562,1195,1373,0.879001280409731,0.870356882738529,"Annette Island Reserve, AK",1334,967,1163,0.871814092953523,0.831470335339639
+"7","0115","Aroostook Band of Micmac Trust Land, ME",202,117,144,0.712871287128713,0.8125,"Aroostook Band of Micmac Trust Land, ME",207,152,186,0.898550724637681,0.817204301075269
+"8","0120","Auburn Rancheria and Off-Reservation Trust Land, CA",2,0,1,0.5,0,"Auburn Rancheria and Off-Reservation Trust Land, CA",0,0,0,NA,NA
+"9","0125","Augustine Reservation, CA",0,0,0,NA,NA,"Augustine Reservation, CA",0,0,0,NA,NA
+"10","0140","Bad River Reservation, WI",1545,1176,1230,0.796116504854369,0.95609756097561,"Bad River Reservation, WI",1279,892,953,0.745113369820172,0.935991605456453
+"11","0155","Barona Reservation and Off-Reservation Trust Land, CA",756,550,611,0.808201058201058,0.900163666121113,"Barona Reservation and Off-Reservation Trust Land, CA",485,250,290,0.597938144329897,0.862068965517241
+"12","0165","Battle Mountain Reservation and Off-Reservation Trust Land, NV",142,120,124,0.873239436619718,0.967741935483871,"Battle Mountain Reservation and Off-Reservation Trust Land, NV",146,78,109,0.746575342465753,0.715596330275229
+"13","0170","Bay Mills Reservation and Off-Reservation Trust Land, MI",1032,762,864,0.837209302325581,0.881944444444444,"Bay Mills Reservation and Off-Reservation Trust Land, MI",1129,772,927,0.821080602302923,0.832793959007551
+"14","0185","Benton Paiute Reservation and Off-Reservation Trust Land, CA",84,21,31,0.369047619047619,0.67741935483871,"Benton Paiute Reservation and Off-Reservation Trust Land, CA",72,53,61,0.847222222222222,0.868852459016393
+"15","0200","Berry Creek Rancheria and Off-Reservation Trust Land, CA",153,83,108,0.705882352941177,0.768518518518518,"Berry Creek Rancheria and Off-Reservation Trust Land, CA",121,62,80,0.661157024793388,0.775
+"16","0215","Big Bend Rancheria, CA",5,2,2,0.4,1,"Big Bend Rancheria, CA",0,0,0,NA,NA
+"17","0225","Big Cypress Reservation, FL",239,54,68,0.284518828451883,0.794117647058823,"Big Cypress Reservation, FL",321,283,289,0.900311526479751,0.97923875432526
+"18","0240","Big Lagoon Rancheria, CA",17,17,17,1,1,"Big Lagoon Rancheria, CA",0,0,0,NA,NA
+"19","0250","Big Pine Reservation and Off-Reservation Trust Land, CA",571,435,475,0.831873905429072,0.91578947368421,"Big Pine Reservation and Off-Reservation Trust Land, CA",486,309,357,0.734567901234568,0.865546218487395
+"20","0265","Big Sandy Rancheria and Off-Reservation Trust Land, CA",175,137,143,0.817142857142857,0.958041958041958,"Big Sandy Rancheria and Off-Reservation Trust Land, CA",118,94,111,0.940677966101695,0.846846846846847
+"21","0275","Big Valley Rancheria, CA",191,150,164,0.858638743455497,0.914634146341463,"Big Valley Rancheria, CA",317,250,305,0.962145110410095,0.819672131147541
+"22","0290","Bishop Reservation, CA",1907,1345,1451,0.760880964866282,0.926946933149552,"Bishop Reservation, CA",2340,1318,1521,0.65,0.866535174227482
+"23","0305","Blackfeet Indian Reservation and Off-Reservation Trust Land, MT",10764,9058,9476,0.88034188034188,0.955888560574082,"Blackfeet Indian Reservation and Off-Reservation Trust Land, MT",10199,8644,8809,0.863712128640063,0.981269156544443
+"24","0325","Blue Lake Rancheria and Off-Reservation Trust Land, CA",112,30,54,0.482142857142857,0.555555555555556,"Blue Lake Rancheria and Off-Reservation Trust Land, CA",121,35,45,0.371900826446281,0.777777777777778
+"25","0335","Bois Forte Reservation and Off-Reservation Trust Land, MN",984,688,756,0.768292682926829,0.91005291005291,"Bois Forte Reservation and Off-Reservation Trust Land, MN",784,498,535,0.682397959183674,0.930841121495327
+"26","0350","Bridgeport Reservation and Off-Reservation Trust Land, CA",46,14,22,0.478260869565217,0.636363636363636,"Bridgeport Reservation and Off-Reservation Trust Land, CA",27,27,27,1,1
+"27","0360","Brighton Reservation, FL",438,151,184,0.420091324200913,0.820652173913043,"Brighton Reservation, FL",426,245,275,0.645539906103286,0.890909090909091
+"28","0400","Burns Paiute Indian Colony and Off-Reservation Trust Land, OR",133,99,124,0.932330827067669,0.798387096774194,"Burns Paiute Indian Colony and Off-Reservation Trust Land, OR",150,81,111,0.74,0.72972972972973
+"29","0415","Cabazon Reservation, CA",192,23,30,0.15625,0.766666666666667,"Cabazon Reservation, CA",307,17,30,0.0977198697068404,0.566666666666667
+"30","0435","Cahuilla Reservation, CA",229,211,213,0.930131004366812,0.990610328638498,"Cahuilla Reservation, CA",65,33,43,0.661538461538462,0.767441860465116
+"31","0440","Campbell Ranch, NV",291,177,205,0.70446735395189,0.863414634146341,"Campbell Ranch, NV",283,209,234,0.826855123674912,0.893162393162393
+"32","0450","Campo Indian Reservation, CA",398,256,283,0.71105527638191,0.904593639575972,"Campo Indian Reservation, CA",455,295,361,0.793406593406593,0.817174515235457
+"33","0495","Capitan Grande Reservation, CA",0,0,0,NA,NA,"Capitan Grande Reservation, CA",0,0,0,NA,NA
+"34","0510","Carson Colony, NV",238,198,216,0.907563025210084,0.916666666666667,"Carson Colony, NV",283,242,252,0.890459363957597,0.96031746031746
+"35","0525","Catawba Reservation and Off-Reservation Trust Land, SC",849,556,671,0.790341578327444,0.828614008941878,"Catawba Reservation and Off-Reservation Trust Land, SC",789,432,506,0.641318124207858,0.853754940711462
+"36","0540","Cattaraugus Reservation, NY",2676,1654,1793,0.670029895366218,0.922476296709426,"Cattaraugus Reservation, NY",1977,1193,1442,0.729387961557916,0.827323162274619
+"37","0555","Cedarville Rancheria and Off-Reservation Trust Land, CA",19,11,11,0.578947368421053,1,"Cedarville Rancheria and Off-Reservation Trust Land, CA",8,0,0,0,NA
+"38","0560","Celilo Village, OR",85,81,82,0.964705882352941,0.98780487804878,"Celilo Village, OR",56,52,56,1,0.928571428571429
+"39","0575","Chehalis Reservation and Off-Reservation Trust Land, WA",767,488,528,0.688396349413299,0.924242424242424,"Chehalis Reservation and Off-Reservation Trust Land, WA",713,367,383,0.537166900420757,0.95822454308094
+"40","0585","Chemehuevi Reservation, CA",464,279,314,0.676724137931034,0.888535031847134,"Chemehuevi Reservation, CA",363,193,226,0.622589531680441,0.853982300884956
+"41","0605","Cheyenne River Reservation and Off-Reservation Trust Land, SD",7639,6063,6322,0.8275952349784,0.959031951913951,"Cheyenne River Reservation and Off-Reservation Trust Land, SD",7582,5521,5759,0.759562120812451,0.958673380795277
+"42","0620","Chicken Ranch Rancheria and Off-Reservation Trust Land, CA",4,0,2,0.5,0,"Chicken Ranch Rancheria and Off-Reservation Trust Land, CA",0,0,0,NA,NA
+"43","0635","Chitimacha Reservation, LA",644,407,446,0.692546583850932,0.912556053811659,"Chitimacha Reservation, LA",878,440,549,0.625284738041002,0.801457194899818
+"44","0680","Pueblo de Cochiti, NM",1517,722,767,0.505603164139749,0.941329856584094,"Pueblo de Cochiti, NM",1704,810,930,0.545774647887324,0.870967741935484
+"45","0690","Coconut Creek Trust Land, FL",0,0,0,NA,NA,"Coconut Creek Trust Land, FL",0,0,0,NA,NA
+"46","0695","Cocopah Reservation, AZ",857,469,502,0.585764294049008,0.934262948207171,"Cocopah Reservation, AZ",912,545,592,0.649122807017544,0.920608108108108
+"47","0705","Coeur d'Alene Reservation, ID",7567,1246,1510,0.199550680586758,0.825165562913907,"Coeur d'Alene Reservation, ID",8051,1130,1501,0.186436467519563,0.752831445702865
+"48","0720","Cold Springs Rancheria, CA",79,30,38,0.481012658227848,0.789473684210526,"Cold Springs Rancheria, CA",20,15,17,0.85,0.882352941176471
+"49","0735","Colorado River Indian Reservation, AZ--CA",8431,2796,3225,0.382516901909619,0.866976744186047,"Colorado River Indian Reservation, AZ--CA",8234,2029,2498,0.303376244838475,0.812249799839872
+"50","0750","Colusa Rancheria, CA",91,83,83,0.912087912087912,1,"Colusa Rancheria, CA",81,80,80,0.987654320987654,1
+"51","0760","Colville Reservation and Off-Reservation Trust Land, WA",7807,4824,5226,0.669399257076982,0.923076923076923,"Colville Reservation and Off-Reservation Trust Land, WA",7588,3808,4287,0.564971006852926,0.88826685327735
+"52","0770","Coos, Lower Umpqua, and Siuslaw Reservation and Off-Reservation Trust Land, OR",77,42,54,0.701298701298701,0.777777777777778,"Coos, Lower Umpqua, and Siuslaw Reservation and Off-Reservation Trust Land, OR",61,28,46,0.754098360655738,0.608695652173913
+"53","0775","Coquille Reservation, OR",343,132,174,0.507288629737609,0.758620689655172,"Coquille Reservation and Off-Reservation Trust Land, OR",443,106,185,0.417607223476298,0.572972972972973
+"54","0780","Cortina Indian Rancheria, CA",8,4,5,0.625,0.8,"Cortina Indian Rancheria, CA",10,10,10,1,1
+"55","0795","Coushatta Reservation and Off-Reservation Trust Land, LA",94,40,65,0.691489361702128,0.615384615384615,"Coushatta Reservation and Off-Reservation Trust Land, LA",110,89,106,0.963636363636364,0.839622641509434
+"56","0815","Cow Creek Reservation and Off-Reservation Trust Land, OR",229,61,77,0.336244541484716,0.792207792207792,"Cow Creek Reservation, OR",171,36,54,0.315789473684211,0.666666666666667
+"57","0820","Cowlitz Reservation, WA",0,0,0,NA,NA,"Cowlitz Reservation, WA",0,0,0,NA,NA
+"58","0825","Coyote Valley Reservation, CA",126,107,119,0.944444444444444,0.899159663865546,"Coyote Valley Reservation, CA",191,109,182,0.952879581151832,0.598901098901099
+"59","0845","Crow Reservation and Off-Reservation Trust Land, MT",6974,5452,5629,0.807140808718096,0.968555693728904,"Crow Reservation and Off-Reservation Trust Land, MT",6848,5539,5653,0.825496495327103,0.979833716610649
+"60","0855","Crow Creek Reservation, SD",2054,1800,1871,0.910905550146056,0.962052378407269,"Crow Creek Reservation, SD",1752,1462,1502,0.857305936073059,0.973368841544607
+"61","0940","Dresslerville Colony, NV",403,365,381,0.945409429280397,0.958005249343832,"Dresslerville Colony, NV",346,329,334,0.965317919075145,0.985029940119761
+"62","0955","Dry Creek Rancheria and Off-Reservation Trust Land, CA",0,0,0,NA,NA,"Dry Creek Rancheria and Off-Reservation Trust Land, CA",0,0,0,NA,NA
+"63","0965","Duck Valley Reservation and Off-Reservation Trust Land, ID--NV",1338,1217,1249,0.933482810164424,0.974379503602882,"Duck Valley Reservation and Off-Reservation Trust Land, ID--NV",838,688,726,0.866348448687351,0.947658402203857
+"64","0975","Duckwater Reservation, NV",159,119,135,0.849056603773585,0.881481481481482,"Duckwater Reservation, NV",103,72,72,0.699029126213592,1
+"65","0990","Eastern Cherokee Reservation, NC",9233,7132,7724,0.836564496913246,0.923355774210254,"Eastern Cherokee Reservation and Off-Reservation Trust Land, NC",7707,5841,6104,0.792007266121708,0.956913499344692
+"66","1005","Elko Colony, NV",723,613,648,0.896265560165975,0.945987654320988,"Elko Colony, NV",782,658,689,0.881074168797954,0.955007256894049
+"67","1010","Elk Valley Rancheria and Off-Reservation Trust Land, CA",100,58,65,0.65,0.892307692307692,"Elk Valley Rancheria and Off-Reservation Trust Land, CA",89,44,52,0.584269662921348,0.846153846153846
+"68","1040","Ely Reservation, NV",240,158,201,0.8375,0.786069651741294,"Ely Reservation, NV",371,132,298,0.803234501347709,0.442953020134228
+"69","1055","Enterprise Rancheria and Off-Reservation Trust Land, CA",4,0,4,1,0,"Enterprise Rancheria and Off-Reservation Trust Land, CA",3,1,1,0.333333333333333,1
+"70","1065","Ewiiaapaayp Reservation, CA",5,1,1,0.2,1,"Ewiiaapaayp Reservation, CA",0,0,0,NA,NA
+"71","1070","Fallon Paiute-Shoshone Colony and Off-Reservation Trust Land, NV",98,79,85,0.86734693877551,0.929411764705882,"Fallon Paiute-Shoshone Colony and Off-Reservation Trust Land, NV",157,119,143,0.910828025477707,0.832167832167832
+"72","1075","Fallon Paiute-Shoshone Reservation and Off-Reservation Trust Land, NV",672,510,566,0.842261904761905,0.901060070671378,"Fallon Paiute-Shoshone Reservation and Off-Reservation Trust Land, NV",692,543,600,0.867052023121387,0.905
+"73","1100","Flandreau Reservation, SD",415,321,392,0.944578313253012,0.818877551020408,"Flandreau Reservation, SD",520,420,466,0.896153846153846,0.901287553648069
+"74","1110","Flathead Reservation, MT",30849,7673,10153,0.329119258322798,0.755737220525953,"Flathead Reservation, MT",32167,7287,10133,0.315012279665496,0.71913549787822
+"75","1125","Fond du Lac Reservation and Off-Reservation Trust Land, MN--WI",4184,1739,2016,0.481835564053537,0.862599206349206,"Fond du Lac Reservation and Off-Reservation Trust Land, MN--WI",3799,1150,1625,0.427744143195578,0.707692307692308
+"76","1135","Forest County Potawatomi Community and Off-Reservation Trust Land, WI",594,467,499,0.84006734006734,0.935871743486974,"Forest County Potawatomi Community and Off-Reservation Trust Land, WI",667,480,569,0.853073463268366,0.843585237258348
+"77","1140","Fort Apache Reservation, AZ",14340,13869,14015,0.977336122733612,0.989582590082055,"Fort Apache Reservation, AZ",15117,14030,14477,0.957663557584177,0.969123437176211
+"78","1150","Fort Belknap Reservation and Off-Reservation Trust Land, MT",3382,3142,3228,0.954464813719692,0.973358116480793,"Fort Belknap Reservation and Off-Reservation Trust Land, MT",3148,2883,3034,0.963786531130877,0.950230718523401
+"79","1160","Fort Berthold Reservation, ND",8350,5537,6056,0.725269461077844,0.914299867899604,"Fort Berthold Reservation, ND",7267,4234,4625,0.636438695472685,0.91545945945946
+"80","1170","Fort Bidwell Reservation and Off-Reservation Trust Land, CA",97,76,80,0.824742268041237,0.95,"Fort Bidwell Reservation and Off-Reservation Trust Land, CA",102,82,85,0.833333333333333,0.964705882352941
+"81","1185","Fort Hall Reservation and Off-Reservation Trust Land, ID",5977,3975,4158,0.695666722436005,0.955988455988456,"Fort Hall Reservation and Off-Reservation Trust Land, ID",5010,3075,3340,0.666666666666667,0.92065868263473
+"82","1195","Fort Independence Reservation, CA",94,33,62,0.659574468085106,0.532258064516129,"Fort Independence Reservation, CA",121,39,67,0.553719008264463,0.582089552238806
+"83","1210","Fort McDermitt Indian Reservation, NV--OR",267,254,260,0.973782771535581,0.976923076923077,"Fort McDermitt Indian Reservation, NV--OR",286,263,282,0.986013986013986,0.932624113475177
+"84","1220","Fort McDowell Yavapai Nation Reservation, AZ",1152,950,1018,0.883680555555556,0.933202357563851,"Fort McDowell Yavapai Nation Reservation, AZ",1003,739,842,0.839481555333998,0.877672209026128
+"85","1235","Fort Mojave Reservation and Off-Reservation Trust Land, AZ--CA--NV",1697,814,892,0.525633470830878,0.912556053811659,"Fort Mojave Reservation and Off-Reservation Trust Land, AZ--CA--NV",1648,594,677,0.410800970873786,0.877400295420975
+"86","1250","Fort Peck Indian Reservation and Off-Reservation Trust Land, MT",9988,6596,7210,0.721866239487385,0.914840499306519,"Fort Peck Indian Reservation and Off-Reservation Trust Land, MT",9785,6229,6934,0.708635666836995,0.898327083934237
+"87","1260","Fort Pierce Reservation, FL",52,35,39,0.75,0.897435897435897,"Fort Pierce Reservation, FL",21,2,5,0.238095238095238,0.4
+"88","1270","Fort Sill Apache Indian Reservation, NM",0,0,0,NA,NA,"Fort Sill Apache Indian Reservation, NM",0,0,0,NA,NA
+"89","1280","Fort Yuma Indian Reservation, CA--AZ",1898,1326,1434,0.755532139093783,0.924686192468619,"Fort Yuma Indian Reservation, CA--AZ",1070,750,866,0.809345794392523,0.866050808314088
+"90","1310","Gila River Indian Reservation, AZ",14053,13135,13410,0.954244645271472,0.979492915734526,"Gila River Indian Reservation, AZ",13900,11780,12655,0.910431654676259,0.930857368629
+"91","1340","Goshute Reservation, NV--UT",116,89,92,0.793103448275862,0.967391304347826,"Goshute Reservation, NV--UT",148,140,140,0.945945945945946,1
+"92","1355","Grand Portage Reservation and Off-Reservation Trust Land, MN",618,390,445,0.720064724919094,0.876404494382023,"Grand Portage Reservation and Off-Reservation Trust Land, MN",589,266,337,0.572156196943973,0.789317507418398
+"93","1365","Grand Ronde Community and Off-Reservation Trust Land, OR",604,422,470,0.778145695364238,0.897872340425532,"Grand Ronde Community and Off-Reservation Trust Land, OR",727,442,556,0.764786795048143,0.794964028776978
+"94","1370","Grand Traverse Reservation and Off-Reservation Trust Land, MI",595,423,486,0.816806722689076,0.87037037037037,"Grand Traverse Reservation and Off-Reservation Trust Land, MI",541,343,428,0.791127541589649,0.801401869158878
+"95","1380","Greenville Rancheria, CA",28,18,21,0.75,0.857142857142857,"Greenville Rancheria, CA",38,29,29,0.763157894736842,1
+"96","1395","Grindstone Indian Rancheria, CA",188,164,169,0.898936170212766,0.970414201183432,"Grindstone Indian Rancheria, CA",51,42,45,0.882352941176471,0.933333333333333
+"97","1400","Guidiville Rancheria and Off-Reservation Trust Land, CA",63,39,49,0.777777777777778,0.795918367346939,"Guidiville Rancheria and Off-Reservation Trust Land, CA",78,35,59,0.756410256410256,0.593220338983051
+"98","1410","Hannahville Indian Community and Off-Reservation Trust Land, MI",720,541,623,0.865277777777778,0.868378812199037,"Hannahville Indian Community and Off-Reservation Trust Land, MI",572,399,482,0.842657342657343,0.827800829875519
+"99","1440","Havasupai Reservation, AZ",214,175,179,0.836448598130841,0.977653631284916,"Havasupai Reservation, AZ",0,0,0,NA,NA
+"100","1450","Ho-Chunk Nation Reservation and Off-Reservation Trust Land, WI--MN",1577,1281,1414,0.896639188332277,0.905940594059406,"Ho-Chunk Nation Reservation and Off-Reservation Trust Land, WI--MN",1131,900,994,0.878868258178603,0.905432595573441
+"101","1460","Hoh Indian Reservation and Off-Reservation Trust Land, WA",93,74,84,0.903225806451613,0.880952380952381,"Hoh Indian Reservation and Off-Reservation Trust Land, WA",54,25,42,0.777777777777778,0.595238095238095
+"102","1475","Hollywood Reservation, FL",1426,344,397,0.278401122019635,0.866498740554156,"Hollywood Reservation, FL",551,310,325,0.58983666061706,0.953846153846154
+"103","1490","Hoopa Valley Reservation, CA",3173,2681,2857,0.900409706901986,0.938396919845992,"Hoopa Valley Reservation, CA",2248,1655,1843,0.819839857651246,0.897992403689637
+"104","1505","Hopi Reservation and Off-Reservation Trust Land, AZ",6377,6173,6224,0.976007527050337,0.991805912596401,"Hopi Reservation and Off-Reservation Trust Land, AZ",6812,6607,6611,0.970493247210804,0.999394947814249
+"105","1515","Hopland Rancheria, CA",249,187,206,0.827309236947791,0.907766990291262,"Hopland Rancheria, CA",124,73,93,0.75,0.78494623655914
+"106","1530","Houlton Maliseet Reservation and Off-Reservation Trust Land, ME",226,160,177,0.783185840707965,0.903954802259887,"Houlton Maliseet Reservation and Off-Reservation Trust Land, ME",269,173,198,0.736059479553903,0.873737373737374
+"107","1545","Hualapai Indian Reservation and Off-Reservation Trust Land, AZ",1299,1235,1254,0.965357967667437,0.984848484848485,"Hualapai Indian Reservation and Off-Reservation Trust Land, AZ",1432,1164,1173,0.81913407821229,0.9923273657289
+"108","1550","Huron Potawatomi Reservation and Off-Reservation Trust Land, MI",62,28,35,0.564516129032258,0.8,"Huron Potawatomi Reservation and Off-Reservation Trust Land, MI",94,15,48,0.51063829787234,0.3125
+"109","1555","Immokalee Reservation, FL",197,56,70,0.355329949238579,0.8,"Immokalee Reservation, FL",128,99,105,0.8203125,0.942857142857143
+"110","1560","Inaja and Cosmit Reservation, CA",0,0,0,NA,NA,"Inaja and Cosmit Reservation, CA",0,0,0,NA,NA
+"111","1575","Indian Township Reservation, ME",760,617,668,0.878947368421053,0.923652694610778,"Indian Township Reservation, ME",759,586,635,0.836627140974967,0.922834645669291
+"112","1590","Iowa (KS-NE) Reservation and Off-Reservation Trust Land, KS--NE",181,99,118,0.651933701657459,0.838983050847458,"Iowa (KS-NE) Reservation and Off-Reservation Trust Land, KS--NE",258,133,165,0.63953488372093,0.806060606060606
+"113","1610","Isabella Reservation and Off-Reservation Trust Land, MI",25534,1614,2529,0.0990444113730712,0.638196915776987,"Isabella Reservation and Off-Reservation Trust Land, MI",24763,1481,2192,0.0885191616524654,0.675638686131387
+"114","1625","Isleta Pueblo, NM",3376,2943,3068,0.908767772511848,0.959256844850065,"Isleta Pueblo, NM",4523,3654,3929,0.868671235905373,0.930007635530669
+"115","1640","Jackson Rancheria, CA",0,0,0,NA,NA,"Jackson Rancheria, CA",0,0,0,NA,NA
+"116","1655","Jamestown S'Klallam Reservation and Off-Reservation Trust Land, WA",36,13,18,0.5,0.722222222222222,"Jamestown S'Klallam Reservation and Off-Reservation Trust Land, WA",38,2,28,0.736842105263158,0.0714285714285714
+"117","1670","Jamul Indian Village, CA",0,0,0,NA,NA,"Jamul Indian Village, CA",0,0,0,NA,NA
+"118","1685","Jemez Pueblo, NM",1991,1959,1980,0.994475138121547,0.989393939393939,"Jemez Pueblo, NM",2220,2189,2189,0.986036036036036,1
+"119","1690","Jena Band of Choctaw Reservation, LA",26,6,11,0.423076923076923,0.545454545454545,"Jena Band of Choctaw Reservation, LA",18,5,9,0.5,0.555555555555556
+"120","1700","Jicarilla Apache Nation Reservation and Off-Reservation Trust Land, NM",3494,3086,3222,0.922152261018889,0.957790192427064,"Jicarilla Apache Nation Reservation and Off-Reservation Trust Land, NM",3626,3087,3230,0.890788747931605,0.955727554179567
+"121","1720","Kaibab Indian Reservation, AZ",221,182,188,0.850678733031674,0.968085106382979,"Kaibab Indian Reservation, AZ",292,200,231,0.791095890410959,0.865800865800866
+"122","1735","Kalispel Reservation and Off-Reservation Trust Land, WA",753,198,252,0.334661354581673,0.785714285714286,"Kalispel Reservation and Off-Reservation Trust Land, WA",864,163,219,0.253472222222222,0.744292237442922
+"123","1750","Karuk Reservation and Off-Reservation Trust Land, CA",578,452,520,0.899653979238754,0.869230769230769,"Karuk Reservation and Off-Reservation Trust Land, CA",550,332,471,0.856363636363636,0.704883227176221
+"124","1770","Kickapoo (KS) Reservation, KS",3849,646,817,0.212262925435178,0.790697674418605,"Kickapoo (KS) Reservation, KS",4478,488,719,0.160562751228227,0.678720445062587
+"125","1775","Kickapoo (TX) Reservation and Off-Reservation Trust Land, TX",377,353,360,0.954907161803713,0.980555555555556,"Kickapoo (TX) Reservation and Off-Reservation Trust Land, TX",585,417,440,0.752136752136752,0.947727272727273
+"126","1785","Klamath Reservation, OR",25,17,21,0.84,0.80952380952381,"Klamath Reservation, OR",49,39,39,0.795918367346939,1
+"127","1800","Kootenai Reservation and Off-Reservation Trust Land, ID",92,72,81,0.880434782608696,0.888888888888889,"Kootenai Reservation and Off-Reservation Trust Land, ID",150,134,136,0.906666666666667,0.985294117647059
+"128","1815","Lac Courte Oreilles Reservation and Off-Reservation Trust Land, WI",2968,2145,2305,0.776617250673854,0.93058568329718,"Lac Courte Oreilles Reservation and Off-Reservation Trust Land, WI",3046,1937,2171,0.712738017071569,0.892215568862275
+"129","1825","Lac du Flambeau Reservation, WI",3518,2061,2167,0.615974985787379,0.951084448546378,"Lac du Flambeau Reservation, WI",3654,1840,1929,0.527914614121511,0.95386210471747
+"130","1830","Lac Vieux Desert Reservation, MI",221,189,200,0.904977375565611,0.945,"Lac Vieux Desert Reservation and Off-Reservation Trust Land, MI",68,57,64,0.941176470588235,0.890625
+"131","1840","Laguna Pueblo and Off-Reservation Trust Land, NM",3985,3707,3772,0.9465495608532,0.982767762460233,"Laguna Pueblo and Off-Reservation Trust Land, NM",3227,3149,3149,0.975828943290982,1
+"132","1850","La Jolla Reservation, CA",145,88,94,0.648275862068965,0.936170212765957,"La Jolla Reservation, CA",178,128,129,0.724719101123595,0.992248062015504
+"133","1860","Lake Traverse Reservation and Off-Reservation Trust Land, SD--ND",11043,4725,5182,0.469256542606176,0.911810111925897,"Lake Traverse Reservation and Off-Reservation Trust Land, SD--ND",11084,4019,4582,0.413388668350776,0.877127891750327
+"134","1880","L'Anse Reservation and Off-Reservation Trust Land, MI",3396,994,1352,0.39811542991755,0.735207100591716,"L'Anse Reservation and Off-Reservation Trust Land, MI",3633,987,1297,0.3570052298376,0.760986892829607
+"135","1895","La Posta Indian Reservation, CA",50,21,32,0.64,0.65625,"La Posta Indian Reservation, CA",43,29,35,0.813953488372093,0.828571428571429
+"136","1915","Las Vegas Indian Colony, NV",106,70,79,0.745283018867924,0.886075949367089,"Las Vegas Indian Colony, NV",94,70,88,0.936170212765957,0.795454545454545
+"137","1925","Laytonville Rancheria, CA",154,135,141,0.915584415584416,0.957446808510638,"Laytonville Rancheria, CA",142,100,125,0.880281690140845,0.8
+"138","1940","Leech Lake Reservation and Off-Reservation Trust Land, MN",11388,4983,5581,0.49007727432385,0.892850743594338,"Leech Lake Reservation and Off-Reservation Trust Land, MN",10983,3892,4743,0.431849221524174,0.820577693442969
+"139","1955","Likely Rancheria, CA",0,0,0,NA,NA,"Likely Rancheria, CA",0,0,0,NA,NA
+"140","1960","Little River Reservation and Off-Reservation Trust Land, MI",226,113,146,0.646017699115044,0.773972602739726,"Little River Reservation and Off-Reservation Trust Land, MI",112,43,68,0.607142857142857,0.632352941176471
+"141","1963","Little Traverse Bay Reservation and Off-Reservation Trust Land, MI",92,51,63,0.684782608695652,0.80952380952381,"Little Traverse Bay Reservation and Off-Reservation Trust Land, MI",76,23,54,0.710526315789474,0.425925925925926
+"142","1970","Lone Pine Reservation, CA",242,196,203,0.838842975206612,0.96551724137931,"Lone Pine Reservation, CA",189,106,138,0.73015873015873,0.768115942028985
+"143","1980","Lookout Rancheria, CA",11,9,10,0.909090909090909,0.9,"Lookout Rancheria, CA",1,1,1,1,1
+"144","1995","Los Coyotes Reservation, CA",15,5,5,0.333333333333333,1,"Los Coyotes Reservation, CA",67,46,49,0.73134328358209,0.938775510204082
+"145","2015","Lovelock Indian Colony, NV",95,62,69,0.726315789473684,0.898550724637681,"Lovelock Indian Colony, NV",210,199,199,0.947619047619048,1
+"146","2030","Lower Brule Reservation and Off-Reservation Trust Land, SD",1630,1533,1572,0.96441717791411,0.975190839694656,"Lower Brule Reservation and Off-Reservation Trust Land, SD",1521,1356,1364,0.896778435239974,0.994134897360704
+"147","2040","Lower Elwha Reservation and Off-Reservation Trust Land, WA",680,501,582,0.855882352941176,0.860824742268041,"Lower Elwha Reservation and Off-Reservation Trust Land, WA",613,357,470,0.766721044045677,0.759574468085106
+"148","2055","Lower Sioux Indian Community and Off-Reservation Trust Land, MN",534,425,472,0.883895131086142,0.900423728813559,"Lower Sioux Indian Community and Off-Reservation Trust Land, MN",446,335,388,0.869955156950673,0.86340206185567
+"149","2070","Lummi Reservation, WA",5748,2891,3191,0.555149617258177,0.905985584456283,"Lummi Reservation, WA",5034,2104,2306,0.45808502185141,0.912402428447528
+"150","2075","Lytton Rancheria, CA",0,0,0,NA,NA,"Lytton Rancheria, CA",0,0,0,NA,NA
+"151","2085","Makah Indian Reservation, WA",1692,1409,1529,0.903664302600473,0.921517331589274,"Makah Indian Reservation, WA",1514,899,1231,0.813077939233818,0.730300568643379
+"152","2100","Manchester-Point Arena Rancheria, CA",188,141,157,0.835106382978723,0.898089171974522,"Manchester-Point Arena Rancheria, CA",390,110,317,0.812820512820513,0.347003154574132
+"153","2115","Manzanita Reservation and Off-Reservation Trust Land, CA",101,89,91,0.900990099009901,0.978021978021978,"Manzanita Reservation and Off-Reservation Trust Land, CA",66,20,42,0.636363636363636,0.476190476190476
+"154","2130","Maricopa (Ak Chin) Indian Reservation and Off-Reservation Trust Land, AZ",1070,914,966,0.902803738317757,0.946169772256729,"Maricopa (Ak Chin) Indian Reservation and Off-Reservation Trust Land, AZ",1339,1153,1220,0.911127707244212,0.945081967213115
+"155","2145","Mashantucket Pequot Reservation and Off-Reservation Trust Land, CT",457,302,367,0.803063457330416,0.822888283378747,"Mashantucket Pequot Reservation and Off-Reservation Trust Land, CT",86,40,55,0.63953488372093,0.727272727272727
+"156","2147","Mashpee Wampanoag Trust Land, MA",3,0,3,1,0,"Mashpee Wampanoag Trust Land, MA",47,28,35,0.74468085106383,0.8
+"157","2150","Match-e-be-nash-she-wish Band of Pottawatomi Reservation and Off-Reservation Trust Land, MI",18,9,17,0.944444444444444,0.529411764705882,"Match-e-be-nash-she-wish Band of Pottawatomi Reservation and Off-Reservation Trust Land, MI",21,8,10,0.476190476190476,0.8
+"158","2175","Menominee Reservation and Off-Reservation Trust Land, WI",3293,3098,3153,0.957485575463104,0.9825562955915,"Menominee Reservation and Off-Reservation Trust Land, WI",3548,3194,3300,0.930101465614431,0.967878787878788
+"159","2190","Mesa Grande Reservation, CA",87,68,74,0.850574712643678,0.918918918918919,"Mesa Grande Reservation, CA",49,49,49,1,1
+"160","2205","Mescalero Reservation, NM",4022,3721,3795,0.943560417702636,0.980500658761528,"Mescalero Reservation, NM",3590,3198,3257,0.907242339832869,0.981885170402211
+"161","2240","Miccosukee Reservation and Off-Reservation Trust Land, FL",535,0,1,0.00186915887850467,0,"Miccosukee Reservation and Off-Reservation Trust Land, FL",0,0,0,NA,NA
+"162","2255","Middletown Rancheria, CA",33,27,30,0.909090909090909,0.9,"Middletown Rancheria, CA",5,3,3,0.6,1
+"163","2270","Mille Lacs Reservation and Off-Reservation Trust Land, MN",4767,1515,1709,0.358506398153975,0.886483323581042,"Mille Lacs Reservation and Off-Reservation Trust Land, MN",4504,1125,1298,0.288188277087034,0.866718027734977
+"164","2285","Minnesota Chippewa Trust Land, MN",8,3,8,1,0.375,"Minnesota Chippewa Trust Land, MN",0,0,0,NA,NA
+"165","2300","Mississippi Choctaw Reservation and Off-Reservation Trust Land, MS--TN",8080,7233,7583,0.938490099009901,0.953844125016484,"Mississippi Choctaw Reservation and Off-Reservation Trust Land, MS--TN",6605,5510,5728,0.867221801665405,0.961941340782123
+"166","2315","Moapa River Indian Reservation, NV",234,171,191,0.816239316239316,0.895287958115183,"Moapa River Indian Reservation, NV",133,89,109,0.819548872180451,0.81651376146789
+"167","2320","Mohegan Reservation, CT",212,104,127,0.599056603773585,0.818897637795276,"Mohegan Reservation, CT",239,104,114,0.476987447698745,0.912280701754386
+"168","2330","Montgomery Creek Rancheria, CA",33,23,27,0.818181818181818,0.851851851851852,"Montgomery Creek Rancheria, CA",7,7,7,1,1
+"169","2340","Mooretown Rancheria and Off-Reservation Trust Land, CA",197,118,160,0.812182741116751,0.7375,"Mooretown Rancheria and Off-Reservation Trust Land, CA",199,105,147,0.738693467336683,0.714285714285714
+"170","2360","Morongo Reservation and Off-Reservation Trust Land, CA",1243,833,925,0.744167337087691,0.900540540540541,"Morongo Reservation and Off-Reservation Trust Land, CA",787,431,542,0.68869123252859,0.79520295202952
+"171","2375","Muckleshoot Reservation and Off-Reservation Trust Land, WA",4391,1566,1800,0.409929401047597,0.87,"Muckleshoot Reservation and Off-Reservation Trust Land, WA",3985,976,1215,0.304893350062735,0.803292181069959
+"172","2400","Nambe Pueblo and Off-Reservation Trust Land, NM",1840,575,617,0.335326086956522,0.93192868719611,"Nambe Pueblo and Off-Reservation Trust Land, NM",1944,358,421,0.21656378600823,0.850356294536817
+"173","2415","Narragansett Reservation, RI",0,0,0,NA,NA,"Narragansett Reservation, RI",0,0,0,NA,NA
+"174","2430","Navajo Nation Reservation and Off-Reservation Trust Land, AZ--NM--UT",165158,157901,160552,0.972111553784861,0.983488215655987,"Navajo Nation Reservation and Off-Reservation Trust Land, AZ--NM--UT",161008,152000,155593,0.966368130776111,0.976907701503281
+"175","2445","Nez Perce Reservation, ID",18403,2423,3019,0.164049339781557,0.802583636965883,"Nez Perce Reservation, ID",19038,1869,2644,0.138880134467906,0.706883509833585
+"176","2460","Nisqually Reservation, WA",639,418,447,0.699530516431925,0.935123042505593,"Nisqually Reservation, WA",628,392,422,0.671974522292994,0.928909952606635
+"177","2475","Nooksack Reservation and Off-Reservation Trust Land, WA",876,563,715,0.8162100456621,0.787412587412587,"Nooksack Reservation and Off-Reservation Trust Land, WA",714,376,536,0.750700280112045,0.701492537313433
+"178","2490","Northern Cheyenne Indian Reservation and Off-Reservation Trust Land, MT--SD",4456,4042,4200,0.942549371633752,0.962380952380952,"Northern Cheyenne Indian Reservation and Off-Reservation Trust Land, MT--SD",4363,3928,4019,0.921155168462067,0.977357551629759
+"179","2495","North Fork Rancheria and Off-Reservation Trust Land, CA",51,41,44,0.862745098039216,0.931818181818182,"North Fork Rancheria and Off-Reservation Trust Land, CA",114,108,110,0.964912280701754,0.981818181818182
+"180","2505","Northwestern Shoshone Reservation, UT",0,0,0,NA,NA,"Northwestern Shoshone Reservation, UT",0,0,0,NA,NA
+"181","2510","Ohkay Owingeh, NM",6580,1730,1883,0.286170212765957,0.918746680828465,"Ohkay Owingeh, NM",6434,1355,1597,0.248212620453839,0.848465873512837
+"182","2535","Oil Springs Reservation, NY",20,1,2,0.1,0.5,"Oil Springs Reservation, NY",0,0,0,NA,NA
+"183","2550","Omaha Reservation, NE--IA",4526,2156,2217,0.489836500220946,0.972485340550293,"Omaha Reservation, NE--IA",4368,1718,1805,0.413232600732601,0.95180055401662
+"184","2555","Oneida Indian Nation Reservation, NY",62877,531,1631,0.0259395327385212,0.325567136725935,"Oneida Indian Nation Reservation, NY",61992,211,571,0.00921086591818299,0.369527145359019
+"185","2560","Oneida (WI) Reservation and Off-Reservation Trust Land, WI",27110,4555,5569,0.205422353375138,0.81792063207039,"Oneida (WI) Reservation and Off-Reservation Trust Land, WI",27624,3359,4667,0.168947292209673,0.719734304692522
+"186","2570","Onondaga Nation Reservation, NY",831,281,290,0.348977135980746,0.968965517241379,"Onondaga Nation Reservation, NY",338,317,317,0.937869822485207,1
+"187","2580","Ontonagon Reservation, MI",0,0,0,NA,NA,"Ontonagon Reservation, MI",0,0,0,NA,NA
+"188","2595","Osage Reservation, OK",45818,6555,11113,0.242546597407133,0.589849725546657,"Osage Reservation, OK",45997,5117,9680,0.210448507511359,0.528615702479339
+"189","2625","Paiute (UT) Reservation, UT",230,176,194,0.843478260869565,0.907216494845361,"Paiute (UT) Reservation, UT",381,347,368,0.965879265091864,0.942934782608696
+"190","2635","Pala Reservation, CA",1541,882,962,0.624269954574951,0.916839916839917,"Pala Reservation, CA",914,404,412,0.450765864332604,0.980582524271845
+"191","2680","Pascua Pueblo Yaqui Reservation and Off-Reservation Trust Land, AZ",3466,2924,3136,0.904789382573572,0.932397959183674,"Pascua Pueblo Yaqui Reservation and Off-Reservation Trust Land, AZ",3243,2838,2955,0.911193339500463,0.960406091370558
+"192","2685","Paskenta Rancheria, CA",6,0,2,0.333333333333333,0,"Paskenta Rancheria, CA",0,0,0,NA,NA
+"193","2695","Passamaquoddy Trust Land, ME",4,0,3,0.75,0,"Passamaquoddy Trust Land, ME",12,0,0,0,NA
+"194","2715","Pauma and Yuima Reservation, CA",179,152,152,0.849162011173184,1,"Pauma and Yuima Reservation, CA",109,70,70,0.642201834862385,1
+"195","2745","Pechanga Reservation and Off-Reservation Trust Land, CA",582,402,434,0.745704467353952,0.926267281105991,"Pechanga Reservation and Off-Reservation Trust Land, CA",332,222,242,0.728915662650602,0.917355371900826
+"196","2760","Penobscot Reservation and Off-Reservation Trust Land, ME",379,258,313,0.825857519788918,0.824281150159744,"Penobscot Reservation and Off-Reservation Trust Land, ME",477,330,379,0.794549266247379,0.870712401055409
+"197","2775","Picayune Rancheria and Off-Reservation Trust Land, CA",63,54,55,0.873015873015873,0.981818181818182,"Picayune Rancheria and Off-Reservation Trust Land, CA",40,28,38,0.95,0.736842105263158
+"198","2785","Picuris Pueblo, NM",1623,216,283,0.174368453481208,0.763250883392226,"Picuris Pueblo, NM",1929,176,252,0.130637636080871,0.698412698412698
+"199","2810","Pine Ridge Reservation, SD--NE",18850,16326,16904,0.896763925729443,0.965806909607194,"Pine Ridge Reservation, SD--NE",18758,15777,15867,0.845879091587589,0.994327850255247
+"200","2820","Pinoleville Rancheria, CA",142,87,99,0.697183098591549,0.878787878787879,"Pinoleville Rancheria, CA",227,141,166,0.731277533039648,0.849397590361446
+"201","2835","Pit River Trust Land, CA",24,22,22,0.916666666666667,1,"Pit River Trust Land, CA",9,5,5,0.555555555555556,1
+"202","2850","Pleasant Point Reservation, ME",692,318,399,0.576589595375723,0.796992481203007,"Pleasant Point Reservation, ME",552,403,461,0.835144927536232,0.874186550976139
+"203","2865","Poarch Creek Reservation and Off-Reservation Trust Land, AL--FL",287,184,198,0.689895470383275,0.929292929292929,"Poarch Creek Reservation and Off-Reservation Trust Land, AL--FL",339,241,260,0.766961651917404,0.926923076923077
+"204","2890","Pokagon Reservation and Off-Reservation Trust Land, MI--IN",202,117,156,0.772277227722772,0.75,"Pokagon Reservation and Off-Reservation Trust Land, MI--IN",204,72,105,0.514705882352941,0.685714285714286
+"205","2900","Ponca (NE) Trust Land, NE--IA",8,3,4,0.5,0.75,"Ponca (NE) Trust Land, NE--IA",0,0,0,NA,NA
+"206","2910","Port Gamble Reservation and Off-Reservation Trust Land, WA",750,614,652,0.869333333333333,0.941717791411043,"Port Gamble Reservation and Off-Reservation Trust Land, WA",533,380,417,0.782363977485929,0.911270983213429
+"207","2925","Port Madison Reservation, WA",7929,726,1106,0.139487955606003,0.656419529837251,"Port Madison Reservation, WA",7552,435,822,0.108845338983051,0.529197080291971
+"208","2980","Prairie Band of Potawatomi Nation Reservation, KS",1529,806,983,0.642903858731197,0.819938962360122,"Prairie Band of Potawatomi Nation Reservation, KS",1245,409,540,0.433734939759036,0.757407407407407
+"209","2985","Prairie Island Indian Community and Off-Reservation Trust Land, MN",310,248,270,0.870967741935484,0.918518518518519,"Prairie Island Indian Community and Off-Reservation Trust Land, MN",210,157,179,0.852380952380952,0.877094972067039
+"210","2990","Pueblo of Pojoaque and Off-Reservation Trust Land, NM",3536,529,647,0.182975113122172,0.817619783616692,"Pueblo of Pojoaque and Off-Reservation Trust Land, NM",3760,643,752,0.2,0.855053191489362
+"211","3000","Puyallup Reservation and Off-Reservation Trust Land, WA",54416,1535,2998,0.0550940899735372,0.512008005336891,"Puyallup Reservation and Off-Reservation Trust Land, WA",55690,1097,2168,0.0389297899084216,0.5059963099631
+"212","3010","Pyramid Lake Paiute Reservation, NV",1933,1398,1488,0.769787894464563,0.939516129032258,"Pyramid Lake Paiute Reservation, NV",1421,906,934,0.657283603096411,0.970021413276231
+"213","3020","Quartz Valley Reservation and Off-Reservation Trust Land, CA",202,108,122,0.603960396039604,0.885245901639344,"Quartz Valley Reservation and Off-Reservation Trust Land, CA",224,133,142,0.633928571428571,0.936619718309859
+"214","3030","Quileute Reservation, WA",404,339,364,0.900990099009901,0.931318681318681,"Quileute Reservation, WA",344,262,308,0.895348837209302,0.850649350649351
+"215","3040","Quinault Reservation, WA",1520,1221,1276,0.839473684210526,0.956896551724138,"Quinault Reservation, WA",1245,923,1011,0.812048192771084,0.91295746785361
+"216","3070","Ramona Village, CA",0,0,0,NA,NA,"Ramona Village, CA",0,0,0,NA,NA
+"217","3085","Red Cliff Reservation and Off-Reservation Trust Land, WI",1403,1162,1224,0.872416250890948,0.949346405228758,"Red Cliff Reservation and Off-Reservation Trust Land, WI",1256,871,1008,0.802547770700637,0.864087301587302
+"218","3095","Redding Rancheria, CA",40,32,32,0.8,1,"Redding Rancheria, CA",73,36,36,0.493150684931507,1
+"219","3100","Red Lake Reservation, MN",5506,5382,5447,0.989284416999637,0.988066825775656,"Red Lake Reservation, MN",5433,5153,5200,0.957113933370145,0.990961538461538
+"220","3115","Redwood Valley Rancheria, CA",237,80,102,0.430379746835443,0.784313725490196,"Redwood Valley Rancheria, CA",273,65,123,0.450549450549451,0.528455284552846
+"221","3130","Reno-Sparks Indian Colony and Off-Reservation Trust Land, NV",944,861,892,0.944915254237288,0.9652466367713,"Reno-Sparks Indian Colony and Off-Reservation Trust Land, NV",802,571,619,0.771820448877805,0.922455573505654
+"222","3145","Resighini Rancheria, CA",33,18,21,0.636363636363636,0.857142857142857,"Resighini Rancheria, CA",38,38,38,1,1
+"223","3165","Rincon Reservation and Off-Reservation Trust Land, CA",1095,497,523,0.477625570776256,0.950286806883365,"Rincon Reservation and Off-Reservation Trust Land, CA",749,271,279,0.372496662216288,0.971326164874552
+"224","3185","Roaring Creek Rancheria, CA",19,16,17,0.894736842105263,0.941176470588235,"Roaring Creek Rancheria, CA",0,0,0,NA,NA
+"225","3195","Robinson Rancheria and Off-Reservation Trust Land, CA",233,211,223,0.957081545064378,0.946188340807175,"Robinson Rancheria and Off-Reservation Trust Land, CA",431,413,418,0.969837587006961,0.988038277511962
+"226","3205","Rocky Boy's Reservation and Off-Reservation Trust Land, MT",3639,3512,3565,0.979664743061281,0.985133239831697,"Rocky Boy's Reservation and Off-Reservation Trust Land, MT",3369,3256,3303,0.980409617097061,0.98577051165607
+"227","3220","Rohnerville (Rancheria) Trust Land, CA",208,119,153,0.735576923076923,0.777777777777778,"Rohnerville (Rancheria) Trust Land, CA",294,227,247,0.840136054421769,0.919028340080972
+"228","3235","Rosebud Indian Reservation and Off-Reservation Trust Land, SD",10570,9358,9678,0.915610217596973,0.9669353172143,"Rosebud Indian Reservation and Off-Reservation Trust Land, SD",10180,8505,8820,0.866404715127701,0.964285714285714
+"229","3250","Round Valley Reservation and Off-Reservation Trust Land, CA",454,317,348,0.766519823788546,0.910919540229885,"Round Valley Reservation and Off-Reservation Trust Land, CA",298,168,200,0.671140939597315,0.84
+"230","3265","Rumsey Indian Rancheria, CA",41,12,23,0.560975609756098,0.521739130434783,"Rumsey Indian Rancheria, CA",29,22,22,0.758620689655172,1
+"231","3280","Sac and Fox/Meskwaki Settlement and Off-Reservation Trust Land, IA",1142,981,1081,0.946584938704028,0.907493061979649,"Sac and Fox/Meskwaki Settlement and Off-Reservation Trust Land, IA",1023,777,898,0.877810361681329,0.865256124721604
+"232","3285","Sac and Fox Nation Reservation and Off-Reservation Trust Land, NE--KS",168,45,61,0.363095238095238,0.737704918032787,"Sac and Fox Nation Reservation and Off-Reservation Trust Land, NE--KS",185,31,34,0.183783783783784,0.911764705882353
+"233","3305","St. Croix Reservation and Off-Reservation Trust Land, WI",765,568,673,0.879738562091503,0.843982169390788,"St. Croix Reservation and Off-Reservation Trust Land, WI",447,308,395,0.883668903803132,0.779746835443038
+"234","3320","St. Regis Mohawk Reservation, NY",3663,3451,3525,0.962325962325962,0.979007092198582,"St. Regis Mohawk Reservation, NY",3661,2987,3024,0.826003824091778,0.98776455026455
+"235","3340","Salt River Reservation, AZ",6321,4886,5153,0.815219110900174,0.948185522996313,"Salt River Reservation, AZ",5111,3153,3642,0.712580708276267,0.865733113673806
+"236","3355","San Carlos Reservation, AZ",10251,10000,10101,0.985367281240855,0.99000099000099,"San Carlos Reservation, AZ",10551,5187,10245,0.97099800966733,0.506295754026354
+"237","3370","Sandia Pueblo, NM",4738,680,796,0.168003376952301,0.85427135678392,"Sandia Pueblo and Off-Reservation Trust Land, NM",4847,613,781,0.1611305962451,0.784891165172855
+"238","3400","San Felipe Pueblo, NM",3686,2952,2989,0.810906131307651,0.987621278019404,"San Felipe Pueblo, NM",3518,2093,2104,0.59806708357021,0.994771863117871
+"239","3415","San Ildefonso Pueblo and Off-Reservation Trust Land, NM",1819,623,681,0.374381528312259,0.914831130690162,"San Ildefonso Pueblo and Off-Reservation Trust Land, NM",2165,702,793,0.366281755196305,0.885245901639344
+"240","3445","San Manuel Reservation and Off-Reservation Trust Land, CA",137,65,72,0.525547445255474,0.902777777777778,"San Manuel Reservation, CA",92,70,74,0.804347826086957,0.945945945945946
+"241","3460","San Pasqual Reservation and Off-Reservation Trust Land, CA",1270,781,911,0.717322834645669,0.857299670691548,"San Pasqual Reservation and Off-Reservation Trust Land, CA",833,398,436,0.523409363745498,0.912844036697248
+"242","3480","Santa Ana Pueblo, NM",684,668,672,0.982456140350877,0.994047619047619,"Santa Ana Pueblo, NM",1026,995,995,0.969785575048733,1
+"243","3495","Santa Clara Pueblo and Off-Reservation Trust Land, NM",11322,1545,1826,0.161278925984808,0.846111719605696,"Santa Clara Pueblo and Off-Reservation Trust Land, NM",11709,1347,1806,0.154240327952857,0.745847176079734
+"244","3520","Santa Rosa Rancheria, CA",898,738,767,0.854120267260579,0.96219035202086,"Santa Rosa Rancheria, CA",755,516,566,0.749668874172185,0.911660777385159
+"245","3525","Santa Rosa Reservation, CA",131,113,116,0.885496183206107,0.974137931034483,"Santa Rosa Reservation, CA",60,32,44,0.733333333333333,0.727272727272727
+"246","3540","Santa Ynez Reservation, CA",264,173,205,0.776515151515151,0.84390243902439,"Santa Ynez Reservation, CA",278,127,169,0.607913669064748,0.751479289940828
+"247","3550","Santa Ysabel Reservation, CA",263,230,233,0.885931558935361,0.987124463519313,"Santa Ysabel Reservation, CA",89,56,56,0.629213483146067,1
+"248","3565","Santee Reservation, NE",974,748,782,0.802874743326489,0.956521739130435,"Santee Reservation, NE",751,509,536,0.713715046604527,0.949626865671642
+"249","3585","Santo Domingo Pueblo, NM",3160,2806,3107,0.983227848101266,0.903121982619891,"Santo Domingo Pueblo, NM",3546,2172,3509,0.98956570783982,0.618979766315189
+"250","3625","Sauk-Suiattle Reservation, WA",52,37,42,0.807692307692308,0.880952380952381,"Sauk-Suiattle Reservation, WA",55,34,45,0.818181818181818,0.755555555555556
+"251","3635","Sault Ste. Marie Reservation and Off-Reservation Trust Land, MI",1757,1003,1252,0.712578258394991,0.80111821086262,"Sault Ste. Marie Reservation and Off-Reservation Trust Land, MI",1890,815,1085,0.574074074074074,0.751152073732719
+"252","3665","Seminole (FL) Trust Land, FL",0,0,0,NA,NA,"Seminole (FL) Trust Land, FL",0,0,0,NA,NA
+"253","3680","Shakopee Mdewakanton Sioux Community and Off-Reservation Trust Land, MN--SD",779,492,569,0.730423620025674,0.864674868189807,"Shakopee Mdewakanton Sioux Community and Off-Reservation Trust Land, MN--SD",448,187,270,0.602678571428571,0.692592592592593
+"254","3735","Sherwood Valley Rancheria and Off-Reservation Trust Land, CA",208,149,181,0.870192307692308,0.823204419889503,"Sherwood Valley Rancheria and Off-Reservation Trust Land, CA",205,155,167,0.814634146341463,0.92814371257485
+"255","3750","Shingle Springs Rancheria and Off-Reservation Trust Land, CA",108,74,82,0.759259259259259,0.902439024390244,"Shingle Springs Rancheria and Off-Reservation Trust Land, CA",93,47,69,0.741935483870968,0.681159420289855
+"256","3780","Shoalwater Bay Indian Reservation and Off-Reservation Trust Land, WA",82,55,60,0.731707317073171,0.916666666666667,"Shoalwater Bay Indian Reservation and Off-Reservation Trust Land, WA",160,69,74,0.4625,0.932432432432432
+"257","3795","Siletz Reservation and Off-Reservation Trust Land, OR",685,485,558,0.814598540145985,0.869175627240143,"Siletz Reservation and Off-Reservation Trust Land, OR",654,391,532,0.813455657492355,0.734962406015038
+"258","3825","Skokomish Reservation and Off-Reservation Trust Land, WA",724,469,527,0.727900552486188,0.889943074003795,"Skokomish Reservation and Off-Reservation Trust Land, WA",691,285,426,0.616497829232996,0.669014084507042
+"259","3840","Skull Valley Reservation, UT",13,12,13,1,0.923076923076923,"Skull Valley Reservation, UT",15,8,8,0.533333333333333,1
+"260","3855","Smith River Rancheria and Off-Reservation Trust Land, CA",160,119,128,0.8,0.9296875,"Smith River Rancheria and Off-Reservation Trust Land, CA",283,140,155,0.547703180212014,0.903225806451613
+"261","3860","Snoqualmie Reservation and Off-Reservation Trust Land, WA",0,0,0,NA,NA,"Snoqualmie Reservation and Off-Reservation Trust Land, WA",0,0,0,NA,NA
+"262","3870","Soboba Reservation and Off-Reservation Trust Land, CA",567,474,495,0.873015873015873,0.957575757575758,"Soboba Reservation and Off-Reservation Trust Land, CA",204,136,157,0.769607843137255,0.866242038216561
+"263","3885","Sokaogon Chippewa Community and Off-Reservation Trust Land, WI",507,394,440,0.867850098619329,0.895454545454546,"Sokaogon Chippewa Community and Off-Reservation Trust Land, WI",466,320,375,0.804721030042919,0.853333333333333
+"264","3925","Southern Ute Reservation, CO",12321,1672,2235,0.181397613830046,0.748098434004474,"Southern Ute Reservation, CO",13364,1462,1794,0.134241245136187,0.814938684503902
+"265","3930","South Fork Reservation and Off-Reservation Trust Land, NV",98,73,78,0.795918367346939,0.935897435897436,"South Fork Reservation and Off-Reservation Trust Land, NV",68,49,49,0.720588235294118,1
+"266","3935","Spirit Lake Reservation, ND",3787,3134,3224,0.851333509374175,0.972084367245658,"Spirit Lake Reservation, ND",3835,2877,3050,0.795306388526728,0.94327868852459
+"267","3940","Spokane Reservation and Off-Reservation Trust Land, WA",2541,2011,2164,0.851633215269579,0.929297597042514,"Spokane Reservation and Off-Reservation Trust Land, WA",1924,1340,1488,0.773388773388773,0.900537634408602
+"268","3955","Squaxin Island Reservation and Off-Reservation Trust Land, WA",509,281,384,0.754420432220039,0.731770833333333,"Squaxin Island Reservation and Off-Reservation Trust Land, WA",388,140,225,0.579896907216495,0.622222222222222
+"269","3970","Standing Rock Reservation, SD--ND",7819,6069,6372,0.814937971607622,0.952448210922787,"Standing Rock Reservation, SD--ND",7546,5636,5821,0.771402067320435,0.968218519154784
+"270","3980","Stewart Community, NV",196,155,164,0.836734693877551,0.945121951219512,"Stewart Community, NV",219,177,193,0.881278538812785,0.917098445595855
+"271","3985","Stewarts Point Rancheria and Off-Reservation Trust Land, CA",86,72,81,0.941860465116279,0.888888888888889,"Stewarts Point Rancheria and Off-Reservation Trust Land, CA",8,8,8,1,1
+"272","4000","Stillaguamish Reservation and Off-Reservation Trust Land, WA",16,6,13,0.8125,0.461538461538462,"Stillaguamish Reservation and Off-Reservation Trust Land, WA",7,1,4,0.571428571428571,0.25
+"273","4015","Stockbridge Munsee Community and Off-Reservation Trust Land, WI",733,572,641,0.874488403819918,0.892355694227769,"Stockbridge Munsee Community and Off-Reservation Trust Land, WI",714,471,573,0.802521008403361,0.821989528795812
+"274","4030","Sulphur Bank Rancheria, CA",46,41,44,0.956521739130435,0.931818181818182,"Sulphur Bank Rancheria, CA",6,4,4,0.666666666666667,1
+"275","4045","Summit Lake Reservation and Off-Reservation Trust Land, NV",0,0,0,NA,NA,"Summit Lake Reservation and Off-Reservation Trust Land, NV",0,0,0,NA,NA
+"276","4060","Susanville Indian Rancheria and Off-Reservation Trust Land, CA",570,249,272,0.47719298245614,0.915441176470588,"Susanville Indian Rancheria and Off-Reservation Trust Land, CA",591,262,349,0.590524534686971,0.750716332378224
+"277","4075","Swinomish Reservation and Off-Reservation Trust Land, WA",3228,714,844,0.261462205700124,0.845971563981043,"Swinomish Reservation and Off-Reservation Trust Land, WA",3135,451,647,0.206379585326954,0.697063369397218
+"278","4090","Sycuan Reservation and Off-Reservation Trust Land, CA",218,108,148,0.678899082568807,0.72972972972973,"Sycuan Reservation and Off-Reservation Trust Land, CA",135,53,99,0.733333333333333,0.535353535353535
+"279","4095","Table Bluff Reservation, CA",120,98,105,0.875,0.933333333333333,"Table Bluff Reservation, CA",103,45,83,0.805825242718447,0.542168674698795
+"280","4110","Table Mountain Rancheria and Off-Reservation Trust Land, CA",24,2,3,0.125,0.666666666666667,"Table Mountain Rancheria and Off-Reservation Trust Land, CA",0,0,0,NA,NA
+"281","4130","Tampa Reservation, FL",0,0,0,NA,NA,"Tampa Reservation, FL",0,0,0,NA,NA
+"282","4140","Taos Pueblo and Off-Reservation Trust Land, NM",4704,1205,1369,0.291028911564626,0.880204528853177,"Taos Pueblo and Off-Reservation Trust Land, NM",4761,1091,1246,0.261709724847721,0.875601926163724
+"283","4170","Tesuque Pueblo and Off-Reservation Trust Land, NM",1173,512,525,0.447570332480818,0.975238095238095,"Tesuque Pueblo and Off-Reservation Trust Land, NM",1013,425,451,0.445212240868707,0.942350332594235
+"284","4180","Timbi-Sha Shoshone Reservation and Off-Reservation Trust Land, CA--NV",25,12,14,0.56,0.857142857142857,"Timbi-Sha Shoshone Reservation and Off-Reservation Trust Land, CA--NV",16,14,16,1,0.875
+"285","4200","Tohono O'odham Nation Reservation and Off-Reservation Trust Land, AZ",9561,8500,8642,0.903880347244012,0.983568618375376,"Tohono O'odham Nation Reservation and Off-Reservation Trust Land, AZ",8975,6874,7300,0.813370473537604,0.941643835616438
+"286","4225","Tonawanda Reservation, NY",261,206,227,0.869731800766284,0.907488986784141,"Tonawanda Reservation, NY",224,147,171,0.763392857142857,0.859649122807018
+"287","4235","Tonto Apache Reservation and Off-Reservation Trust Land, AZ",130,93,108,0.830769230769231,0.861111111111111,"Tonto Apache Reservation and Off-Reservation Trust Land, AZ",112,73,84,0.75,0.869047619047619
+"288","4255","Torres-Martinez Reservation, CA",3454,373,437,0.126519976838448,0.853546910755149,"Torres-Martinez Reservation and Off-Reservation Trust Land, CA",3045,122,142,0.0466338259441708,0.859154929577465
+"289","4275","Trinidad Rancheria and Off-Reservation Trust Land, CA",137,112,124,0.905109489051095,0.903225806451613,"Trinidad Rancheria and Off-Reservation Trust Land, CA",95,53,70,0.736842105263158,0.757142857142857
+"290","4290","Tulalip Reservation and Off-Reservation Trust Land, WA",10969,2524,3180,0.289907922326557,0.793710691823899,"Tulalip Reservation and Off-Reservation Trust Land, WA",10353,1824,2323,0.224379406935188,0.785191562634524
+"291","4300","Tule River Reservation and Off-Reservation Trust Land, CA",1250,1066,1137,0.9096,0.937554969217238,"Tule River Reservation and Off-Reservation Trust Land, CA",1101,867,936,0.850136239782016,0.926282051282051
+"292","4315","Tunica-Biloxi Reservation and Off-Reservation Trust Land, LA",106,51,57,0.537735849056604,0.894736842105263,"Tunica-Biloxi Reservation and Off-Reservation Trust Land, LA",182,85,98,0.538461538461538,0.86734693877551
+"293","4330","Tuolumne Rancheria, CA",154,115,125,0.811688311688312,0.92,"Tuolumne Rancheria, CA",252,99,141,0.55952380952381,0.702127659574468
+"294","4345","Turtle Mountain Reservation and Off-Reservation Trust Land, ND--MT--SD",7619,7118,7288,0.956555978474866,0.976673984632272,"Turtle Mountain Reservation and Off-Reservation Trust Land, ND--MT--SD",7447,6938,7087,0.951658385927219,0.978975589106815
+"295","4360","Tuscarora Nation Reservation, NY",1145,595,660,0.576419213973799,0.901515151515151,"Tuscarora Nation Reservation, NY",642,273,277,0.431464174454829,0.985559566787004
+"296","4375","Twenty-Nine Palms Reservation and Off-Reservation Trust Land, CA",5,1,1,0.2,1,"Twenty-Nine Palms Reservation and Off-Reservation Trust Land, CA",8,2,2,0.25,1
+"297","4390","Uintah and Ouray Reservation and Off-Reservation Trust Land, UT",25192,2747,3404,0.135122261035249,0.806991774383079,"Uintah and Ouray Reservation and Off-Reservation Trust Land, UT",25737,1596,2256,0.0876559039515095,0.707446808510638
+"298","4405","Umatilla Reservation and Off-Reservation Trust Land, OR--WA",2861,1442,1605,0.560992659909123,0.898442367601246,"Umatilla Reservation and Off-Reservation Trust Land, OR--WA",2840,1162,1277,0.449647887323944,0.909945184025059
+"299","4430","Upper Lake Rancheria, CA",70,26,31,0.442857142857143,0.838709677419355,"Upper Lake Rancheria, CA",74,37,43,0.581081081081081,0.86046511627907
+"300","4445","Upper Sioux Community and Off-Reservation Trust Land, MN",120,82,102,0.85,0.803921568627451,"Upper Sioux Community and Off-Reservation Trust Land, MN",139,92,114,0.820143884892086,0.807017543859649
+"301","4455","Upper Skagit Reservation and Off-Reservation Trust Land, WA",266,222,232,0.87218045112782,0.956896551724138,"Upper Skagit Reservation and Off-Reservation Trust Land, WA",142,98,121,0.852112676056338,0.809917355371901
+"302","4470","Ute Mountain Reservation and Off-Reservation Trust Land, CO--NM--UT",1656,1591,1613,0.974033816425121,0.986360818350899,"Ute Mountain Reservation and Off-Reservation Trust Land, CO--NM--UT",1513,1221,1249,0.825512227362855,0.977582065652522
+"303","4500","Viejas Reservation and Off-Reservation Trust Land, CA",538,318,385,0.715613382899628,0.825974025974026,"Viejas Reservation and Off-Reservation Trust Land, CA",204,96,130,0.637254901960784,0.738461538461539
+"304","4515","Walker River Reservation, NV",814,676,727,0.893120393120393,0.929848693259972,"Walker River Reservation, NV",997,853,901,0.903711133400201,0.946725860155383
+"305","4530","Wampanoag-Aquinnah Trust Land, MA",86,52,61,0.709302325581395,0.852459016393443,"Wampanoag-Aquinnah Trust Land, MA",128,41,66,0.515625,0.621212121212121
+"306","4545","Warm Springs Reservation and Off-Reservation Trust Land, OR",3403,3076,3240,0.952101087275933,0.949382716049383,"Warm Springs Reservation and Off-Reservation Trust Land, OR",2955,2521,2612,0.883925549915398,0.965160796324655
+"307","4560","Washoe Ranches Trust Land, NV--CA",3223,71,175,0.0542972385975799,0.405714285714286,"Washoe Ranches Trust Land, NV--CA",3344,22,244,0.0729665071770335,0.0901639344262295
+"308","4580","Wells Colony, NV",54,44,47,0.87037037037037,0.936170212765957,"Wells Colony, NV",36,23,24,0.666666666666667,0.958333333333333
+"309","4595","White Earth Reservation and Off-Reservation Trust Land, MN",9726,4343,5388,0.553979025293029,0.806050482553823,"White Earth Reservation and Off-Reservation Trust Land, MN",9456,3201,4816,0.509306260575296,0.664659468438538
+"310","4610","Wind River Reservation and Off-Reservation Trust Land, WY",25759,7636,8755,0.339881206568578,0.872187321530554,"Wind River Reservation and Off-Reservation Trust Land, WY",25958,6469,7556,0.291085599815086,0.856140815246162
+"311","4625","Winnebago Reservation and Off-Reservation Trust Land, NE--IA",2737,1836,1902,0.694921446839605,0.965299684542587,"Winnebago Reservation and Off-Reservation Trust Land, NE--IA",2834,1923,2025,0.71453775582216,0.94962962962963
+"312","4635","Winnemucca Indian Colony, NV",43,33,34,0.790697674418605,0.970588235294118,"Winnemucca Indian Colony, NV",23,11,11,0.478260869565217,1
+"313","4665","Woodfords Community, CA",225,197,207,0.92,0.951690821256039,"Woodfords Community, CA",443,411,416,0.939051918735892,0.987980769230769
+"314","4680","XL Ranch Rancheria, CA",117,117,117,1,1,"XL Ranch Rancheria, CA",17,6,9,0.529411764705882,0.666666666666667
+"315","4690","Yakama Nation Reservation and Off-Reservation Trust Land, WA",31591,7976,8987,0.284479756892786,0.887504172693891,"Yakama Nation Reservation and Off-Reservation Trust Land, WA",29781,5254,6515,0.218763641247775,0.806446661550269
+"316","4700","Yankton Reservation, SD",6588,3069,3342,0.507285974499089,0.918312387791742,"Yankton Reservation, SD",6584,2603,3095,0.470078979343864,0.841033925686591
+"317","4708","Yavapai-Apache Nation Reservation, AZ",1234,1004,1112,0.901134521880065,0.902877697841727,"Yavapai-Apache Nation Reservation, AZ",912,474,648,0.710526315789474,0.731481481481482
+"318","4710","Yavapai-Prescott Reservation, AZ",200,138,160,0.8,0.8625,"Yavapai-Prescott Reservation, AZ",557,225,353,0.633752244165171,0.637393767705382
+"319","4725","Yerington Colony, NV",144,98,117,0.8125,0.837606837606838,"Yerington Colony, NV",166,124,141,0.849397590361446,0.879432624113475
+"320","4740","Yomba Reservation, NV",34,22,28,0.823529411764706,0.785714285714286,"Yomba Reservation, NV",1,1,1,1,1
+"321","4755","Ysleta del Sur Pueblo and Off-Reservation Trust Land, TX",1124,869,896,0.797153024911032,0.969866071428571,"Ysleta del Sur Pueblo and Off-Reservation Trust Land, TX",1085,772,808,0.744700460829493,0.955445544554455
+"322","4760","Yurok Reservation, CA",1236,651,824,0.666666666666667,0.79004854368932,"Yurok Reservation, CA",612,229,297,0.485294117647059,0.771043771043771
+"323","4770","Zia Pueblo and Off-Reservation Trust Land, NM",760,750,755,0.993421052631579,0.993377483443709,"Zia Pueblo and Off-Reservation Trust Land, NM",770,760,765,0.993506493506494,0.993464052287582
+"324","4785","Zuni Reservation and Off-Reservation Trust Land, NM--AZ",7461,7136,7219,0.967564669615333,0.988502562681812,"Zuni Reservation and Off-Reservation Trust Land, NM--AZ",7144,6872,6918,0.968365061590146,0.993350679387106
+"325","4910","Kickapoo (KS) Reservation/Sac and Fox Nation Trust Land joint-use area, KS",0,0,0,NA,NA,"Kickapoo (KS) Reservation/Sac and Fox Nation Trust Land joint-use area, KS",0,0,0,NA,NA
+"326","4930","San Felipe Pueblo/Santa Ana Pueblo joint-use area, NM",0,0,0,NA,NA,"San Felipe Pueblo/Santa Ana Pueblo joint-use area, NM",0,0,0,NA,NA
+"327","4940","San Felipe Pueblo/Santo Domingo Pueblo joint-use area, NM",0,0,0,NA,NA,"San Felipe Pueblo/Santo Domingo Pueblo joint-use area, NM",0,0,0,NA,NA
+"328","5540","Caddo-Wichita-Delaware OTSA, OK",15107,1255,2083,0.137883100549414,0.602496399423908,"Caddo-Wichita-Delaware OTSA, OK",15683,1371,2512,0.160173436204808,0.54578025477707
+"329","5550","Cherokee OTSA, OK",513178,88823,145580,0.283683244410322,0.610131886248111,"Cherokee OTSA, OK",521336,83069,133665,0.256389353507143,0.621471589421315
+"330","5560","Cheyenne and Arapaho OTSA, OK",186628,9507,20151,0.107974151788585,0.471788000595504,"Cheyenne and Arapaho OTSA, OK",195234,7874,17468,0.0894721206347255,0.450767117013968
+"331","5580","Chickasaw OTSA, OK",306460,28705,54353,0.17735756705606,0.528121722811988,"Chickasaw OTSA, OK",315106,23684,47689,0.151342722766307,0.496634444001761
+"332","5590","Choctaw OTSA, OK",226984,36487,57942,0.255269093856836,0.629715922819371,"Choctaw OTSA, OK",229120,29185,51858,0.226335544692737,0.562786840988854
+"333","5600","Citizen Potawatomi Nation-Absentee Shawnee OTSA, OK",126987,9125,19099,0.150401222172348,0.477773705429604,"Citizen Potawatomi Nation-Absentee Shawnee OTSA, OK",128061,8289,16648,0.130000546614504,0.497897645362806
+"334","5620","Creek OTSA, OK",813184,67171,136762,0.16818087911223,0.491152513124991,"Creek OTSA, OK",831269,59983,119084,0.143255672953039,0.503703268281213
+"335","5640","Eastern Shawnee OTSA, OK",743,172,242,0.325706594885599,0.710743801652893,"Eastern Shawnee OTSA, OK",789,177,247,0.313054499366286,0.716599190283401
+"336","5670","Iowa OTSA, OK",6602,357,803,0.121629809148743,0.444582814445828,"Iowa OTSA, OK",7010,337,639,0.0911554921540656,0.527386541471048
+"337","5690","Kaw OTSA, OK",5692,564,1021,0.17937456078707,0.552399608227228,"Kaw OTSA, OK",5708,477,901,0.157848633496847,0.529411764705882
+"338","5700","Kickapoo OTSA, OK",26259,2520,4605,0.175368445104536,0.547231270358306,"Kickapoo OTSA, OK",27757,2174,3771,0.135857621500883,0.576504905860515
+"339","5720","Kiowa-Comanche-Apache-Fort Sill Apache OTSA, OK",187646,10697,19904,0.106072071880029,0.537429662379421,"Kiowa-Comanche-Apache-Fort Sill Apache OTSA, OK",187709,8304,19490,0.10383092979026,0.426064648537712
+"340","5730","Miami OTSA, OK",257,76,104,0.404669260700389,0.730769230769231,"Miami OTSA, OK",232,81,98,0.422413793103448,0.826530612244898
+"341","5740","Modoc OTSA, OK",233,93,109,0.467811158798283,0.853211009174312,"Modoc OTSA, OK",300,46,105,0.35,0.438095238095238
+"342","5760","Otoe-Missouria OTSA, OK",810,417,488,0.602469135802469,0.854508196721312,"Otoe-Missouria OTSA, OK",1042,361,497,0.476967370441459,0.72635814889336
+"343","5770","Ottawa OTSA, OK",5388,940,1462,0.271343726800297,0.642954856361149,"Ottawa OTSA, OK",5545,1007,1440,0.259693417493237,0.699305555555556
+"344","5780","Pawnee OTSA, OK",15412,1943,3229,0.209512068518038,0.601734283059771,"Pawnee OTSA, OK",15579,1431,2848,0.182810193208807,0.502457865168539
+"345","5795","Peoria OTSA, OK",5112,959,1478,0.289123630672926,0.648849797023004,"Peoria OTSA, OK",4990,972,1399,0.280360721442886,0.694781987133667
+"346","5800","Ponca OTSA, OK",1916,660,789,0.411795407098121,0.836501901140684,"Ponca OTSA, OK",1950,471,686,0.351794871794872,0.686588921282799
+"347","5810","Quapaw OTSA, OK",4810,955,1320,0.274428274428274,0.723484848484849,"Quapaw OTSA, OK",4571,980,1341,0.293371253555021,0.730797912005966
+"348","5820","Sac and Fox OTSA, OK",58358,5919,10619,0.181963055622194,0.557397118372728,"Sac and Fox OTSA, OK",59096,5077,8900,0.150602409638554,0.570449438202247
+"349","5830","Seminole OTSA, OK",21656,4263,6414,0.29617657923901,0.664639850327409,"Seminole OTSA, OK",21209,3950,5518,0.260172568249328,0.715839072127582
+"350","5835","Seneca-Cayuga OTSA, OK",4241,594,944,0.222589012025466,0.629237288135593,"Seneca-Cayuga OTSA, OK",4537,562,888,0.195724046726912,0.632882882882883
+"351","5860","Tonkawa OTSA, OK",3841,465,703,0.183025253840146,0.661450924608819,"Tonkawa OTSA, OK",3836,402,722,0.188216892596455,0.556786703601108
+"352","5890","Wyandotte OTSA, OK",1869,433,613,0.327982878544676,0.706362153344209,"Wyandotte OTSA, OK",1866,333,509,0.272775991425509,0.654223968565815
+"353","5915","Creek/Seminole joint-use OTSA, OK",1900,375,559,0.294210526315789,0.670840787119857,"Creek/Seminole joint-use OTSA, OK",2285,495,614,0.268708971553611,0.806188925081433
+"354","5950","Kaw/Ponca joint-use OTSA, OK",26146,2477,4488,0.171651495448635,0.551916221033868,"Kaw/Ponca joint-use OTSA, OK",26028,1786,3957,0.152028584601199,0.451352034369472
+"355","5955","Kiowa-Comanche-Apache-Ft Sill Apache/Caddo-Wichita-Delaware joint-use OTSA, OK",9690,3635,4613,0.476057791537668,0.787990461738565,"Kiowa-Comanche-Apache-Ft Sill Apache/Caddo-Wichita-Delaware joint-use OTSA, OK",9171,2756,4072,0.444008286991604,0.676817288801572
+"356","5970","Miami/Peoria joint-use OTSA, OK",4029,646,1029,0.255398361876396,0.62779397473275,"Miami/Peoria joint-use OTSA, OK",4098,720,1019,0.248657881893607,0.70657507360157
+"357","6015","Akhiok ANVSA, AK",63,55,56,0.888888888888889,0.982142857142857,"Akhiok ANVSA, AK",160,100,115,0.71875,0.869565217391304
+"358","6020","Akiachak ANVSA, AK",683,639,650,0.951683748169839,0.983076923076923,"Akiachak ANVSA, AK",736,691,725,0.985054347826087,0.953103448275862
+"359","6025","Akiak ANVSA, AK",462,442,444,0.961038961038961,0.995495495495496,"Akiak ANVSA, AK",377,351,357,0.946949602122016,0.983193277310924
+"360","6030","Akutan ANVSA, AK",1585,56,89,0.0561514195583596,0.629213483146067,"Akutan ANVSA, AK",694,149,161,0.231988472622478,0.925465838509317
+"361","6035","Alakanuk ANVSA, AK",756,718,724,0.957671957671958,0.99171270718232,"Alakanuk ANVSA, AK",864,757,863,0.998842592592593,0.877172653534183
+"362","6040","Alatna ANVSA, AK",15,14,14,0.933333333333333,1,"Alatna ANVSA, AK",11,11,11,1,1
+"363","6045","Aleknagik ANVSA, AK",211,132,168,0.796208530805687,0.785714285714286,"Aleknagik ANVSA, AK",92,83,88,0.956521739130435,0.943181818181818
+"364","6065","Algaaciq ANVSA, AK",497,468,476,0.957746478873239,0.983193277310924,"Algaaciq ANVSA, AK",650,563,595,0.915384615384615,0.946218487394958
+"365","6070","Allakaket ANVSA, AK",177,149,155,0.875706214689266,0.961290322580645,"Allakaket ANVSA, AK",167,141,142,0.850299401197605,0.992957746478873
+"366","6075","Ambler ANVSA, AK",274,236,250,0.912408759124088,0.944,"Ambler ANVSA, AK",182,167,173,0.950549450549451,0.965317919075145
+"367","6080","Anaktuvuk Pass ANVSA, AK",425,315,351,0.825882352941177,0.897435897435897,"Anaktuvuk Pass ANVSA, AK",329,238,288,0.875379939209726,0.826388888888889
+"368","6095","Andreafsky ANVSA, AK",102,89,93,0.911764705882353,0.956989247311828,"Andreafsky ANVSA, AK",160,135,155,0.96875,0.870967741935484
+"369","6100","Angoon ANVSA, AK",357,286,318,0.890756302521008,0.89937106918239,"Angoon ANVSA, AK",480,276,405,0.84375,0.681481481481481
+"370","6105","Aniak ANVSA, AK",510,368,410,0.803921568627451,0.897560975609756,"Aniak ANVSA, AK",585,388,419,0.716239316239316,0.926014319809069
+"371","6125","Anvik ANVSA, AK",70,62,66,0.942857142857143,0.939393939393939,"Anvik ANVSA, AK",79,78,78,0.987341772151899,1
+"372","6140","Arctic Village ANVSA, AK",151,140,145,0.960264900662252,0.96551724137931,"Arctic Village ANVSA, AK",164,156,164,1,0.951219512195122
+"373","6150","Atka ANVSA, AK",53,50,52,0.981132075471698,0.961538461538462,"Atka ANVSA, AK",15,15,15,1,1
+"374","6160","Atmautluak ANVSA, AK",386,371,375,0.971502590673575,0.989333333333333,"Atmautluak ANVSA, AK",88,81,81,0.920454545454545,1
+"375","6165","Atqasuk ANVSA, AK",276,240,253,0.916666666666667,0.948616600790514,"Atqasuk ANVSA, AK",288,238,275,0.954861111111111,0.865454545454545
+"376","6175","Barrow ANVSA, AK",4927,2652,3127,0.634666125431297,0.84809721778062,"Barrow ANVSA, AK",4778,2503,2858,0.598158225198828,0.875787263820854
+"377","6190","Beaver ANVSA, AK",48,46,46,0.958333333333333,1,"Beaver ANVSA, AK",17,17,17,1,1
+"378","6195","Belkofski ANVSA, AK",2,0,0,0,NA,"Belkofski ANVSA, AK",0,0,0,NA,NA
+"379","6205","Bethel ANVSA, AK",6325,4158,4710,0.744664031620553,0.882802547770701,"Bethel ANVSA, AK",6312,4143,4567,0.723542458808618,0.907160061309394
+"380","6225","Bill Moore's ANVSA, AK",0,0,0,NA,NA,"Bill Moore's ANVSA, AK",0,0,0,NA,NA
+"381","6235","Birch Creek ANVSA, AK",35,31,32,0.914285714285714,0.96875,"Birch Creek ANVSA, AK",0,0,0,NA,NA
+"382","6240","Brevig Mission ANVSA, AK",428,380,393,0.918224299065421,0.966921119592875,"Brevig Mission ANVSA, AK",718,688,699,0.973537604456824,0.984263233190272
+"383","6250","Buckland ANVSA, AK",550,525,539,0.98,0.974025974025974,"Buckland ANVSA, AK",533,489,529,0.99249530956848,0.924385633270321
+"384","6255","Cantwell ANVSA, AK",197,36,54,0.274111675126904,0.666666666666667,"Cantwell ANVSA, AK",128,25,38,0.296875,0.657894736842105
+"385","6257","Canyon Village ANVSA, AK",0,0,0,NA,NA,"Canyon Village ANVSA, AK",0,0,0,NA,NA
+"386","6265","Chalkyitsik ANVSA, AK",56,52,54,0.964285714285714,0.962962962962963,"Chalkyitsik ANVSA, AK",80,69,80,1,0.8625
+"387","6275","Chefornak ANVSA, AK",506,460,488,0.964426877470356,0.942622950819672,"Chefornak ANVSA, AK",620,566,614,0.990322580645161,0.921824104234528
+"388","6280","Chenega ANVSA, AK",59,34,40,0.677966101694915,0.85,"Chenega ANVSA, AK",37,0,11,0.297297297297297,0
+"389","6285","Chevak ANVSA, AK",951,892,927,0.974763406940063,0.962243797195254,"Chevak ANVSA, AK",494,423,460,0.931174089068826,0.919565217391304
+"390","6290","Chickaloon ANVSA, AK",25487,1501,3078,0.120767450072586,0.487654320987654,"Chickaloon ANVSA, AK",27567,1582,3295,0.119526970653317,0.480121396054628
+"391","6295","Chignik ANVSA, AK",97,58,69,0.711340206185567,0.840579710144927,"Chignik ANVSA, AK",27,10,23,0.851851851851852,0.434782608695652
+"392","6300","Chignik Lagoon ANVSA, AK",72,48,61,0.847222222222222,0.786885245901639,"Chignik Lagoon ANVSA, AK",29,13,22,0.758620689655172,0.590909090909091
+"393","6305","Chignik Lake ANVSA, AK",65,55,60,0.923076923076923,0.916666666666667,"Chignik Lake ANVSA, AK",27,17,26,0.962962962962963,0.653846153846154
+"394","6310","Chilkat ANVSA, AK",93,67,79,0.849462365591398,0.848101265822785,"Chilkat ANVSA, AK",82,56,68,0.829268292682927,0.823529411764706
+"395","6315","Chilkoot ANVSA, AK",410,61,91,0.221951219512195,0.67032967032967,"Chilkoot ANVSA, AK",787,73,113,0.143583227445997,0.646017699115044
+"396","6325","Chistochina ANVSA, AK",50,37,44,0.88,0.840909090909091,"Chistochina ANVSA, AK",58,51,51,0.879310344827586,1
+"397","6330","Chitina ANVSA, AK",78,37,50,0.641025641025641,0.74,"Chitina ANVSA, AK",100,42,51,0.51,0.823529411764706
+"398","6335","Chuathbaluk ANVSA, AK",104,92,99,0.951923076923077,0.929292929292929,"Chuathbaluk ANVSA, AK",82,78,80,0.975609756097561,0.975
+"399","6340","Chuloonawick ANVSA, AK",1,0,1,1,0,"Chuloonawick ANVSA, AK",0,0,0,NA,NA
+"400","6350","Circle ANVSA, AK",91,84,84,0.923076923076923,1,"Circle ANVSA, AK",54,44,48,0.888888888888889,0.916666666666667
+"401","6360","Clarks Point ANVSA, AK",67,62,63,0.940298507462687,0.984126984126984,"Clarks Point ANVSA, AK",25,20,22,0.88,0.909090909090909
+"402","6365","Copper Center ANVSA, AK",449,177,228,0.507795100222717,0.776315789473684,"Copper Center ANVSA, AK",417,177,224,0.537170263788969,0.790178571428571
+"403","6380","Council ANVSA, AK",2,0,1,0.5,0,"Council ANVSA, AK",6,2,2,0.333333333333333,1
+"404","6385","Craig ANVSA, AK",1251,243,398,0.31814548361311,0.610552763819096,"Craig ANVSA, AK",1248,174,337,0.270032051282051,0.516320474777448
+"405","6390","Crooked Creek ANVSA, AK",90,86,88,0.977777777777778,0.977272727272727,"Crooked Creek ANVSA, AK",17,16,16,0.941176470588235,1
+"406","6400","Deering ANVSA, AK",182,168,173,0.950549450549451,0.971098265895954,"Deering ANVSA, AK",227,188,211,0.929515418502203,0.890995260663507
+"407","6405","Dillingham ANVSA, AK",2350,1272,1550,0.659574468085106,0.820645161290323,"Dillingham ANVSA, AK",2171,1128,1454,0.669737448180562,0.775790921595598
+"408","6415","Dot Lake ANVSA, AK",23,12,16,0.695652173913043,0.75,"Dot Lake ANVSA, AK",0,0,0,NA,NA
+"409","6420","Douglas ANVSA, AK",5542,553,1054,0.190184049079755,0.524667931688805,"Douglas ANVSA, AK",6208,735,1419,0.228576030927835,0.517970401691332
+"410","6430","Eagle ANVSA, AK",54,27,32,0.592592592592593,0.84375,"Eagle ANVSA, AK",24,9,22,0.916666666666667,0.409090909090909
+"411","6440","Eek ANVSA, AK",404,371,397,0.982673267326733,0.934508816120907,"Eek ANVSA, AK",174,165,174,1,0.948275862068966
+"412","6445","Egegik ANVSA, AK",39,23,24,0.615384615384615,0.958333333333333,"Egegik ANVSA, AK",54,7,15,0.277777777777778,0.466666666666667
+"413","6450","Eklutna ANVSA, AK",62,39,49,0.790322580645161,0.795918367346939,"Eklutna ANVSA, AK",84,42,70,0.833333333333333,0.6
+"414","6455","Ekuk ANVSA, AK",2,0,0,0,NA,"Ekuk ANVSA, AK",1,0,0,0,NA
+"415","6460","Ekwok ANVSA, AK",111,95,98,0.882882882882883,0.969387755102041,"Ekwok ANVSA, AK",36,31,31,0.861111111111111,1
+"416","6470","Elim ANVSA, AK",366,325,340,0.92896174863388,0.955882352941177,"Elim ANVSA, AK",383,371,371,0.968668407310705,1
+"417","6480","Emmonak ANVSA, AK",825,759,794,0.962424242424242,0.955919395465995,"Emmonak ANVSA, AK",966,751,885,0.916149068322981,0.848587570621469
+"418","6490","Evansville ANVSA, AK",35,9,11,0.314285714285714,0.818181818181818,"Evansville ANVSA, AK",33,0,15,0.454545454545455,0
+"419","6495","Eyak ANVSA, AK",134,4,30,0.223880597014925,0.133333333333333,"Eyak ANVSA, AK",206,5,14,0.0679611650485437,0.357142857142857
+"420","6500","False Pass ANVSA, AK",394,25,46,0.116751269035533,0.543478260869565,"False Pass ANVSA, AK",151,66,66,0.437086092715232,1
+"421","6515","Fort Yukon ANVSA, AK",428,359,391,0.913551401869159,0.918158567774936,"Fort Yukon ANVSA, AK",656,577,619,0.94359756097561,0.932148626817447
+"422","6520","Gakona ANVSA, AK",107,42,45,0.420560747663551,0.933333333333333,"Gakona ANVSA, AK",173,61,66,0.38150289017341,0.924242424242424
+"423","6525","Galena ANVSA, AK",472,326,347,0.735169491525424,0.939481268011527,"Galena ANVSA, AK",611,393,428,0.700490998363339,0.918224299065421
+"424","6530","Gambell ANVSA, AK",640,616,618,0.965625,0.996763754045307,"Gambell ANVSA, AK",569,539,566,0.994727592267135,0.952296819787986
+"425","6535","Georgetown ANVSA, AK",1,0,0,0,NA,"Georgetown ANVSA, AK",0,0,0,NA,NA
+"426","6540","Golovin ANVSA, AK",175,159,164,0.937142857142857,0.969512195121951,"Golovin ANVSA, AK",181,162,162,0.895027624309392,1
+"427","6545","Goodnews Bay ANVSA, AK",258,233,243,0.941860465116279,0.958847736625514,"Goodnews Bay ANVSA, AK",115,112,112,0.973913043478261,1
+"428","6550","Grayling ANVSA, AK",210,187,205,0.976190476190476,0.91219512195122,"Grayling ANVSA, AK",173,164,164,0.947976878612717,1
+"429","6560","Gulkana ANVSA, AK",121,66,72,0.59504132231405,0.916666666666667,"Gulkana ANVSA, AK",55,26,29,0.527272727272727,0.896551724137931
+"430","6570","Hamilton ANVSA, AK",2,0,0,0,NA,"Hamilton ANVSA, AK",0,0,0,NA,NA
+"431","6575","Healy Lake ANVSA, AK",24,20,21,0.875,0.952380952380952,"Healy Lake ANVSA, AK",24,24,24,1,1
+"432","6585","Holy Cross ANVSA, AK",176,142,169,0.960227272727273,0.840236686390533,"Holy Cross ANVSA, AK",205,195,199,0.970731707317073,0.979899497487437
+"433","6590","Hoonah ANVSA, AK",931,455,580,0.622986036519871,0.78448275862069,"Hoonah ANVSA, AK",862,216,360,0.417633410672854,0.6
+"434","6595","Hooper Bay ANVSA, AK",1375,1330,1337,0.972363636363636,0.994764397905759,"Hooper Bay ANVSA, AK",903,779,799,0.884828349944629,0.974968710888611
+"435","6605","Hughes ANVSA, AK",86,77,80,0.930232558139535,0.9625,"Hughes ANVSA, AK",40,40,40,1,1
+"436","6610","Huslia ANVSA, AK",304,279,290,0.953947368421053,0.962068965517241,"Huslia ANVSA, AK",51,32,51,1,0.627450980392157
+"437","6615","Hydaburg ANVSA, AK",380,318,335,0.881578947368421,0.949253731343284,"Hydaburg ANVSA, AK",375,283,312,0.832,0.907051282051282
+"438","6620","Igiugig ANVSA, AK",68,48,54,0.794117647058823,0.888888888888889,"Igiugig ANVSA, AK",53,32,43,0.811320754716981,0.744186046511628
+"439","6625","Iliamna ANVSA, AK",108,64,80,0.740740740740741,0.8,"Iliamna ANVSA, AK",70,38,49,0.7,0.775510204081633
+"440","6630","Inalik ANVSA, AK",83,72,79,0.951807228915663,0.911392405063291,"Inalik ANVSA, AK",27,27,27,1,1
+"441","6650","Ivanof Bay ANVSA, AK",1,0,0,0,NA,"Ivanof Bay ANVSA, AK",0,0,0,NA,NA
+"442","6670","Kake ANVSA, AK",543,416,469,0.863720073664825,0.886993603411514,"Kake ANVSA, AK",624,347,498,0.798076923076923,0.696787148594378
+"443","6680","Kaktovik ANVSA, AK",283,269,271,0.957597173144876,0.992619926199262,"Kaktovik ANVSA, AK",124,114,120,0.967741935483871,0.95
+"444","6685","Kalskag ANVSA, AK",212,182,195,0.919811320754717,0.933333333333333,"Kalskag ANVSA, AK",239,209,229,0.9581589958159,0.912663755458515
+"445","6690","Kaltag ANVSA, AK",158,132,147,0.930379746835443,0.897959183673469,"Kaltag ANVSA, AK",68,64,64,0.941176470588235,1
+"446","6700","Karluk ANVSA, AK",27,24,26,0.962962962962963,0.923076923076923,"Karluk ANVSA, AK",33,32,33,1,0.96969696969697
+"447","6705","Kasaan ANVSA, AK",30,8,9,0.3,0.888888888888889,"Kasaan ANVSA, AK",51,28,32,0.627450980392157,0.875
+"448","6710","Kasigluk ANVSA, AK",623,597,600,0.963081861958267,0.995,"Kasigluk ANVSA, AK",698,695,695,0.995702005730659,1
+"449","6720","Kenaitze ANVSA, AK",34637,2324,4675,0.134971273493663,0.497112299465241,"Kenaitze ANVSA, AK",35530,2022,4649,0.130847171404447,0.434932243493224
+"450","6725","Ketchikan ANVSA, AK",13225,2067,3101,0.234480151228733,0.666559174459852,"Ketchikan ANVSA, AK",13122,1525,2710,0.206523395823807,0.562730627306273
+"451","6730","Kiana ANVSA, AK",449,401,424,0.944320712694877,0.945754716981132,"Kiana ANVSA, AK",440,414,414,0.940909090909091,1
+"452","6735","King Cove ANVSA, AK",757,327,383,0.505944517833554,0.85378590078329,"King Cove ANVSA, AK",1352,643,775,0.573224852071006,0.829677419354839
+"453","6740","King Salmon ANVSA, AK",125,34,56,0.448,0.607142857142857,"King Salmon ANVSA, AK",81,32,46,0.567901234567901,0.695652173913043
+"454","6750","Kipnuk ANVSA, AK",704,682,685,0.973011363636364,0.995620437956204,"Kipnuk ANVSA, AK",706,636,696,0.985835694050991,0.913793103448276
+"455","6755","Kivalina ANVSA, AK",444,434,436,0.981981981981982,0.995412844036697,"Kivalina ANVSA, AK",809,784,802,0.991347342398022,0.977556109725686
+"456","6765","Klawock ANVSA, AK",528,285,386,0.731060606060606,0.738341968911917,"Klawock ANVSA, AK",561,266,377,0.672014260249554,0.705570291777188
+"457","6785","Knik ANVSA, AK",81495,5334,10959,0.134474507638505,0.48672324117164,"Knik ANVSA, AK",85258,4731,10623,0.124598278167445,0.445354419655465
+"458","6790","Kobuk ANVSA, AK",191,160,166,0.869109947643979,0.963855421686747,"Kobuk ANVSA, AK",101,86,96,0.95049504950495,0.895833333333333
+"459","6795","Kodiak ANVSA, AK",2,0,0,0,NA,"Kodiak ANVSA, AK",0,0,0,NA,NA
+"460","6800","Kokhanok ANVSA, AK",152,124,139,0.914473684210526,0.892086330935252,"Kokhanok ANVSA, AK",39,13,35,0.897435897435897,0.371428571428571
+"461","6810","Kongiganak ANVSA, AK",486,466,478,0.983539094650206,0.97489539748954,"Kongiganak ANVSA, AK",316,316,316,1,1
+"462","6815","Kotlik ANVSA, AK",655,653,654,0.998473282442748,0.998470948012232,"Kotlik ANVSA, AK",976,944,962,0.985655737704918,0.981288981288981
+"463","6820","Kotzebue ANVSA, AK",3102,2117,2411,0.777240490006447,0.878058896723351,"Kotzebue ANVSA, AK",2984,1871,2192,0.734584450402145,0.853558394160584
+"464","6825","Koyuk ANVSA, AK",312,280,296,0.948717948717949,0.945945945945946,"Koyuk ANVSA, AK",348,335,340,0.977011494252874,0.985294117647059
+"465","6830","Koyukuk ANVSA, AK",98,98,98,1,1,"Koyukuk ANVSA, AK",29,29,29,1,1
+"466","6835","Kwethluk ANVSA, AK",812,773,792,0.975369458128079,0.976010101010101,"Kwethluk ANVSA, AK",975,937,962,0.986666666666667,0.974012474012474
+"467","6840","Kwigillingok ANVSA, AK",380,369,375,0.986842105263158,0.984,"Kwigillingok ANVSA, AK",545,540,541,0.992660550458716,0.99815157116451
+"468","6845","Kwinhagak ANVSA, AK",776,731,761,0.980670103092783,0.960578186596583,"Kwinhagak ANVSA, AK",1311,1206,1264,0.964149504195271,0.954113924050633
+"469","6850","Lake Minchumina ANVSA, AK",16,3,6,0.375,0.5,"Lake Minchumina ANVSA, AK",7,0,0,0,NA
+"470","6855","Larsen Bay ANVSA, AK",34,27,28,0.823529411764706,0.964285714285714,"Larsen Bay ANVSA, AK",145,14,19,0.131034482758621,0.736842105263158
+"471","6860","Lesnoi ANVSA, AK",0,0,0,NA,NA,"Lesnoi ANVSA, AK",0,0,0,NA,NA
+"472","6865","Levelock ANVSA, AK",69,65,67,0.971014492753623,0.970149253731343,"Levelock ANVSA, AK",8,4,6,0.75,0.666666666666667
+"473","6875","Lime Village ANVSA, AK",13,12,12,0.923076923076923,1,"Lime Village ANVSA, AK",0,0,0,NA,NA
+"474","6890","Lower Kalskag ANVSA, AK",278,262,272,0.97841726618705,0.963235294117647,"Lower Kalskag ANVSA, AK",239,233,239,1,0.97489539748954
+"475","6895","McGrath ANVSA, AK",301,170,186,0.617940199335548,0.913978494623656,"McGrath ANVSA, AK",255,100,171,0.670588235294118,0.584795321637427
+"476","6900","Manley Hot Springs ANVSA, AK",169,107,114,0.674556213017751,0.93859649122807,"Manley Hot Springs ANVSA, AK",32,0,4,0.125,0
+"477","6905","Manokotak ANVSA, AK",487,445,467,0.958932238193018,0.952890792291221,"Manokotak ANVSA, AK",679,584,602,0.88659793814433,0.970099667774086
+"478","6910","Marshall ANVSA, AK",492,464,480,0.975609756097561,0.966666666666667,"Marshall ANVSA, AK",386,384,386,1,0.994818652849741
+"479","6915","Mary's Igloo ANVSA, AK",1,0,0,0,NA,"Mary's Igloo ANVSA, AK",0,0,0,NA,NA
+"480","6935","Mekoryuk ANVSA, AK",206,193,196,0.951456310679612,0.98469387755102,"Mekoryuk ANVSA, AK",287,272,278,0.968641114982578,0.97841726618705
+"481","6945","Mentasta Lake ANVSA, AK",108,89,96,0.888888888888889,0.927083333333333,"Mentasta Lake ANVSA, AK",48,48,48,1,1
+"482","6965","Minto ANVSA, AK",150,138,141,0.94,0.978723404255319,"Minto ANVSA, AK",214,159,202,0.94392523364486,0.787128712871287
+"483","6975","Mountain Village ANVSA, AK",621,585,591,0.951690821256039,0.989847715736041,"Mountain Village ANVSA, AK",949,923,930,0.979978925184405,0.99247311827957
+"484","6990","Naknek ANVSA, AK",470,218,269,0.572340425531915,0.810408921933085,"Naknek ANVSA, AK",522,102,151,0.289272030651341,0.675496688741722
+"485","6995","Nanwalek ANVSA, AK",247,177,230,0.931174089068826,0.769565217391304,"Nanwalek ANVSA, AK",199,139,198,0.994974874371859,0.702020202020202
+"486","7005","Napaimute ANVSA, AK",0,0,0,NA,NA,"Napaimute ANVSA, AK",0,0,0,NA,NA
+"487","7010","Napakiak ANVSA, AK",358,325,341,0.952513966480447,0.953079178885631,"Napakiak ANVSA, AK",556,551,554,0.996402877697842,0.994584837545126
+"488","7020","Napaskiak ANVSA, AK",509,488,494,0.970530451866405,0.987854251012146,"Napaskiak ANVSA, AK",447,435,445,0.995525727069351,0.97752808988764
+"489","7025","Nelson Lagoon ANVSA, AK",41,38,38,0.926829268292683,1,"Nelson Lagoon ANVSA, AK",78,70,70,0.897435897435897,1
+"490","7030","Nenana ANVSA, AK",358,147,150,0.418994413407821,0.98,"Nenana ANVSA, AK",479,222,248,0.517745302713987,0.895161290322581
+"491","7035","Newhalen ANVSA, AK",168,128,151,0.898809523809524,0.847682119205298,"Newhalen ANVSA, AK",122,86,106,0.868852459016393,0.811320754716981
+"492","7040","New Koliganek ANVSA, AK",183,167,177,0.967213114754098,0.943502824858757,"New Koliganek ANVSA, AK",193,192,192,0.994818652849741,1
+"493","7050","New Stuyahok ANVSA, AK",512,460,484,0.9453125,0.950413223140496,"New Stuyahok ANVSA, AK",474,394,461,0.972573839662447,0.854663774403471
+"494","7055","Newtok ANVSA, AK",308,293,302,0.980519480519481,0.970198675496689,"Newtok ANVSA, AK",48,42,48,1,0.875
+"495","7065","Nightmute ANVSA, AK",306,294,297,0.970588235294118,0.98989898989899,"Nightmute ANVSA, AK",93,93,93,1,1
+"496","7070","Nikolai ANVSA, AK",89,72,76,0.853932584269663,0.947368421052632,"Nikolai ANVSA, AK",44,26,41,0.931818181818182,0.634146341463415
+"497","7075","Nikolski ANVSA, AK",39,27,28,0.717948717948718,0.964285714285714,"Nikolski ANVSA, AK",1,1,1,1,1
+"498","7080","Ninilchik ANVSA, AK",16004,644,1395,0.0871657085728568,0.461648745519713,"Ninilchik ANVSA, AK",17199,784,1690,0.0982615268329554,0.463905325443787
+"499","7085","Noatak ANVSA, AK",570,531,542,0.950877192982456,0.979704797047971,"Noatak ANVSA, AK",786,771,774,0.984732824427481,0.996124031007752
+"500","7095","Nome ANVSA, AK",3794,1951,2541,0.669741697416974,0.767807949626131,"Nome ANVSA, AK",3801,1937,2553,0.671665351223362,0.758715236976107
+"501","7100","Nondalton ANVSA, AK",133,109,119,0.894736842105263,0.915966386554622,"Nondalton ANVSA, AK",103,49,97,0.941747572815534,0.505154639175258
+"502","7110","Noorvik ANVSA, AK",694,672,679,0.978386167146974,0.989690721649485,"Noorvik ANVSA, AK",748,620,627,0.838235294117647,0.988835725677831
+"503","7115","Northway ANVSA, AK",227,207,207,0.911894273127753,1,"Northway ANVSA, AK",192,158,182,0.947916666666667,0.868131868131868
+"504","7125","Nuiqsut ANVSA, AK",512,474,476,0.9296875,0.995798319327731,"Nuiqsut ANVSA, AK",616,516,526,0.853896103896104,0.980988593155893
+"505","7130","Nulato ANVSA, AK",239,169,215,0.899581589958159,0.786046511627907,"Nulato ANVSA, AK",255,187,187,0.733333333333333,1
+"506","7133","Nunam Iqua ANVSA, AK",217,203,212,0.976958525345622,0.957547169811321,"Nunam Iqua ANVSA, AK",0,0,0,NA,NA
+"507","7135","Nunapitchuk ANVSA, AK",594,581,581,0.978114478114478,1,"Nunapitchuk ANVSA, AK",618,598,606,0.980582524271845,0.986798679867987
+"508","7145","Ohogamiut ANVSA, AK",1,0,0,0,NA,"Ohogamiut ANVSA, AK",0,0,0,NA,NA
+"509","7150","Old Harbor ANVSA, AK",216,178,185,0.856481481481482,0.962162162162162,"Old Harbor ANVSA, AK",162,118,147,0.907407407407407,0.802721088435374
+"510","7175","Oscarville ANVSA, AK",70,67,67,0.957142857142857,1,"Oscarville ANVSA, AK",42,42,42,1,1
+"511","7180","Ouzinkie ANVSA, AK",118,80,89,0.754237288135593,0.898876404494382,"Ouzinkie ANVSA, AK",87,50,78,0.896551724137931,0.641025641025641
+"512","7185","Paimiut ANVSA, AK",2,0,0,0,NA,"Paimiut ANVSA, AK",0,0,0,NA,NA
+"513","7205","Pedro Bay ANVSA, AK",43,21,23,0.534883720930233,0.91304347826087,"Pedro Bay ANVSA, AK",14,7,11,0.785714285714286,0.636363636363636
+"514","7215","Perryville ANVSA, AK",88,77,81,0.920454545454545,0.950617283950617,"Perryville ANVSA, AK",82,68,78,0.951219512195122,0.871794871794872
+"515","7220","Petersburg ANVSA, AK",2360,178,361,0.152966101694915,0.493074792243767,"Petersburg ANVSA, AK",2805,224,395,0.140819964349376,0.567088607594937
+"516","7225","Pilot Point ANVSA, AK",70,50,59,0.842857142857143,0.847457627118644,"Pilot Point ANVSA, AK",48,30,45,0.9375,0.666666666666667
+"517","7230","Pilot Station ANVSA, AK",615,590,601,0.977235772357724,0.981697171381032,"Pilot Station ANVSA, AK",713,687,704,0.987377279102384,0.975852272727273
+"518","7235","Pitkas Point ANVSA, AK",120,118,120,1,0.983333333333333,"Pitkas Point ANVSA, AK",169,169,169,1,1
+"519","7245","Platinum ANVSA, AK",55,47,53,0.963636363636364,0.886792452830189,"Platinum ANVSA, AK",43,41,41,0.953488372093023,1
+"520","7250","Point Hope ANVSA, AK",830,732,765,0.921686746987952,0.956862745098039,"Point Hope ANVSA, AK",832,778,801,0.962740384615385,0.971285892634207
+"521","7255","Point Lay ANVSA, AK",330,304,310,0.939393939393939,0.980645161290323,"Point Lay ANVSA, AK",390,284,285,0.730769230769231,0.996491228070175
+"522","7260","Portage Creek ANVSA, AK",4,1,2,0.5,0.5,"Portage Creek ANVSA, AK",1,0,0,0,NA
+"523","7263","Port Alsworth ANVSA, AK",186,41,51,0.274193548387097,0.803921568627451,"Port Alsworth ANVSA, AK",199,9,145,0.728643216080402,0.0620689655172414
+"524","7265","Port Graham ANVSA, AK",162,134,151,0.932098765432099,0.887417218543046,"Port Graham ANVSA, AK",83,65,69,0.831325301204819,0.942028985507246
+"525","7270","Port Heiden ANVSA, AK",100,79,86,0.86,0.918604651162791,"Port Heiden ANVSA, AK",73,59,69,0.945205479452055,0.855072463768116
+"526","7275","Port Lions ANVSA, AK",170,105,111,0.652941176470588,0.945945945945946,"Port Lions ANVSA, AK",150,78,101,0.673333333333333,0.772277227722772
+"527","7300","Rampart ANVSA, AK",57,44,51,0.894736842105263,0.862745098039216,"Rampart ANVSA, AK",0,0,0,NA,NA
+"528","7305","Red Devil ANVSA, AK",22,16,20,0.909090909090909,0.8,"Red Devil ANVSA, AK",3,3,3,1,1
+"529","7310","Ruby ANVSA, AK",139,125,129,0.928057553956835,0.968992248062015,"Ruby ANVSA, AK",237,231,232,0.978902953586498,0.995689655172414
+"530","7315","Russian Mission ANVSA, AK",421,398,413,0.980997624703088,0.963680387409201,"Russian Mission ANVSA, AK",314,57,314,1,0.181528662420382
+"531","7340","St. George ANVSA, AK",67,60,63,0.940298507462687,0.952380952380952,"St. George ANVSA, AK",70,64,70,1,0.914285714285714
+"532","7375","St. Michael ANVSA, AK",456,413,426,0.934210526315789,0.969483568075117,"St. Michael ANVSA, AK",177,167,177,1,0.943502824858757
+"533","7390","St. Paul ANVSA, AK",413,358,374,0.905569007263923,0.957219251336898,"St. Paul ANVSA, AK",378,244,269,0.711640211640212,0.907063197026022
+"534","7400","Salamatof ANVSA, AK",1078,189,248,0.230055658627087,0.762096774193548,"Salamatof ANVSA, AK",1149,127,166,0.144473455178416,0.765060240963855
+"535","7410","Sand Point ANVSA, AK",536,342,376,0.701492537313433,0.909574468085106,"Sand Point ANVSA, AK",1046,450,570,0.544933078393881,0.789473684210526
+"536","7415","Savoonga ANVSA, AK",835,807,813,0.973652694610778,0.992619926199262,"Savoonga ANVSA, AK",868,663,683,0.786866359447005,0.970717423133236
+"537","7420","Saxman ANVSA, AK",384,262,316,0.822916666666667,0.829113924050633,"Saxman ANVSA, AK",324,209,269,0.830246913580247,0.776951672862453
+"538","7425","Scammon Bay ANVSA, AK",600,593,596,0.993333333333333,0.99496644295302,"Scammon Bay ANVSA, AK",440,408,435,0.988636363636364,0.937931034482759
+"539","7430","Selawik ANVSA, AK",809,786,793,0.980222496909765,0.991172761664565,"Selawik ANVSA, AK",412,388,401,0.973300970873786,0.967581047381546
+"540","7435","Seldovia ANVSA, AK",448,60,112,0.25,0.535714285714286,"Seldovia ANVSA, AK",417,51,78,0.18705035971223,0.653846153846154
+"541","7440","Shageluk ANVSA, AK",100,91,94,0.94,0.968085106382979,"Shageluk ANVSA, AK",34,26,26,0.764705882352941,1
+"542","7450","Shaktoolik ANVSA, AK",212,185,187,0.882075471698113,0.989304812834225,"Shaktoolik ANVSA, AK",283,277,277,0.978798586572438,1
+"543","7465","Shishmaref ANVSA, AK",576,555,557,0.967013888888889,0.99640933572711,"Shishmaref ANVSA, AK",466,454,454,0.974248927038627,1
+"544","7470","Shungnak ANVSA, AK",272,259,263,0.966911764705882,0.984790874524715,"Shungnak ANVSA, AK",147,147,147,1,1
+"545","7475","Sitka ANVSA, AK",4459,803,1262,0.28302309934963,0.636291600633914,"Sitka ANVSA, AK",4313,448,926,0.214699744957106,0.483801295896328
+"546","7485","Skagway ANVSA, AK",1240,32,72,0.0580645161290323,0.444444444444444,"Skagway ANVSA, AK",1244,69,87,0.069935691318328,0.793103448275862
+"547","7495","Sleetmute ANVSA, AK",95,63,80,0.842105263157895,0.7875,"Sleetmute ANVSA, AK",48,42,42,0.875,1
+"548","7500","Solomon ANVSA, AK",1,0,0,0,NA,"Solomon ANVSA, AK",0,0,0,NA,NA
+"549","7505","South Naknek ANVSA, AK",67,34,45,0.671641791044776,0.755555555555556,"South Naknek ANVSA, AK",73,27,34,0.465753424657534,0.794117647058823
+"550","7510","Stebbins ANVSA, AK",634,577,597,0.941640378548896,0.966499162479062,"Stebbins ANVSA, AK",596,499,576,0.966442953020134,0.866319444444444
+"551","7520","Stevens Village ANVSA, AK",37,37,37,1,1,"Stevens Village ANVSA, AK",0,0,0,NA,NA
+"552","7525","Stony River ANVSA, AK",57,50,50,0.87719298245614,1,"Stony River ANVSA, AK",29,20,20,0.689655172413793,1
+"553","7530","Takotna ANVSA, AK",56,15,22,0.392857142857143,0.681818181818182,"Takotna ANVSA, AK",15,6,9,0.6,0.666666666666667
+"554","7535","Tanacross ANVSA, AK",144,119,125,0.868055555555556,0.952,"Tanacross ANVSA, AK",155,150,150,0.967741935483871,1
+"555","7540","Tanana ANVSA, AK",246,194,202,0.821138211382114,0.96039603960396,"Tanana ANVSA, AK",334,275,307,0.919161676646707,0.895765472312704
+"556","7555","Tatitlek ANVSA, AK",90,74,77,0.855555555555556,0.961038961038961,"Tatitlek ANVSA, AK",20,20,20,1,1
+"557","7560","Tazlina ANVSA, AK",263,84,108,0.4106463878327,0.777777777777778,"Tazlina ANVSA, AK",382,143,215,0.56282722513089,0.665116279069767
+"558","7565","Telida ANVSA, AK",2,1,1,0.5,1,"Telida ANVSA, AK",0,0,0,NA,NA
+"559","7570","Teller ANVSA, AK",249,224,234,0.939759036144578,0.957264957264957,"Teller ANVSA, AK",255,247,249,0.976470588235294,0.991967871485944
+"560","7580","Tetlin ANVSA, AK",135,117,120,0.888888888888889,0.975,"Tetlin ANVSA, AK",123,109,123,1,0.886178861788618
+"561","7605","Togiak ANVSA, AK",817,738,772,0.944920440636475,0.955958549222798,"Togiak ANVSA, AK",963,844,877,0.910695742471443,0.962371721778791
+"562","7625","Toksook Bay ANVSA, AK",658,635,638,0.969604863221885,0.995297805642633,"Toksook Bay ANVSA, AK",833,816,819,0.983193277310924,0.996336996336996
+"563","7630","Tuluksak ANVSA, AK",444,416,430,0.968468468468468,0.967441860465116,"Tuluksak ANVSA, AK",118,100,100,0.847457627118644,1
+"564","7640","Tuntutuliak ANVSA, AK",469,457,459,0.978678038379531,0.995642701525055,"Tuntutuliak ANVSA, AK",514,510,514,1,0.992217898832685
+"565","7645","Tununak ANVSA, AK",411,390,400,0.97323600973236,0.975,"Tununak ANVSA, AK",384,372,378,0.984375,0.984126984126984
+"566","7650","Twin Hills ANVSA, AK",103,81,98,0.951456310679612,0.826530612244898,"Twin Hills ANVSA, AK",87,85,87,1,0.977011494252874
+"567","7655","Tyonek ANVSA, AK",161,121,141,0.875776397515528,0.858156028368794,"Tyonek ANVSA, AK",295,203,239,0.810169491525424,0.849372384937239
+"568","7665","Ugashik ANVSA, AK",4,3,3,0.75,1,"Ugashik ANVSA, AK",4,0,2,0.5,0
+"569","7690","Unalakleet ANVSA, AK",806,672,678,0.841191066997519,0.991150442477876,"Unalakleet ANVSA, AK",565,423,459,0.812389380530973,0.92156862745098
+"570","7695","Unalaska ANVSA, AK",4254,195,326,0.076633756464504,0.598159509202454,"Unalaska ANVSA, AK",4556,103,182,0.0399473222124671,0.565934065934066
+"571","7705","Uyak ANVSA, AK",1,0,0,0,NA,"Uyak ANVSA, AK",0,0,0,NA,NA
+"572","7725","Venetie ANVSA, AK",205,191,191,0.931707317073171,1,"Venetie ANVSA, AK",76,76,76,1,1
+"573","7735","Wainwright ANVSA, AK",628,600,602,0.95859872611465,0.996677740863787,"Wainwright ANVSA, AK",718,658,699,0.973537604456824,0.941344778254649
+"574","7740","Wales ANVSA, AK",168,146,151,0.898809523809524,0.966887417218543,"Wales ANVSA, AK",238,214,214,0.899159663865546,1
+"575","7745","White Mountain ANVSA, AK",185,171,173,0.935135135135135,0.988439306358382,"White Mountain ANVSA, AK",222,211,219,0.986486486486487,0.963470319634703
+"576","7755","Wrangell ANVSA, AK",1173,263,403,0.343563512361466,0.652605459057072,"Wrangell ANVSA, AK",1439,286,468,0.325225851285615,0.611111111111111
+"577","7765","Yakutat ANVSA, AK",657,255,347,0.528158295281583,0.734870317002882,"Yakutat ANVSA, AK",527,111,209,0.396584440227704,0.5311004784689
+"578","8100","Cayuga Nation TDSA, NY",2572,6,65,0.0252721617418351,0.0923076923076923,"Cayuga Nation TDSA, NY",2999,13,54,0.0180060020006669,0.240740740740741
+"579","8150","Chickahominy TDSA, VA",3239,402,492,0.151898734177215,0.817073170731707,"Chickahominy TDSA, VA",3800,349,482,0.126842105263158,0.724066390041494
+"580","8160","Eastern Chickahominy TDSA, VA",193,22,23,0.119170984455959,0.956521739130435,"Eastern Chickahominy TDSA, VA",368,119,131,0.355978260869565,0.908396946564885
+"581","8300","Ione Band of Miwok TDSA, CA",27,0,0,0,NA,"Ione Band of Miwok TDSA, CA",89,0,4,0.0449438202247191,0
+"582","8450","Mechoopda TDSA, CA",3227,168,302,0.0935853734118376,0.556291390728477,"Mechoopda TDSA, CA",3885,64,159,0.0409266409266409,0.40251572327044
+"583","8700","Rappahannock TDSA, VA",1638,32,57,0.0347985347985348,0.56140350877193,"Rappahannock TDSA, VA",2101,58,100,0.0475963826749167,0.58
+"584","8750","Samish TDSA, WA",41102,317,1330,0.0323585226996253,0.238345864661654,"Samish TDSA, WA",42442,267,1053,0.0248103293906979,0.253561253561254
+"585","9260","Pamunkey (state) Reservation, VA",114,56,69,0.605263157894737,0.811594202898551,"Pamunkey (state) Reservation, VA",118,55,66,0.559322033898305,0.833333333333333
+"586","9370","Shinnecock (state) Reservation, NY",819,713,742,0.905982905982906,0.960916442048518,"Shinnecock (state) Reservation, NY",450,338,383,0.851111111111111,0.882506527415144
+"587","9815","Lumbee SDTSA, NC",510711,57978,73098,0.14312987188449,0.793154395469096,"Lumbee SDTSA, NC",514268,57030,70959,0.137980585997962,0.803703547118759
+"588","3695",NA,NA,NA,NA,NA,NA,"Shawnee Trust Land, OK",0,0,0,NA,NA
