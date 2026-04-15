@@ -1,51 +1,54 @@
-# E. Silverman and A. Miller, Office of Policy Analysis, Department of Interior, August 2025
-# Last update: 14-Apr-2026
+## Reference data tables for federally recognized American Indian and Alaska Native entities. 
 
-Reference data tables for federally recognized American Indian and Alaska Native entities. 
+### E. Silverman, Office of Policy Analysis (PPA), Department of Interior
+### Created: August 2025
+### Last update: 15-Apr-2026
+
 
 These tables use the list of federally recognized Indian entities published in the Federal Register Notice (FRN).
-As of the creation of these files, the most recent update of the FRN list occurred on 2026-01-30 (FRN20260130)
-There are 577 federally recognized entities listed in the FRN20260130. This is an increase of one entity from the previous FRN20241211.
+As of the creation of these files, the most recent update of the FRN list occurred on 2026-01-30 (*FRN20260130*)
+There are 577 federally recognized entities listed in the *FRN20260130*. This is an increase of one entity from the previous FRN20241211.
 The Lumbee Tribe of North Carolina was added due to the passage of the Lumbee Fairness Act in Jan 2025, which ammended the Lumbee Act of 1956.
 
-*NOTE* FRN20260130 includes two cases where two entities appear to be reported both alone and together:
+*NOTE*: FRN20260130 includes two cases where two entities appear to be reported both alone and together:
 
-"Native Village of Venetie Tribal Government (Arctic Village and Village of Venetie)" neid_mid = VENTGV
-"Pribilof Islands Aleut Communities of St. Paul & St. George Islands (St. George Island and Saint Paul Island)" neid_mid = PRBLFC
+- "Native Village of Venetie Tribal Government (Arctic Village and Village of Venetie)" neid_mid = VENTGV
+- "Pribilof Islands Aleut Communities of St. Paul & St. George Islands (St. George Island and Saint Paul Island)" neid_mid = PRBLFC
 
 The combined and constituent entries represent unique entities with their own unique codes for race/ethnicity and unique Native entity identifiers but share Census geographies. 
 
 *NOTE* FRN20260130 also includes two entities that are made up of constituent entities not specified in the FRN:
 
 "Central Council of the Tlingit & Haida Indian Tribes" neid_mid = TLNGHD, which includes of 16 FRN entities
-ANGOON,"Angoon Community Association"
-CHLKAT,"Chilkat Indian Village (Klukwan)"
-CLKOOT,"Chilkoot Indian Association (Haines)"
-CRAIGT,"Craig Tribal Association"
-HDABRG,"Hydaburg Cooperative Association"
-HOONAH,"Hoonah Indian Association"
-KASAAN,"Organized Village of Kasaan"
-KLAWCK,"Klawock Cooperative Association"
-KTCHKN,"Ketchikan Indian Community"
-MTLKTL,"Metlakatla Indian Community, Annette Island Reserve"
-PTRSBG,"Petersburg Indian Association"
-SAXMAN,"Organized Village of Saxman"
-SITKAT,"Sitka Tribe of Alaska"
-VLKAKE,"Organized Village of Kake"
-WRNGLL,"Wrangell Cooperative Association"
-YKTTLN,"Yakutat Tlingit Tribe"
+- ANGOON,"Angoon Community Association"
+- CHLKAT,"Chilkat Indian Village (Klukwan)"
+- CLKOOT,"Chilkoot Indian Association (Haines)"
+- CRAIGT,"Craig Tribal Association"
+- HDABRG,"Hydaburg Cooperative Association"
+- HOONAH,"Hoonah Indian Association"
+- KASAAN,"Organized Village of Kasaan"
+- KLAWCK,"Klawock Cooperative Association"
+- KTCHKN,"Ketchikan Indian Community"
+- MTLKTL,"Metlakatla Indian Community, Annette Island Reserve"
+- PTRSBG,"Petersburg Indian Association"
+- SAXMAN,"Organized Village of Saxman"
+- SITKAT,"Sitka Tribe of Alaska"
+- VLKAKE,"Organized Village of Kake"
+- WRNGLL,"Wrangell Cooperative Association"
+- YKTTLN,"Yakutat Tlingit Tribe"
 
 "Inupiat Community of the Arctic Slope" neid_mid = INPTAS, which includes of 8 FRN entities
-INPTBW,"Native Village of Barrow Inupiat Traditional Government"
-ANKTVK,"Village of Anaktuvuk Pass"
-ATQSUK,"Native Village of Atqasuk"
-KKTOVK,"Kaktovik Village (aka Barter Island)"
-NUIQST,"Native Village of Nuiqsut (aka Nooiksut)"
-PNTHPE,"Native Village of Point Hope"
-PNTLAY,"Native Village of Point Lay"
-WAINWT,"Village of Wainwright"
+- INPTBW,"Native Village of Barrow Inupiat Traditional Government"
+- ANKTVK,"Village of Anaktuvuk Pass"
+- ATQSUK,"Native Village of Atqasuk"
+- KKTOVK,"Kaktovik Village (aka Barter Island)"
+- NUIQST,"Native Village of Nuiqsut (aka Nooiksut)"
+- PNTHPE,"Native Village of Point Hope"
+- PNTLAY,"Native Village of Point Lay"
+- WAINWT,"Village of Wainwright"
 
 ################################################################
+
 **File 1: census-tribal_ANVSA_ANRC.csv**
 
 This file has one row for 221 Alaska Native Village Census geographies.
@@ -68,6 +71,7 @@ The file includes four ANVSAs that we have not mapped to an FRN entity: Canyon V
 This is a many-to-one file with many Census ANVSAs associated with a single ANCSA_region.
 
 ################################################################
+
 **File 2: census-tribal_CICDEntityID_FRNName.csv**
 
 This file contains the FRN list of federally recognized Native entities linked to the CICD Native Connector id codes.
@@ -89,6 +93,7 @@ File has 590 records: 576 from the 2024-12-11 FRN and 3 name changes from the 20
 Due to date changes, file is one-to-many (neid_mid to FRN_NameAsPublished).
 
 ################################################################
+
 **File 3: census-tribal_FRNCICDEntity_CensusGeography.csv**
 
 This file has one row for each FRN 2026-01-30 entity x Census geography relationship.
@@ -128,6 +133,7 @@ There are 583 unique Census geographies associated with an FRN entity.
 An additional 9 are associated with 3-4 entities. One is associated with 7 entities (Kiowa-Comanche-Apache-Ft Sill Apache/Caddo-Wichita-Delaware joint-use OTSA).
 
 ################################################################
+
 **File 4 census-tribal_FRNEntityID_CensusRaceEthCode.csv**
 
 This file has one row for each of the 577 entities listed in the 2026-01-30 FRN.
@@ -140,6 +146,7 @@ The file provides the key to mapping between Census race/ethnicity codes and the
 This is a one-to-one file: each FRN entity has a unique Census r/e code.
 
 ################################################################
+
 **File 5: census-tribal_RaceEthCode_Description.csv**
 This file is a subset of the complete Census list of race and ethnicity codes. 
 We have subset the list to only the codes that match to FRN20260130 entities. There are 2792 rows.
