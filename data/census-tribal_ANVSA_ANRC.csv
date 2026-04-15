@@ -1,4 +1,4 @@
-AIANNHCE,AIANNHNS,AIANNH_Geoname,AIANNH_Geoname_Full,ANRC_FIPS,ANRCNS,GEOIDFQ,ANCSA_Region,ANCSA_Region_Full
+AIANNHCE,AIANNHNS,aiannh_geoname,AIANNH_geoname_full,FIPS,ANRCNS,GEOIDFQ,ANCSA_region,ANSCA_region_long
 6030,02418758,"Akutan","Akutan ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
 7390,02419230,"St. Paul","St. Paul ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
 7695,02419277,"Unalaska","Unalaska ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
@@ -10,7 +10,6 @@ AIANNHCE,AIANNHNS,AIANNH_Geoname,AIANNH_Geoname_Full,ANRC_FIPS,ANRCNS,GEOIDFQ,AN
 6735,02418652,"King Cove","King Cove ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
 7025,02418732,"Nelson Lagoon","Nelson Lagoon ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
 7410,02419207,"Sand Point","Sand Point ANVSA",01570,02419297,2300000US0201570,"Aleut","Aleut Alaska Native Regional Corporation"
-6290,02418816,"Chickaloon","Chickaloon ANVSA",00590,02419295,2300000US0200590,"Ahtna","Ahtna Alaska Native Regional Corporation"
 6325,02418829,"Chistochina","Chistochina ANVSA",00590,02419295,2300000US0200590,"Ahtna","Ahtna Alaska Native Regional Corporation"
 6330,02418831,"Chitina","Chitina ANVSA",00590,02419295,2300000US0200590,"Ahtna","Ahtna Alaska Native Regional Corporation"
 6365,02418846,"Copper Center","Copper Center ANVSA",00590,02419295,2300000US0200590,"Ahtna","Ahtna Alaska Native Regional Corporation"
@@ -191,7 +190,6 @@ AIANNHCE,AIANNHNS,AIANNH_Geoname,AIANNH_Geoname_Full,ANRC_FIPS,ANRCNS,GEOIDFQ,AN
 6855,02418682,"Larsen Bay","Larsen Bay ANVSA",41640,02418991,2300000US0241640,"Koniag","Koniag Alaska Native Regional Corporation"
 6795,02575184,"Kodiak","Kodiak ANVSA",41640,02418991,2300000US0241640,"Koniag","Koniag Alaska Native Regional Corporation"
 7705,02813268,"Uyak","Uyak ANVSA",41640,02418991,2300000US0241640,"Koniag","Koniag Alaska Native Regional Corporation"
-7263,02575189,"Port Alsworth","Port Alsworth ANVSA",09040,02419321,2300000US0209040,"Bristol Bay","Bristol Bay Alaska Native Regional Corporation"
 7100,02419145,"Nondalton","Nondalton ANVSA",09040,02419321,2300000US0209040,"Bristol Bay","Bristol Bay Alaska Native Regional Corporation"
 7205,02419163,"Pedro Bay","Pedro Bay ANVSA",09040,02419321,2300000US0209040,"Bristol Bay","Bristol Bay Alaska Native Regional Corporation"
 7215,02419166,"Perryville","Perryville ANVSA",09040,02419321,2300000US0209040,"Bristol Bay","Bristol Bay Alaska Native Regional Corporation"
