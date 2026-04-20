@@ -106,7 +106,7 @@ The file provides the key to mapping between Census geographies and the FRN20260
 - neid_mid = 6 character string; CICD code to identify each entity on the FRN list.
 match = var string, lower case; code to indicate how match was made. 
 - AIANNH_geoname_full = var string; Census AIAN geography name.
-- STATES = var string, caps, deliminator is ~; list of state abbrevitions that intersect with the geography, e.g. "AZ~CA" for Arizona and California.
+- STATES = var string, caps, deliminator is \~; list of state abbrevitions that intersect with the geography, e.g. "AZ\~CA" for Arizona and California.
 - AIANNHCE = 4 digit integer; Census AIANNH area geography code.
 - AIANNHNS = 8 digit integer; national standards code for geography; first digit is 0 in all cases.
 
