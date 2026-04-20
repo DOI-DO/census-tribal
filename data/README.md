@@ -53,10 +53,11 @@ The combined and constituent entries represent unique entities with their own un
 
 This file has one row for 221 Alaska Native Village Census geographies.
 Census geographies come from the 2020 Census AIANNH list.
-Note: this file does not include Annette Island Reserve 0110, the only reservation in Alaska.
+Note: this file does not include Annette Island Reserve 0110, the only reservation in Alaska, which is located in the Sealaska regional corporation.
 
 The file provides the key to mapping between Census geographies and the 12 Alaska Native Regional Corporations.
 The file includes four ANVSAs that we have not mapped to an FRN entity: Canyon Village (6257), Port Alsworth (7263), Lake Minchumina (6850), and Uyak (7705). 
+According to the U.S. Census Bureau, these four geographies are mapped to the Kian Tr'ee Corporation, Tanalian Inc., Minchumina Natives Inc., and Uyak Natives Inc., respectively.
  
 - AIANNHCE = 4 digit integer; Census AIANNH area geography code.
 - AIANNHNS = 8 digit integer; national standards code for geography; first digit is 0 in all cases.
