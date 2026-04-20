@@ -93,6 +93,7 @@ Due to date changes, file is one-to-many (neid_mid to FRN_NameAsPublished).
 
 This file has one row for each FRN 2026-01-30 entity x Census geography relationship.
 Census geographies come from the 2020 Census AIANNH list.
+There is one addition to this list since 2024: AIANNHCE = 3695 Shawnee Trust Land.
 The file provides the key to mapping between Census geographies and the FRN20260130 list.
 
 - neid_prefix = 4 character string, caps; unique CICD code indicates if the entity is a federally recognized tribe (TRBF) or Alaskan Native Village (AKNF).
