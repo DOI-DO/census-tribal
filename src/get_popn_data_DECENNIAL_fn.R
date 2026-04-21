@@ -1,14 +1,37 @@
 # This function pulls population totals and AIAN totals (alone, in combination)
-# from decennial census.
-# Sums all in the in combination responses, geographies = AIANNH home lands
+# from decennial census for AIAN home lands.
 
-# Result = GEOID, geography name, variable (total popn, AIAN-A or AIAN-IC), and value
+# NOTE: this includes 3 geographies belonging to federally recognized tribes
+# with state-only areas: Lumbee (9815), Pamunkey (9260), Shinnecock (9370).
 
-# other possible geos:
+# NOTE!!
+# Prior to running, source the tidycensus package and
+# set the API key: census_api_key("MY KEY HERE").
+# Include, "install = T" if you want to skip adding the key at every session.
+# 
+
+# Inputs:
+# year = integer for 5-year interval from (year-5, year)
+# sumfile = Decennial table to pull, dhc = 
+# geo = character string indicate the AIAN geography product to select
+# dropNonFed = logical, default = T, remove geographies not associated with federally-recognize entities
+
+# default geography product is "american indian area/alaska native area/hawaiian home land"
+# other possible geo sets:
 # "alaska native regional corporation"
 # "american indian area/alaska native area (reservation or statistical entity only)"
 
-# prior to running set key: census_api_key("MY KEY HERE")
+# Output: data frame with four columns
+# GEOID = character, four digit Census geography code, includes leading zeros
+# NAME = character, Census geography names, includes state
+# variable = character,values are
+#   :'total' = all responses, regardless of race/ethnicity
+#   :'A' = AIAN alone
+#   :'IC' = AIAN in combination
+# value = integer, population size for variable
+
+# NOTE: ACS5 tables are "Alone or in combination," while Decennial tables are
+# "In combination," so Alone and In combination must be summed to calculate AoIC.
 
 # To create a wide table with total, AIAN-A, AIAN-AoIC:
 # pivot_wider(out, id_cols = c("GEOID", "NAME"), names_from = variable) %>% 
@@ -38,7 +61,7 @@ get_popn_data <- function(year = 2020, sumfile = "dhc",
                         year = year,
                         sumfile = sumfile) %>%
     mutate(variable = ifelse(variable == "P8_001N", "total",
-                             ifelse(variable == "P8_005N", "A", "IC"))) %>% 
+                             ifelse(variable == "P8_005N", "A", "IC"))) %>% z
     group_by(GEOID, NAME, variable) %>% summarize(value = sum(value), .groups ='drop' )
   
   if(dropNonFed) {
