@@ -1,5 +1,8 @@
 # This function pulls population totals and AIAN totals (alone, in combination)
-# from decennial census for AIAN home lands.
+# from decennial census for AIAN home lands from the Demographics & Housing (dhc) file.
+
+# See https://www.census.gov/data/developers/data-sets/decennial-census.html
+# for explanation of tables, variables, and geographies available.
 
 # NOTE: this includes 3 geographies belonging to federally recognized tribes
 # with state-only areas: Lumbee (9815), Pamunkey (9260), Shinnecock (9370).
@@ -12,7 +15,6 @@
 
 # Inputs:
 # year = integer for 5-year interval from (year-5, year)
-# sumfile = Decennial table to pull, dhc = 
 # geo = character string indicate the AIAN geography product to select
 # dropNonFed = logical, default = T, remove geographies not associated with federally-recognize entities
 
@@ -39,7 +41,7 @@
 
 # E Silverman 9-FEb-2026
 
-get_popn_data <- function(year = 2020, sumfile = "dhc",
+get_popn_data <- function(year = 2020, 
                           geo = "american indian area/alaska native area/hawaiian home land",
                           dropNonFed = T) {
  
@@ -47,7 +49,7 @@ get_popn_data <- function(year = 2020, sumfile = "dhc",
   library(tidyverse)
   
   # load variables for selected year and table
-  variables <- load_variables(year, sumfile, cache = TRUE)
+  variables <- load_variables(year, sumfile = "dhc", cache = TRUE)
   
   # select all P8 variables with AIAN, as well as the total (_001N)
   var.select <- c("P8_001N",
