@@ -41,9 +41,9 @@
 
 # E Silverman 9-FEb-2026
 
-get_popn_data <- function(year = 2020, 
-                          geo = "american indian area/alaska native area/hawaiian home land",
-                          dropNonFed = T) {
+get_AIAN_popn_data_decennial.fn <- function(year = 2020, 
+                                            geo = "american indian area/alaska native area/hawaiian home land",
+                                            dropNonFed = T) {
  
   library(tidycensus)
   library(tidyverse)

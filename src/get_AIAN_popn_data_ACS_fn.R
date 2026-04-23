@@ -21,7 +21,7 @@
 # other possible geo sets:
 # "alaska native regional corporation"
 # "american indian area/alaska native area (reservation or statistical entity only)"
-
+# "american indian area (off-reservation trust land only)/hawaiian home land"
 
 # Output: data frame with five columns
 # GEOID = character, four digit Census geography code, includes leading zeros
@@ -41,7 +41,7 @@
 
 # A Miller, adapted from E Silverman "get_popn_data_DECENNIAL_fn.R"
 
-get_acs_popn_data <- function(year = year,
+get_AIAN_popn_data_ACS.fn <- function(year = year,
                               acs_table = "acs5/profile",
                               geo = "american indian area/alaska native area/hawaiian home land",
                               dropNonFed = T) {

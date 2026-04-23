@@ -5,17 +5,18 @@
 # Note: datasets described here are for the 2020 census. See Census Bureau documentation
 # or tidycensus for dataset names for 2000 and 2010 censuses.
 
-# dataset values relevant for 2020 are 
-# pl = redistricting data
-# dp = demographic profile
-# dhc = demographic and housing
-# ddhca = detailed demographic and housing A
-# ddhcb = detailed demographic and housing B
-# sdhc = supplemental demographic and housing
-
-# output_method = option for output with "p" = print to screen, "v" = View
 
 view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method = "p") {
+
+  # dataset values relevant for 2020 are: 
+  # pl = redistricting data
+  # dp = demographic profile
+  # dhc = demographic and housing
+  # ddhca = detailed demographic and housing A
+  # ddhcb = detailed demographic and housing B
+  # sdhc = supplemental demographic and housing
+  
+  # output_method = option for output with "p" = print to screen, "v" = View
   
   library(tidyverse)
   library(tidycensus)
@@ -70,7 +71,18 @@ view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method
     table.request <- readline(prompt = "If no, type 'no'  ")
     
   }
+
+  cat("\n Do you want to save the last table (yes, type 't') or variable information (yes, type 'v') to an object? \n")
   
+  ANSWER <- readline(prompt = "If no, type 'no'  ")
+  
+  if (ANSWER == "t") {
+    table.info
+  } else {
+    if (ANSWER == "v") {
+      variable.info
+    }
+  }
  
 }
 
