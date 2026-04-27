@@ -17,7 +17,7 @@
 
 
 get_table_decennial.fn <- function(year = 2020, 
-                                   sumfile = "dhc",
+                                   dataset = "dhc",
                                    tab = 'P8',
                                    geo = "american indian area/alaska native area/hawaiian home land",
                                    dropNonFed = T) {
@@ -26,11 +26,13 @@ get_table_decennial.fn <- function(year = 2020,
   # dataset values relevant for 2020 are: 
   # pl = redistricting data
   # dp = demographic profile
+  
+  # NOTE: there are three 2020 Decennial tables that currently not supported by this function:
   # ddhca = detailed demographic and housing A
   # ddhcb = detailed demographic and housing B
   # sdhc = supplemental demographic and housing
   
-  # NOTE: 2000 and 2010 datasets have different names.
+  # NOTE 2: 2000 and 2010 datasets have different names.
   
   # tab is the table desired; default P8 provides the population by race/ethnicity
   # run view_tables_decennial.fn to see all tables available.
@@ -45,10 +47,10 @@ get_table_decennial.fn <- function(year = 2020,
   # Lumbee (GEOID = 9815), Pamunkey (9260), Shinnecock (9370)
  
   # load variables for selected year and table
- variables <- load_variables(year, dataset = sumfile, cache = TRUE) %>% 
+ variables <- load_variables(year, dataset = dataset, cache = TRUE) %>% 
    mutate(table = str_split_i(name, "_",1)) %>%
    filter(table == tab) %>%
-   mutate(label = str_trim(str_replace_all(label, "!!", ""))) 
+   mutate(label = str_trim(str_replace_all(label, "!!", " "))) 
  
  # logical to classify the table as specific to AIAN
  # if True, save all variables. If False, save totals and AIAN variables.
@@ -56,7 +58,7 @@ get_table_decennial.fn <- function(year = 2020,
  
  out <- get_decennial(year = year, 
                       geography = geo, 
-                      sumfile = sumfile,
+                      sumfile = dataset,
                       table = tab) 
  
  out <- left_join(out, variables %>% select(name, label), by = c('variable' = "name"))
