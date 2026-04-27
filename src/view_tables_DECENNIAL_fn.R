@@ -17,6 +17,7 @@ view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method
   # sdhc = supplemental demographic and housing
   
   # output_method = option for output with "p" = print to screen, "v" = View
+  # point to object and answer "t" or "v" to last question to save output to an object
   
   library(tidyverse)
   library(tidycensus)
