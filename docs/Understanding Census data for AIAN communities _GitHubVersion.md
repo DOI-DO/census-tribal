@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Understanding Census data for American Indian and Alaska Native communities.
 
 In addition to conducting the decadal U.S. Census, the Census Bureau
@@ -13,15 +7,15 @@ ACS collects detailed information on topics not included on the decadal
 census; the Census publication *Understanding and using American
 Community Survey data: What users of data for American Indians and
 Alaska Natives need to know* (UAUACS:AIAN,
-[acs_aian_handbook_2021.pdf](https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_aian_handbook_2021.pdf){.uri})
-provides in depth information about using ACS data to describe American
+[acs_aian_handbook_2021.pdf](https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_aian_handbook_2021.pdf))
+provides in-depth information about using ACS data to describe American
 Indian and Alaska Native (AIAN) communities. Here we summarize
 information from that publication and other Census documents to support
 appropriate use of ACS data.
 
 The Census Bureau reports data within spatial units or “geographies.”
 (More on Census geographies here:
-[acs_geography_handbook_2020.pdf](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_geography_handbook_2020.pdf){.uri}.)
+[acs_geography_handbook_2020.pdf](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_geography_handbook_2020.pdf).)
 Geographies may represent legal entities (e.g., states and counties) or
 may be statistical entities created for Census reporting (e.g., census
 blocks). Census provides 1-year estimates for geographies with
@@ -50,7 +44,10 @@ descriptions of these geography types can be found in GTC_10.pdf, posted
 by the Census Bureau here:
 <https://www2.census.gov/geo/pdfs/reference/GTC_10.pdf>.
 
-<img src="res/Table1_UnderstandingCensusData.png" alt="Table 1" width="150">
+<img src="../res/Table1_UnderstandingCensusData.png" alt="Table 1" width="600">
+
+**Table 1**: AIANNH areas and their associated census codes.
+
 
 The four geography types that describe legal entities are federal
 American Indian reservations (AIR) and off-reservation trust lands,
@@ -118,7 +115,9 @@ Table 2 provides a summary of the Census tables available for the 2020
 Decennial and 5-year ACS tables, including the special 2021 tables for
 AIAN. Data can be accessed via data.census.gov.
 
-<img src="res/Figure1_UnderstandingCensusData.png" alt="Figure 1" width="150">
+<img src="../res/Figure1_UnderstandingCensusData.png" alt="Figure 1" width="600">
+
+**Figure 1**: Census hierarchy for AIAN geographies.
 
 Tribal census tracts (n = 492) and block groups (n = 934) are
 subdivisions of federal AIR geographies that are distinct from standard
@@ -179,7 +178,7 @@ an AIANNH geography. Overlap proportions are sometimes used to impute
 estimates for AIANNH geographies from the intersecting country,
 subdivision or tract data. Links to these tables and information about
 them can be found here:
-[2020-aiannh-record-layout.html](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2020-aiannh-record-layout.html){.uri}.
+[2020-aiannh-record-layout.html](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2020-aiannh-record-layout.html).
 
 ## Considerations for summarizing Census data to FR-AIAN geographies
 
@@ -227,9 +226,9 @@ tribes. Although self-reported race is not equivalent to tribal
 membership, these tables should be better than full population tables as
 descriptors of AIAN communities.
 
-<img src="res/Table2_UnderstandingCensusData.png" alt="Table 1" width="150">
+<img src="../res/Table2_UnderstandingCensusData.png" alt="Table 1" width="1000">
 
-Table 2: Decennial Census and American Community Survey tables with
+**Table 2**: Decennial Census and American Community Survey tables with
 estimates for AIAN geographies and AIAN race categories. AIAN-A = AIAN
 ‘alone,’ i.e., AIAN was the only race selected; AIAN-AoIC = AIAN ‘alone
 or in combination,’ i.e., AIAN was selected as race, possibly with one
