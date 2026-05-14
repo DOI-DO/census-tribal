@@ -28,7 +28,7 @@ Census does not require users to have an API key, but there are limits on the nu
 
 ```{r}
 # Paste your key between the quotation marks below:
-census_api_key('9b678913174c9e9d7825c60981d91a896e1dbdb6') #Ann's key, delete before publishing
+census_api_key('your key here') 
 
 source(here::here("src", "get_popn_data_DECENNIAL_fn.R"))
 source(here::here("src", "get_popn_data_ACS_fn.R"))
@@ -99,7 +99,7 @@ acs24 <- get_acs_popn_data(year = 2024) |> # need to specify the year when calli
 dec_acs24 <- dec |>
   full_join(acs24, by = 'GEOID')
 
-# EMILY: where do we want the output .csv file to go? Currently it's being directed to the 'data' folder
+# Output .csv file currently being directed to the 'data' folder
 #write.csv(dec_acs24, here('data', 'census-tribal_Decennail_ACS24_Population.csv'))
 
 ```
