@@ -137,6 +137,7 @@ An additional 9 are associated with 3-4 entities. One is associated with 7 entit
 ################################################################
 
 **File 4 census-tribal_FRNEntityID_CensusRaceEthCode.csv**
+NOTE: This file needs to be updated. FRN entities were matched to 2030 proposed race codes. Need map to 2020 race codes to associated population groups with FRN entities.
 
 This file has one row for each of the 577 entities listed in the 2026-01-30 FRN.
 The file provides the key to mapping between Census race/ethnicity codes and the FRN20260130 list.
@@ -150,19 +151,31 @@ This is a one-to-one file: each FRN entity has a unique Census r/e code.
 ################################################################
 
 **File 5: census-tribal_RaceEthCode_Description.csv**
-This file is a subset of the complete Census list of race and ethnicity codes. 
-We have subset the list to only the codes that match to FRN20260130 entities. There are 2792 rows.
+This file is a subset of the complete proposed 2020 Census list of race and ethnicity codes. 
+There are 898 rows, including 50 codes that do not appear in the 2030 list. None are repeated (i.e., each is associated with a single description).
 Downloaded from: https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/detailed-demographic-and-housing-characteristics-file-a/
 
-- Census_RaceEthCode = 4 digit integer; Census race/ethnicity code.
+- Census_RaceEthCode = 4 or 9 character string, representing either a 4 digit integer or a colon separated range of two four digit codes; Census race/ethnicity code.
 - Census_Description = var string, all caps; name or description associated with Census race/ethnicity code.
-
-This is a one-to-many file (Code to Description). There are 577 unique Census r/e codes and there are multiple descriptions for many of these.
-Only 14 codes have one description. 55 codes have 10 or more descriptions.
 
 ################################################################
 
-**File 6 census-tribal_PopGrp_RaceCode.csv**
+**File 6: census-tribal_RaceEthCode_Description_2030.csv**
+This file is a subset of the complete proposed 2030 Census list of race and ethnicity codes. For each code, it includes all terms that are proposed to be associated with the code.
+
+Downloaded from: https://www2.census.gov/programs-surveys/demo/2030-race-and-or-ethnicity-code-list/
+
+They are discussed here: https://www.federalregister.gov/documents/2024/11/18/2024-26827/the-census-bureaus-proposed-raceethnicity-code-list-for-the-american-community-survey-and-the-2030
+
+- Census_RaceEthCode = 4 or 9 character string, representing either a 4 digit integer or a colon separated range of two four digit codes; Census race/ethnicity code.
+- Census_Description = var string, all caps; name or description associated with Census race/ethnicity code.
+
+This is a one-to-many file (Code to Description). There are 3820 rows with 867 unique Census r/e codes and multiple descriptions for many of these.
+Only 99 codes have one description. 69 codes have 10 or more descriptions. There are 26 new codes that are not listed in the 2020 file (File 5).
+
+################################################################
+
+**File 7 census-tribal_PopGrp_RaceCode.csv**
 This file provides a crosswalk between the ACS population group codes and the 2020 Decennial Census iteration numbers and the race and ethnicity codes for U.S. AIAN.
 This will allow identifying population group data available for federally recognized entities, using race and ethnicity codes to join population groups to FRN entities. 
 This file has
@@ -178,7 +191,7 @@ Note also that correct population or iteration codes are needed to pull AIAN spe
 
 ################################################################
 
-**File 7 census-tribal_PopGrp.csv**
+**File 8 census-tribal_PopGrp.csv**
 This file provides the population group codes from the 2020 Decennial Census DDHCA/B Population Groups json file (https://api.census.gov/data/2020/dec/ddhca/variables/POPGROUP.json), subset U.S. AIAN. This file includes the codes listed in File 6 and 406 additional codes that were not included in the Census files used to create File 6. No crosswalk to the race and ethnicity codes was found. Currently identified 3574 codes, 406 are missing from File 6.
 
 - popCode = 3-4 length character string, represents the ACS population group (length three alpha-numeric or numeric, letter in 2nd or 3rd space) or Decennial 2020 iteration number (4 digit).
