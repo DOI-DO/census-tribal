@@ -51,3 +51,11 @@ race_codes2030 <- race_codes2030 %>% filter(!is.na(race)) %>%
   filter(endCode > 4999 & startCode < 6500) %>%
   select(-startCode, - endCode)
 
+
+test <- full_join(race_codes, 
+                  race_codes2030 %>% 
+                    group_by(code) %>%
+                    mutate(index = row_number()) %>%
+                    ungroup() %>%
+                    filter(index == 1), 
+                  by = ("code" = "code"))

@@ -18,8 +18,8 @@
 
 get_table_decennial.fn <- function(year = 2020, 
                                    dataset = "dhc",
-                                   tab = 'P8',
-                                   geo = "american indian area/alaska native area/hawaiian home land",
+                                   table_id = 'P8',
+                                   geography = "american indian area/alaska native area/hawaiian home land",
                                    dropNonFed = T) {
   
   # default dataset is "dhc" = demographic and housing
@@ -36,7 +36,6 @@ get_table_decennial.fn <- function(year = 2020,
   
   # tab is the table desired; default P8 provides the population by race/ethnicity
   # run view_tables_decennial.fn to see all tables available.
-  
   # default geography product is "american indian area/alaska native area/hawaiian home land"
   # other possible decennial AIAN geo sets:
   # "alaska native regional corporation"
@@ -45,27 +44,34 @@ get_table_decennial.fn <- function(year = 2020,
   # dropNonFed is a logical; T = drop state recognized areas and Hawaiian home lands
   # exception: three state areas associated with federally recognized entities
   # Lumbee (GEOID = 9815), Pamunkey (9260), Shinnecock (9370)
- 
+
   # load variables for selected year and table
  variables <- load_variables(year, dataset = dataset, cache = TRUE) %>% 
-   mutate(table = str_split_i(name, "_",1)) %>%
-   filter(table == tab) %>%
+   mutate(table = ifelse(str_detect(name, "_"), 
+                         str_split_i(name, "_",1),
+                         str_sub(name, 1, (nchar(name)-3)))) %>%
+   filter(table == table_id) %>%
    mutate(label = str_trim(str_replace_all(label, "!!", " "))) 
- 
+
  # logical to classify the table as specific to AIAN
  # if True, save all variables. If False, save totals and AIAN variables.
  AIAN.table <- str_detect(unique(variables$concept), "AMERICAN INDIAN")
  
  out <- get_decennial(year = year, 
-                      geography = geo, 
+                      geography = geography, 
                       sumfile = dataset,
-                      table = tab) 
+                      table = table_id) 
+ 
  
  out <- left_join(out, variables %>% select(name, label), by = c('variable' = "name"))
  
+ print(head(out))
+ 
  if (!AIAN.table) {
-   # total variables end in ":", labels are not in caps
-   out <- out %>% filter(str_sub(label,nchar(label)) == ":" | str_detect(label, "American Indian"))
+   # total variables end in ":" for 2020, labels are not in caps
+   out <- out %>% filter((label == "Total") | 
+                           str_sub(label,nchar(label)) == ":" | 
+                           str_detect(label, "American Indian"))
  }
   
  if(dropNonFed) {

@@ -2,11 +2,12 @@
 
 # 22-April-2026 E Silverman
 
-# Note: datasets described here are for the 2020 census. See Census Bureau documentation
-# or tidycensus for dataset names for 2000 and 2010 censuses.
+# Note: datasets described here are for the 2000, 2010, and 2020 census. See Census Bureau documentation
+# https://www.census.gov/data/developers/data-sets/decennial-census.html
+# NOte that variable name format differs between 2020 and 2000/2010. 
+# 2000 "profile" name convention is different from same datatset name, not "profile" 
 
-
-view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method = "p") {
+view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method = "v") {
 
   # dataset values relevant for 2020 are: 
   # pl = redistricting data
@@ -15,6 +16,25 @@ view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method
   # ddhca = detailed demographic and housing A
   # ddhcb = detailed demographic and housing B
   # sdhc = supplemental demographic and housing
+  
+  # dataset values relevant for 2010 are:
+  # pl = redistricting data
+  # sf1 = summary file 1
+  # sf2 = summary file 2
+  
+  # dataset values relevant for 2000 are:
+  # pl = redistricting
+  # sf1 = summary file 1
+  # sf2 = summary file 2
+  # sf2profile = demographic profile 
+  # sf3 = summary file 3
+  # sf3profile = sf2 demographic profile
+  # sf4 = summary file 4
+  # sf4profile = sf4 demographic profile
+  # aian = AIAN summary file
+  # aianprofile = AIAN demographic profile
+  # as = island areas
+  
   
   # output_method = option for output with "p" = print to screen, "v" = View
   # point to object and answer "t" or "v" to last question to save output to an object
@@ -30,7 +50,10 @@ view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method
     ) 
   
   table.info <- distinct(file.info %>% 
-                    mutate(table = str_split_i(name, "_",1)) %>% 
+                    mutate(table = ifelse(str_detect(name, "_"), 
+                                          str_split_i(name, "_",1),
+                                          str_sub(name, 1, (nchar(name)-3)))
+                           ) %>% 
                     select(table, concept)) %>%
           filter(str_sub(table, nchar(table)) %in% c(0:9) | str_detect(concept, "AMERICAN INDIAN"))
   
@@ -49,7 +72,9 @@ view_tables_decennial.fn <- function(year = 2020, dataset = "dhc", output_method
   while (table.request != "no") {
     
     variable.info <- file.info %>% 
-      mutate(table = str_split_i(name, "_",1)) %>%
+      mutate(table = ifelse(str_detect(name, "_"), 
+                                    str_split_i(name, "_",1),
+                                    str_sub(name, 1, (nchar(name)-3)))) %>%
       filter(table == table.request) %>%
       select(variable = name, label)
     
