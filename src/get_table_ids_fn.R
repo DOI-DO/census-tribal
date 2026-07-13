@@ -1,11 +1,12 @@
-# This function pulls the variable names, labels , concepts and group (table) from
-# the variables.json associated with a Census dataset.
+# This function pulls the variable names, labels, concepts and group 
+# from the variables.json associated with a Census dataset.
 
-# Use it to identify the table_id to specifiy in get_census_table.fn
+# Use it to identify the table_id (group)to specify in get_census_table.fn
 
-# Originally was using load_variables from tidycensus for this purpose but
-# Census is not consistent between products in the relationship between the 
-# variable name and the group code. 
+# Originally we were using load_variables from tidycensus for this purpose but
+# Census coding is not consistent between products with respect to the relationship  
+# between the variable name and the group code ... instead of trying to manage all
+# the changes and exceptions, this code loads both table and variable.
 
 # 9-July-2026 E Silverman with Claude Chat
 
@@ -13,10 +14,10 @@
 # get_table_ids.fn()
 # Pulls variables.json directly for any year/program/sumfile combination and
 # returns a clean data frame of real variables with their authoritative
-# 'group' (table_id), bypassing tidycensus::load_variables() entirely.
+# 'group' (table_id), bypassing tidycensus::load_variables().
 #
-# This avoids two problems seen in practice:
-#   1. tidycensus's table/variable inference is inconsistent across years
+# This code manages two problems:
+#   1. Census's table/variable inference is inconsistent across years
 #      and products (e.g. 2010 SF1 variable P029007 belongs to group "P29",
 #      not "P029" as naive inference from the variable name would suggest).
 #   2. variables.json itself includes non-variable structural/metadata
@@ -27,6 +28,10 @@
 #      real group or NA. These structural fields are excluded by name.
 # ---------------------------------------------------------------------------
 get_table_ids.fn <- function(year, program, sumfile) {
+ 
+  # year = YYYY, 
+  # program = "dec" for decennial or "acs" for American Community Survey 
+  # sumfile = "dhc", "pl", "sf1", "acs5", "acs5/profile", etc. for Census data 
   
   url <- paste0("https://api.census.gov/data/", year, "/", program, "/", sumfile, "/variables.json")
   response <- GET(url)
@@ -58,7 +63,7 @@ get_table_ids.fn <- function(year, program, sumfile) {
   # real data variables and can carry malformed or meaningless 'group'
   # values (see GEO_ID note above).
   structural_fields <- c("GEO_ID", "NAME")
-  vars_df <- vars_df %>% filter(!(name %in% structural_fields))
+  vars_df <- vars_df %>% filter(!(name %in% structural_fields | is.na(concept)))
   
   # Safety net: also drop anything whose group value itself looks
   # malformed (comma-separated list) in case other structural fields
@@ -69,6 +74,8 @@ get_table_ids.fn <- function(year, program, sumfile) {
             paste(vars_df$name[malformed], collapse = ", "))
     vars_df <- vars_df[!malformed, ]
   }
+  
+  row.names(vars_df) <- c(1:nrow(vars_df))
   
   vars_df
 }
