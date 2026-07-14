@@ -27,11 +27,13 @@
 #      giant comma-separated list of unrelated table IDs, rather than a
 #      real group or NA. These structural fields are excluded by name.
 # ---------------------------------------------------------------------------
-get_table_ids.fn <- function(year, program, sumfile) {
+get_table_ids.fn <- function(year, program, sumfile, subsetAIAN = T) {
  
   # year = YYYY, 
   # program = "dec" for decennial or "acs" for American Community Survey 
   # sumfile = "dhc", "pl", "sf1", "acs5", "acs5/profile", etc. for Census data 
+  # subsetAIAN = logical, default TRUE: subset to basic tables and AIAN alone,
+  # .... this is *usually* tables ending in numbers or AIAN letters (e.g., C = AIAN along)
   
   url <- paste0("https://api.census.gov/data/", year, "/", program, "/", sumfile, "/variables.json")
   response <- GET(url)
@@ -57,13 +59,18 @@ get_table_ids.fn <- function(year, program, sumfile) {
     concept = sapply(real_vars, function(x) if (is.null(x$concept)) NA else x$concept),
     group = sapply(real_vars, function(x) if (is.null(x$group)) NA else x$group),
     stringsAsFactors = FALSE
-  )
+  ) %>% # Improve label readability
+    mutate(label = str_trim(label)) %>%
+    mutate(label = ifelse(str_sub(label, 1, 2) == "!!", 
+                         str_sub(label, 3, 
+                                 nchar(label)), label)) %>%
+    mutate(label = str_replace_all(label, "!!", "_")) # Improve label readability
   
   # Exclude known non-variable structural/metadata fields. These aren't
   # real data variables and can carry malformed or meaningless 'group'
   # values (see GEO_ID note above).
   structural_fields <- c("GEO_ID", "NAME")
-  vars_df <- vars_df %>% filter(!(name %in% structural_fields | is.na(concept)))
+  vars_df <- vars_df %>% filter(!(name %in% structural_fields | (group == "N/A" & !is.na(group))))
   
   # Safety net: also drop anything whose group value itself looks
   # malformed (comma-separated list) in case other structural fields
@@ -75,7 +82,22 @@ get_table_ids.fn <- function(year, program, sumfile) {
     vars_df <- vars_df[!malformed, ]
   }
   
-  row.names(vars_df) <- c(1:nrow(vars_df))
+ row.names(vars_df) <- c(1:nrow(vars_df))
+  
+  if (subsetAIAN) {
+    # resolve a case with concept = NA in all cases
+    vars_df <- vars_df %>% mutate(concept = ifelse(is.na(concept), "N/A", concept))
+    
+    vars_df <- vars_df %>% filter((str_sub(group, nchar(group)) %in% c(0:9) &
+                                  # odd cases with numeric end and another race, not AIAN:
+                                  !((str_detect(concept, "ASIAN") | 
+                                       str_detect(concept, "WHITE") | 
+                                       str_detect(concept, "BLACK") | 
+                                       str_detect(concept, "HAWAIIAN")) & 
+                                      !str_detect(concept, "AMERICAN INDIAN")))
+                               # or includes AIAN in concept description:
+                               | str_detect(concept, "AMERICAN INDIAN"))
+  }
   
   vars_df
 }
