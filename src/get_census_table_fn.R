@@ -4,6 +4,7 @@
 # working for some datasets (e.g., 2020 decennial ddhcb amd acs/aian and spt tables)
 
 # 9-July-2-26 E Silverman with Claude Chat
+# 29-July-2026 added in_geo for nested geographies (tract, block group, etc.)
 
 # ---------------------------------------------------------------------------
 # get_census_table.fn()
@@ -16,16 +17,30 @@
 #   - DDHCA/DDHCB: adaptive-design POPGROUP wildcard dimension (pulls all pop groups)
 #   - SDHC: race/ethnicity are specified by the table_id, no POPGROUP
 #   - ACS / other dec sumfiles: standard group() pull, no POPGROUP
+#   - Nested geographies via in_geo (e.g. tract requires state; block group
+#     requires state + county)
 #
 # Cleans duplicate columns and converts Census suppression sentinel codes
 # (e.g. -888888888, -999999999) to NA.
 # ---------------------------------------------------------------------------
-get_census_table.fn <- function(table_id,
-                             year,
-                             program,      # "dec" or "acs"
-                             sumfile,      # e.g. "ddhca", "sf1", "acs5", "acs5/aian"
-                             key,          # your census key
-                             geography = "state:*") {
+get_census_table.fn <- function(year,
+                                program,      # "dec" or "acs"
+                                sumfile,      # e.g. "ddhca", "sf1", "acs5", "acs5/aian"
+                                table_id,
+                                geography = "state:*",
+                                in_geo    = NULL, # named vector of parent
+                                # level -> code, e.g.
+                                # c(state = "06", county = "*")
+                                # Get parents from the
+                                # 'requires' field of
+                                # get_dataset_geographies.fn().
+                                key = Sys.getenv("CENSUS_API_KEY")
+                                # defaults to the CENSUS_API_KEY
+                                # env var (set in .Renviron or
+                                # via Sys.setenv()) so the key
+                                # never has to be typed into a
+                                # script or land in a shared URL.
+) {
   
   library(httr)
   library(jsonlite)
@@ -33,12 +48,33 @@ get_census_table.fn <- function(table_id,
   library(tidyr)
   library(stringr)
   
+  if (!nzchar(key))
+    stop("No Census API key. Set CENSUS_API_KEY (e.g. in .Renviron or via ",
+         "Sys.setenv(CENSUS_API_KEY = \"...\")) or pass key= explicitly.")
+  
   base_url <- paste0("https://api.census.gov/data/", year, "/", program, "/", sumfile)
   
-  # Encode geography string so spaces/slashes (e.g. aian homeland geography name) 
-  # don't break the URL. URLencode() by default leaves *, &, =, : alone, 
+  # Encode geography string so spaces/slashes (e.g. aian homeland geography name)
+  # don't break the URL. URLencode() by default leaves *, &, =, : alone,
   # these are meaningful in the query string.
   geography_encoded <- URLencode(geography)
+  
+  # Build the &in= clause for nested geographies. in_geo is a NAMED vector
+  # mapping each required parent level to its code, e.g.
+  #   c(state = "06")                     -> &in=state:06
+  #   c(state = "06", county = "*")       -> &in=state:06&in=county:*
+  # Emit ONE &in= per parent (rather than a single space-separated &in=)
+  # because some level names contain spaces or slashes (e.g. 'block group',
+  # 'american indian area/alaska native area/hawaiian home land'), which are
+  # ambiguous when packed into one &in=. URLencode() (no reserved=TRUE)
+  # encodes those spaces/slashes but leaves ':' and '*' intact, matching the
+  # &for= convention above.
+  in_clause <- ""
+  if (!is.null(in_geo) && length(in_geo) > 0) {
+    pairs     <- paste0(names(in_geo), ":", unname(in_geo))
+    encoded   <- vapply(pairs, URLencode, character(1))
+    in_clause <- paste0(paste0("&in=", encoded), collapse = "")
+  }
   
   # DDHCA/DDHCB use an adaptive-design POPGROUP dimension (race/ethnicity
   # "pop group" is a wildcard-able filter applied on top of the table).
@@ -55,6 +91,7 @@ get_census_table.fn <- function(table_id,
       base_url,
       "?get=NAME,group(", table_id, "),POPGROUP_LABEL",
       "&for=", geography_encoded,
+      in_clause,
       "&POPGROUP=*", # pull all popn groups, filter outside function
       "&key=", key
     )
@@ -65,18 +102,38 @@ get_census_table.fn <- function(table_id,
       base_url,
       "?get=NAME,group(", table_id, ")",
       "&for=", geography_encoded,
+      in_clause,
       "&key=", key
     )
   }
   
   response <- GET(url)
   
+  # 204 No Content: a VALID request that matched no rows (e.g. a within-tract
+  # AIAN level for a tract that contains no AIAN part, or an adaptive-design
+  # gap). Not an error -- return NULL quietly-ish so loops over many geos
+  # don't spam alarming warnings for expected empty cells.
+  if (status_code(response) == 204) {
+    message(paste0("No data (204) for table ", table_id,
+                   " at the requested geography -- valid request, empty result."))
+    return(NULL)
+  }
+  
   if (status_code(response) != 200) {
+    # Surface the API's own error text -- Census 400s usually say exactly
+    # what's wrong (e.g. "unsupported geography hierarchy"), which is far
+    # more diagnostic than the status code alone.
+    err_body <- tryCatch(
+      trimws(content(response, "text", encoding = "UTF-8")),
+      error = function(e) ""
+    )
     warning(paste0(
       "Request failed for table ", table_id,
       " (", program, "/", sumfile, ", ", year, ") with status: ", status_code(response),
-      " -- check table_id validity, adaptive-design availability, or ",
-      "whether this sumfile accepts the parameters used."
+      if (nzchar(err_body)) paste0("\n  API said: ", err_body) else "",
+      "\n  -- check table_id validity, adaptive-design availability, ",
+      "whether this sumfile accepts the parameters used, or whether the ",
+      "geography's in_geo (parent) clause matches its 'requires' field."
     ))
     return(NULL)
   }
