@@ -13,12 +13,12 @@
 #   optionalWithWCFor - parent that may be omitted (implicitly wildcarded)
 #   nested            - TRUE if the level requires an &in= clause
 #
-# output can be 'all' or subset to AIAN only (whichGEO parameter)
+# output can be all supported geographies or subset to AIAN only (subsetAIAN parameter)
 
 get_dataset_geographies.fn <- function(year,
                                        program,      # "dec" or "acs"
                                        sumfile,      # e.g. "ddhca", "sf1", "acs5", "acs5/aian"
-                                       whichGEO = "all" # options: "all", "AIAN"
+                                       subsetAIAN = T # if TRUE include only AIAN geos in output
 ) {
   
   library(tidyverse)
@@ -76,7 +76,7 @@ get_dataset_geographies.fn <- function(year,
     select(any_of(c("name", "geoLevelDisplay", "referenceDate",
                     "requires", "wildcard", "optionalWithWCFor", "nested")))
   
-  if (whichGEO == "AIAN") {
+  if (subsetAIAN) {
     
     out <- out %>% 
       filter(str_detect(name, "indian|home land|tribal|native|trust land"))  
