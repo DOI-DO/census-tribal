@@ -1,12 +1,12 @@
 # This function pulls the variable names, labels, concepts and group 
 # from the variables.json associated with a Census dataset.
 
-# Use it to identify the table_id (group)to specify in get_census_table.fn
+# Use it to identify the table_id (group) you want to specify in get_census_table.fn
 
 # Originally we were using load_variables from tidycensus for this purpose but
 # Census coding is not consistent between products with respect to the relationship  
-# between the variable name and the group code ... instead of trying to manage all
-# the changes and exceptions, this code loads both table and variable.
+# between the variable name and the group code ... instead of trying to manage all the
+# changes and exceptions, this code loads both table (i.e., group) and variable (i.e., name).
 
 # 9-July-2026 E Silverman with Claude Chat
 
@@ -26,6 +26,19 @@
 #      observed (2010 SF1) to carry a malformed 'group' value containing a
 #      giant comma-separated list of unrelated table IDs, rather than a
 #      real group or NA. These structural fields are excluded by name.
+
+# This function requires packages tidyverse/dplyr, httr, and jsonlite
+
+
+# Output is a dataframe with four columns: 
+#   name          - the Census code for the variable
+#   label         - text description of variable
+#   concept       - table name (all caps)
+#   group         - the Census table code
+
+# Example:
+# sf1_2010_vars <- get_table_ids.fn(year = 2010, program = "dec", sumfile = "sf1")
+# unique(sf1_2010_vars$group)
 # ---------------------------------------------------------------------------
 get_table_ids.fn <- function(year, program, sumfile, subsetAIAN = T) {
  
@@ -33,7 +46,8 @@ get_table_ids.fn <- function(year, program, sumfile, subsetAIAN = T) {
   # program = "dec" for decennial or "acs" for American Community Survey 
   # sumfile = "dhc", "pl", "sf1", "acs5", "acs5/profile", etc. for Census data 
   # subsetAIAN = logical, default TRUE: subset to basic tables and AIAN alone,
-  # .... this is *usually* tables ending in numbers or AIAN letters (e.g., C = AIAN along)
+  # .... these are *usually* tables ending in numbers or letters that indicate AIAN
+  # (e.g., C = AIAN alone)
   
   url <- paste0("https://api.census.gov/data/", year, "/", program, "/", sumfile, "/variables.json")
   response <- GET(url)
@@ -102,6 +116,4 @@ get_table_ids.fn <- function(year, program, sumfile, subsetAIAN = T) {
   vars_df
 }
 
-# Example:
-# sf1_2010_vars <- get_table_ids.fn(year = 2010, program = "dec", sumfile = "sf1")
-# unique(sf1_2010_vars$group)
+

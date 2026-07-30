@@ -2,13 +2,13 @@
 
 # E Silverman 29-July-2026
 
-# This function repeats some code to process the api call from the 
-# get_census_table.fn function which was written with Claude. This function
+# This function repeats some code used to process the api call from the 
+# get_census_table.fn function which was written with Claude Chat. This function
 # was also debugged and reworked with Claude to resolve the nested geo issue.
 
 # Output is a dataframe with geography 'name', 3-digit Census 'geoLevelDisplay'
 # code, the reference date, AND the nesting metadata needed to query the geo:
-#   requires          - pipe-separated parent levels that must appear in &in=
+#   requires          - pipe-separated parent levels that mu st appear in &in=
 #   wildcard          - pipe-separated subset of parents that may be ':*'
 #   optionalWithWCFor - parent that may be omitted (implicitly wildcarded)
 #   nested            - TRUE if the level requires an &in= clause

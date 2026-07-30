@@ -1,4 +1,4 @@
-# This function pulls data from Census decennial or ACS
+# This function pulls data tables from Census decennial or ACS
 
 # Similar to get_decennial and get_acs from tidycensus which were not
 # working for some datasets (e.g., 2020 decennial ddhcb amd acs/aian and spt tables)
@@ -12,7 +12,25 @@
 # including nested sumfile paths like "acs/acs5/aian") that aren't well
 # supported by tidycensus (e.g. ddhca, ddhcb, sdhc, or ACS subject-population
 # tables like AIAN/1-year Puerto Rico, etc.)
+
+# Inputs:
+#   year      - YYYY four digit year
+#   program   - 'dec' for decennial or 'acs' for American Community Survey
+#   sumfile   - this is the dataset or "summary file" that includes the table of interest
+#   table_id  - this is the code for the table from the sumfile that you would
+#               like to pull; the codes are found in the 'group' column from get_table_ids.fn
+#   geography - the Census geography you would like the data summarized to, e.g. "state" or
+#               "alaska native regional corporation" ... found in the 'name' field from 
+#               get_dataset_geographies.fn
+#   in_geo    - the 'requires' geography string you need to pull data for "part of" intersection
+#               geographies, from resolve_geo.fn
+#   key       - Census API key ... because you are pulling data from the API, you need a key, which
+#               you can store as CENSUS_API_KEY in your .REnviron or enter when you run the function
 #
+# Output: a wide table with columns for each table variable and rows for each unit in the geography
+# and POPGRP if present in table.
+# We use a separate function to lengthen and tidy the output from this function.
+
 # Handles:
 #   - DDHCA/DDHCB: adaptive-design POPGROUP wildcard dimension (pulls all pop groups)
 #   - SDHC: race/ethnicity are specified by the table_id, no POPGROUP
@@ -84,6 +102,7 @@ get_census_table.fn <- function(year,
   # NOTE: POPGROUP is left out of get= since it's already supplied as a
   # filter below when relevant -- including it in both places caused a
   # duplicate-column error for ddhca/ddhcb.
+  # Separate functions will subset the table to AIAN relevant POPGROUPS
   base_sumfile <- tolower(strsplit(sumfile, "/")[[1]][1])  # e.g. "ddhca" from "ddhca", "acs5" from "acs5/aian"
   
   if (base_sumfile %in% c("ddhca", "ddhcb")) {
