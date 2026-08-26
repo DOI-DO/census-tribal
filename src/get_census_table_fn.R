@@ -5,6 +5,15 @@
 
 # 9-July-2-26 E Silverman with Claude Chat
 # 29-July-2026 added in_geo for nested geographies (tract, block group, etc.)
+# 26-Aug-2026 two fixes surfaced by national exercise of the AIAN wrappers:
+#   (1) single-row collapse: as.data.frame(data[-1, ]) dropped to a 7x1 frame
+#       for states with exactly one area (e.g. GA/Tama Reservation) -> crash at
+#       colnames<-. Fixed with drop = FALSE.
+#   (2) est_cols matcher missed no-underscore decennial columns (table "P1" ->
+#       column "P001001"), so suppression cleanup was silently skipped on
+#       decennial pulls. Fixed by also matching the table's alpha prefix +
+#       digits (padding width varies by vintage, so no reconstruction; relies
+#       on one-table-per-call so only that table's estimate columns match).
 
 # ---------------------------------------------------------------------------
 # get_census_table.fn()
@@ -165,23 +174,54 @@ get_census_table.fn <- function(year,
   }
   
   data <- fromJSON(body, flatten = TRUE)
-  df <- as.data.frame(data[-1, ], stringsAsFactors = FALSE)
+  # drop = FALSE: fromJSON returns a header row + data rows as a character
+  # matrix. For a geography with exactly ONE unit (e.g. a state with a single
+  # AIAN area, like GA/Tama Reservation), data[-1, ] would default to
+  # drop = TRUE and collapse the lone data row to a vector, which as.data.frame
+  # then turns into an N x 1 frame -> colnames<- length mismatch crash.
+  # drop = FALSE keeps it a 1 x N matrix. No-op for multi-row results.
+  df <- as.data.frame(data[-1, , drop = FALSE], stringsAsFactors = FALSE)
   colnames(df) <- data[1, ]
   
-  # De-duplicate any repeated column names (e.g. POPGROUP echoed twice)
+  # De-duplicate any repeated column names (e.g. POPGROUP echoed twice).
+  # drop = FALSE guards the (unlikely) case where dedup leaves a single column.
   if (any(duplicated(colnames(df)))) {
     dupes <- colnames(df)[duplicated(colnames(df))]
     message(paste0("Removed duplicate column(s): ", paste(unique(dupes), collapse = ", ")))
-    df <- df[, !duplicated(colnames(df))]
+    df <- df[, !duplicated(colnames(df)), drop = FALSE]
   }
   
-  # Identify the actual estimate + MOE columns for this table. Matches:
-  #   - flat suffix style:   T02001_001N, B01001_001E (estimate), B01001_001M (MOE)
-  #   - additional flat suffix style: DP1_0001C (count), DP1_0001P (percent)
-  #   - row/col matrix style: PH1_COL1_R1
-  # Excludes annotation columns (trailing A, e.g. _001EA/_001MA/_001NA) since
-  # those are flags/text, not numeric values to clean.
-  est_cols <- grep(paste0("^", table_id, "(_\\d{3}[NEM]|_\\d{4}[CP]|_COL\\d+_R\\d+)$"), colnames(df), value = TRUE)
+  # Identify the actual estimate + MOE columns for this table.
+  #
+  # ACS / DP / matrix conventions include an underscore + the raw table_id:
+  #   - flat suffix style:   T02001_001N, B01001_001E (est), B01001_001M (MOE)
+  #   - DP flat suffix:      DP1_0001C (count), DP1_0001P (percent)
+  #   - row/col matrix:      PH1_COL1_R1
+  # Excludes annotation columns (trailing A, e.g. _001EA/_001MA/_001NA).
+  #
+  # Decennial SF-series columns do NOT follow that: table "P1" is returned as
+  # "P001001", "PCT33" as "PCT033007", "PCO2" as "PCO002035" -- an alpha prefix
+  # then digits, no underscore. The zero-padding width VARIES by vintage (2010
+  # pads the table number to width 3; 2000 differs), so we do NOT try to
+  # reconstruct the exact prefix. Instead we lean on a structural invariant:
+  # each call pulls exactly ONE table via group(table_id), so the only
+  # "<alpha><digits>" columns in the response are that table's estimate
+  # variables. We therefore match the table's letter prefix + all digits,
+  # ending in a digit -- e.g. "^P\d+$" catches P001001, "^PCT\d+$" catches
+  # PCT033007. This is padding- and vintage-agnostic. Annotation columns
+  # (P001001ERR, _001EA) end in letters and are excluded; geo columns
+  # (state, GEO_ID, the AIAN-area name) don't match; underscore-style ACS/DP/
+  # matrix columns don't match (handled by pat_underscore above). One table
+  # per call means no risk of catching a different table's columns.
+  pat_underscore <- paste0("^", table_id,
+                           "(_\\d{3}[NEM]|_\\d{4}[CP]|_COL\\d+_R\\d+)$")
+  est_cols <- grep(pat_underscore, colnames(df), value = TRUE)
+  
+  if (grepl("^[A-Za-z]+\\d+$", table_id)) {
+    alpha   <- sub("^([A-Za-z]+)\\d+$", "\\1", table_id)
+    dec_pat <- paste0("^", alpha, "\\d+$")   # alpha prefix + all digits
+    est_cols <- union(est_cols, grep(dec_pat, colnames(df), value = TRUE))
+  }
   
   if (length(est_cols) == 0) {
     message("No columns matched the expected '", table_id, "' estimate pattern. ",
