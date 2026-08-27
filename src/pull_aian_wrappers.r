@@ -66,7 +66,7 @@ pull_aian_within_state.fn <- function(year, program, sumfile, table_id,
            paste(unique(states[bad]), collapse = ", "))
   }
   
-  geos <- get_dataset_geographies.fn(year, program, sumfile, whichGEO = "AIAN")
+  geos <- get_dataset_geographies.fn(year, program, sumfile, subsetAIAN = T)
   if (is.null(geos)) stop("Could not fetch geographies for this dataset.")
   
   lv <- .find_aian_levels(geos, c("state"))
@@ -183,7 +183,7 @@ pull_aian_in_tracts.fn <- function(year, program, sumfile, table_id,
     stop("`tracts` must be a character vector of 11-digit GEOIDs or a data frame.")
   }
   
-  geos <- get_dataset_geographies.fn(year, program, sumfile, whichGEO = "AIAN")
+  geos <- get_dataset_geographies.fn(year, program, sumfile, subsetAIAN = TRUE)
   if (is.null(geos)) stop("Could not fetch geographies for this dataset.")
   
   lv <- .find_aian_levels(geos, c("state", "county", "tract"))
