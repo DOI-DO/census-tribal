@@ -1,8 +1,9 @@
 # This function tidies the table produced by get_census_table.fn by creating
 # a column for variable and one for annotation (wide to long)
-
 # 9-July-2026 E Silverman with Claude Chat
-
+# 14-Oct-2026 added ACS profile branch (_\d{4}P?[EM] / ..A) to value & annotation
+#         patterns so DP02/DP05-style profile tables reshape instead of
+#         returning unchanged. Mirrors the same fix in get_census_table.fn.
 # ---------------------------------------------------------------------------
 # reshape_census_long()
 # Converts a wide get_census_table() result into long format:
@@ -19,12 +20,13 @@ reshape_census_long.fn <- function(df, table_id) {
   
   all_cols <- colnames(df)
   
-  # Value columns: flat suffix (_###N/E/M) or matrix style (_COL#_R#)
-  value_cols <- grep(paste0("^", table_id, "(_\\d{3}[NEM]|_\\d{4}[CP]|_COL\\d+_R\\d+)$"), all_cols, value = TRUE)
+  # Value columns: flat suffix (_###N/E/M), DP count/pct (_####C/P), ACS
+  # profile (_####[P]E / [P]M), or matrix style (_COL#_R#).
+  value_cols <- grep(paste0("^", table_id, "(_\\d{3}[NEM]|_\\d{4}[CP]|_\\d{4}P?[EM]|_COL\\d+_R\\d+)$"), all_cols, value = TRUE)
   
-  # Annotation columns: same stub + trailing A (e.g. _001NA, _001EA, _001MA)
-  # or matrix style with trailing A (e.g. _COL1_R1A)
-  annot_cols <- grep(paste0("^", table_id, "(_\\d{3}[NEM]A|_\\d{4}[CP]A|_COL\\d+_R\\d+A)$"), all_cols, value = TRUE)
+  # Annotation columns: same stubs + trailing A (e.g. _001NA, _001EA, _001MA,
+  # _0001PEA, _0001PMA, _COL1_R1A).
+  annot_cols <- grep(paste0("^", table_id, "(_\\d{3}[NEM]A|_\\d{4}[CP]A|_\\d{4}P?[EM]A|_COL\\d+_R\\d+A)$"), all_cols, value = TRUE)
   
   id_cols <- setdiff(all_cols, c(value_cols, annot_cols))
   

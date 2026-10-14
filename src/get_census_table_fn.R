@@ -14,6 +14,10 @@
 #       decennial pulls. Fixed by also matching the table's alpha prefix +
 #       digits (padding width varies by vintage, so no reconstruction; relies
 #       on one-table-per-call so only that table's estimate columns match).
+# 14-Oct-2026 est_cols matcher also missed ACS PROFILE columns (DP02_0001E/_M/_PE/
+#       _PM; 4-digit var number +/- 'P' prefix, then E/M), so cleanup was
+#       skipped on acs5 profile / aianprofile pulls. Added "_\d{4}P?[EM]"
+#       branch; $ anchor still excludes the _..A annotation columns.
 
 # ---------------------------------------------------------------------------
 # get_census_table.fn()
@@ -195,9 +199,14 @@ get_census_table.fn <- function(year,
   #
   # ACS / DP / matrix conventions include an underscore + the raw table_id:
   #   - flat suffix style:   T02001_001N, B01001_001E (est), B01001_001M (MOE)
-  #   - DP flat suffix:      DP1_0001C (count), DP1_0001P (percent)
+  #   - DP flat suffix:      DP1_0001C (count), DP1_0001P (percent)  [2010-style]
+  #   - ACS PROFILE style:   DP02_0001E / _0001M / _0001PE / _0001PM
+  #                          (est / MOE / percent-est / percent-MOE; modern
+  #                          acs5 profile + aianprofile). 4-digit var number,
+  #                          optional 'P' prefix, then E or M.
   #   - row/col matrix:      PH1_COL1_R1
-  # Excludes annotation columns (trailing A, e.g. _001EA/_001MA/_001NA).
+  # Excludes annotation columns (trailing A, e.g. _001EA/_001MA/_0001PEA/
+  # _0001PMA) -- the $ anchor drops them because they don't END in N/E/M/C/P.
   #
   # Decennial SF-series columns do NOT follow that: table "P1" is returned as
   # "P001001", "PCT33" as "PCT033007", "PCO2" as "PCO002035" -- an alpha prefix
@@ -214,7 +223,7 @@ get_census_table.fn <- function(year,
   # matrix columns don't match (handled by pat_underscore above). One table
   # per call means no risk of catching a different table's columns.
   pat_underscore <- paste0("^", table_id,
-                           "(_\\d{3}[NEM]|_\\d{4}[CP]|_COL\\d+_R\\d+)$")
+                           "(_\\d{3}[NEM]|_\\d{4}[CP]|_\\d{4}P?[EM]|_COL\\d+_R\\d+)$")
   est_cols <- grep(pat_underscore, colnames(df), value = TRUE)
   
   if (grepl("^[A-Za-z]+\\d+$", table_id)) {
