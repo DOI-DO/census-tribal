@@ -95,7 +95,7 @@ Due to date changes, file is one-to-many (neid_mid to FRN_NameAsPublished).
 
 ################################################################
 
-**File 3: census-tribal_FRNCICDEntity_CensusGeography.csv**
+**File 3: census-tribal_FRNEntityCICD_CensusGeography.csv**
 
 This file has one row for each FRN 2026-01-30 entity x Census geography relationship.
 Census geographies come from the 2020 Census AIANNH list.
