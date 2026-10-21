@@ -192,10 +192,10 @@ Note also that correct population or iteration codes are needed to pull AIAN spe
 ################################################################
 
 **File 8 census-tribal_PopGrp.csv**
-This file provides the population group codes from the 2020 Decennial Census DDHCA/B Population Groups json file (https://api.census.gov/data/2020/dec/ddhca/variables/POPGROUP.json), subset U.S. AIAN. This file includes the codes listed in File 6 and 406 additional codes that were not included in the Census files used to create File 6. No crosswalk to the race and ethnicity codes was found. Currently identified 3574 codes, 406 are missing from File 6.
+This file provides the population group codes from the 2020 Decennial Census DDHCA/B Population Groups json file (https://api.census.gov/data/2020/dec/ddhca/variables/POPGROUP.json), subset U.S. AIAN. This file includes the codes listed in *File 7 census-tribal_PopGrp_RaceCode.csv* and 406 additional codes that were not included in the Census files used to create *File 7 census-tribal_PopGrp_RaceCode.csv*. No crosswalk to the race and ethnicity codes was found. Currently identified 3574 codes, 406 are missing from File 6.
 
 - popCode = 3-4 length character string, represents the ACS population group (length three alpha-numeric or numeric, letter in 2nd or 3rd space) or Decennial 2020 iteration number (4 digit).
-- descriptiveName = var string, descriptive population group name. Note: there is one set of codes where the descriptive name for the codes differs from the ACS table used to create File 6 (4Z9, 5Z9, 7A1, 9Z2 here include the words "tribal grouping").
+- descriptiveName = var string, descriptive population group name. Note: there is one set of codes where the descriptive name for the codes differs from the ACS table used to create *File 7 census-tribal_PopGrp_RaceCode.csv* (4Z9, 5Z9, 7A1, 9Z2 here include the words "tribal grouping").
 - codeType = 1-2 length character string, f = four digit code, t = three digit code, t2 = length three, 2nd character is alpha, t3 = length three, 3rd character is alpha.
 - match = var string, yes/no. Indicates if the code is found in File 6.
 - n_name = integer. Number of records in the file with the same descriptive name.
