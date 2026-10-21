@@ -171,7 +171,7 @@ They are discussed here: https://www.federalregister.gov/documents/2024/11/18/20
 - Census_Description = var string, all caps; name or description associated with Census race/ethnicity code.
 
 This is a one-to-many file (Code to Description). There are 3820 rows with 867 unique Census r/e codes and multiple descriptions for many of these.
-Only 99 codes have one description. 69 codes have 10 or more descriptions. There are 26 new codes that are not listed in the 2020 file (File 5).
+Only 99 codes have one description. 69 codes have 10 or more descriptions. There are 26 new codes that are not listed in the 2020 file (**File 5: census-tribal_RaceEthCode_Description.csv**).
 
 ################################################################
 
@@ -185,7 +185,7 @@ Note also that correct population or iteration codes are needed to pull AIAN spe
 - popCode = 3-4 length character string, represents the ACS population group (length three alpha-numeric or numeric, letter in 2nd or 3rd space) or Decennial 2020 iteration number (4 digit).
 - descriptiveName = var string, descriptive population group name.
 - raceCodeList_census = var string, represents the four digit race code, codes, or code range reported by Census as defining the population group.
-- raceCodeList_edited = var string, list of the valid race codes in raceCodeList_census, list is comma separated except for a few population groups representing large, generic classes (e.g., 'American Indian and Alaska Native alone.' Valid codes are determined by File 5.
+- raceCodeList_edited = var string, list of the valid race codes in raceCodeList_census, list is comma separated except for a few population groups representing large, generic classes (e.g., 'American Indian and Alaska Native alone.' Valid codes are determined by **File 5: census-tribal_RaceEthCode_Description.csv**.
 - popGrp_category = 0,1,2 where 0 = group consists of one race code; 1 = group consists of multiple race codes, and 2 = raceCodeList_census suggests multiple race codes but only one code is valid.
 - inCombo = 0,1 where 0 = population group response "alone" and 1 = population group response to race and ethnicity question "alone or in combination with other race responses."
 
@@ -197,7 +197,7 @@ This file provides the population group codes from the 2020 Decennial Census DDH
 - popCode = 3-4 length character string, represents the ACS population group (length three alpha-numeric or numeric, letter in 2nd or 3rd space) or Decennial 2020 iteration number (4 digit).
 - descriptiveName = var string, descriptive population group name. Note: there is one set of codes where the descriptive name for the codes differs from the ACS table used to create *File 7 census-tribal_PopGrp_RaceCode.csv* (4Z9, 5Z9, 7A1, 9Z2 here include the words "tribal grouping").
 - codeType = 1-2 length character string, f = four digit code, t = three digit code, t2 = length three, 2nd character is alpha, t3 = length three, 3rd character is alpha.
-- match = var string, yes/no. Indicates if the code is found in File 6.
+- match = var string, yes/no. Indicates if the code is found in *File 7 census-tribal_PopGrp_RaceCode.csv*.
 - n_name = integer. Number of records in the file with the same descriptive name.
 - name_id = integer. Index value that connects all records with same descritive name, e.g., "Emmonak Village alone," name_id 641 is represented by three popCodes: 110, 1J1 and 23I.
 
