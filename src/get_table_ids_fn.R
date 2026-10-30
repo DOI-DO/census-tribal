@@ -41,7 +41,11 @@
 # unique(sf1_2010_vars$group)
 # ---------------------------------------------------------------------------
 get_table_ids.fn <- function(year, program, sumfile, subsetAIAN = T) {
- 
+
+  library(tidyverse)
+  library(httr)
+  library(jsonlite)
+  
   # year = YYYY, 
   # program = "dec" for decennial or "acs" for American Community Survey 
   # sumfile = "dhc", "pl", "sf1", "acs5", "acs5/profile", etc. for Census data 
